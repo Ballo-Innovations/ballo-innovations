@@ -77,3 +77,11 @@ nav {
     line-height: 1;
   }
 }
+
+@media (width <= 576px) {
+  section {
+  padding: 0 1.5vw;
+  width: 100vw;
+  overflow-x: hidden;
+  }
+}
