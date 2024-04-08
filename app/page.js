@@ -1,10 +1,9 @@
-import Hero from "@/components/hero-section/Hero";
-import Image from "next/image";
+import Home from "@/components/homepage/Home";
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className="flex min-h-screen">
-      <Hero />
+    <main className="flex flex-col min-h-screen">
+      <Home />
     </main>
   );
 }

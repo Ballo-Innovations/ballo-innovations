@@ -1,15 +1,15 @@
 'use client'
 
 // Import Assets
-import './hero.css'
+import './home.css'
 import background from '@/public/Backgrounds/hero-bg.png'
 import ring from '@/public/elements small/15.png'
 import bi from '@/public/elements small/16.png'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Image from 'next/image'
-import Cards from './Cards'
-import Clients from './Clients'
+import Cards from './cards/Cards'
+import Clients from './clients/Clients'
 
 const Hero = () => {
   // Animation Logic
@@ -27,41 +27,43 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className='min-h-screen w-full pt-40 text-white'>
-      <div 
-        style={{ background: `url(${background.src})`, backgroundSize: 'cover' }}
-        id="hero-content-wrapper"
-        className='absolute left-0 top-0 pt-[45vh]'
-      >
-        <h1 id='header-text' className='relative z-[4] opacity-0 text-center text-[3rem] lg:text-[6vw] font-bold uppercase max-sm:text-5xl'>
-          Rebranding the Future
-        </h1>
-        <Cards />
+    <section className='min-h-screen pt-40 text-white' style={{ minWidth: '100vw' }}>
+      <div className='absolute top-0 left-0'>
+        <div 
+          style={{ background: `url(${background.src})`, backgroundSize: 'cover' }}
+          id="hero-content-wrapper"
+          className='absolute left-0 top-0 pt-[45vh]'
+        >
+          <h1 id='header-text' className='relative z-[4] opacity-0 text-center text-[3rem] lg:text-[6vw] font-bold uppercase max-sm:text-5xl'>
+            Rebranding the Future
+          </h1>
+          <Cards />
 
-        <div className="mt-40 px-5 md:px-32">
-          <h2 className='hero-subheading mb-5'>
-            What We’re About
-          </h2>
+          <div className="mt-40 px-5 md:px-32">
+            <h2 className='subheading mb-5'>
+              What We’re About
+            </h2>
 
-          <p className='font-semibold text-base md:w-[41%]'>
-            Ballo is a word derived from the business streets of Lusaka
-            that means &quot;a bag full of things&quot;. We are an omnichannel
-            (digital) marketing company that obsesses on giving the
-            very best to our clients to ensure the utmost customer
-            satisfaction and return on investment. 
-          </p>
+            <p className='font-semibold text-base md:w-[41%]'>
+              Ballo is a word derived from the business streets of Lusaka
+              that means &quot;a bag full of things&quot;. We are an omnichannel
+              (digital) marketing company that obsesses on giving the
+              very best to our clients to ensure the utmost customer
+              satisfaction and return on investment. 
+            </p>
+          </div>
+
+          <Clients />
         </div>
-
-        <Clients />
       </div>
 
 
-      <div className='h-max ml-5'>
+      <div className='h-max ml-5 -mt-5 w-[92vw]'>
         <Image
           src={ring}
           alt="Logo"
           quality={100}
-          className="logo-ring absolute left-[7.5%] lg:left-[8%] z-[3] w-[calc(29.5%-0.7em)] md:w-[calc(29.5%-0.5em)]"
+          className="logo-ring absolute left-[8%] lg:left-[8.25%] z-[3] w-[calc(29%-0.3em)]"
         />
 
         <Image

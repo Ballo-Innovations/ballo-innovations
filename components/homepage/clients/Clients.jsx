@@ -4,7 +4,7 @@ import Image from "next/image"
 const Clients = () => {
   return (
     <div>
-      <h2 className="hero-subheading mt-16 mb-10 px-5 md:px-32">
+      <h2 className="subheading mt-16 mb-10 px-5 md:px-32">
         Clients & Partners
       </h2>
 
