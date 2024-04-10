@@ -28,7 +28,14 @@ const HeroSection = () => {
   }
 
   return (
-    <section className='min-h-screen pt-[45vh] text-white' style={{ minWidth: '100vw', background: `url(${background.src})`, backgroundSize: 'cover' }}>
+    <section
+      className='min-h-screen text-white'
+      style={{
+        minWidth: '100vw',
+        background: `url(${background.src})`,
+        backgroundSize: 'cover',
+        padding: '45vh 0 0 0'
+      }}>
       <div id="hero-content-wrapper">
         <h1 id='header-text' className='relative z-[4] opacity-0 text-center text-[3rem] lg:text-[6vw] font-bold uppercase max-sm:text-5xl'>
           Rebranding the Future
