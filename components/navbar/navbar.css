@@ -59,8 +59,8 @@
   }
 }
 
-/* @media (width <= 576px) {
+@media (height <= 450px) {
   .openMenu {
-    padding: 3em 0;
+    padding-top: 4em;
   }
-} */
+}
