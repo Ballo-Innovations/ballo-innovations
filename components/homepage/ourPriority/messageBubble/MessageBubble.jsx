@@ -1,4 +1,4 @@
-import LoadingDots from '../loadingDots/loadingDots';
+import LoadingDots from '../loadingDots/LoadingDots';
 import './messagebubble.css';
 
 const MessageBubble = ({ text, direction, margin, loading }) => {
