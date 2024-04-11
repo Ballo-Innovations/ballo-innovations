@@ -1,4 +1,4 @@
-import BalloAdsDemo from "./balloAds/BalloAds"
+import BalloAdsDemo from "./balloAds/BalloAdsDemo"
 import HeroSection from "./heroSection/HeroSection"
 import './home.css'
 import OurPriority from "./ourPriority/OurPriority"
