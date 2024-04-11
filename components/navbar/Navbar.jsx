@@ -107,7 +107,7 @@ const Navbar = () => {
             src={logo}
             alt="Logo"
             quality={100}
-            className="hidden lg:block logo-white"
+            className="hidden lg:block logo-white w-11/12"
           />
 
           <Image

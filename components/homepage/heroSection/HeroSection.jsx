@@ -37,7 +37,10 @@ const HeroSection = () => {
         padding: '45vh 0 0 0'
       }}>
       <div id="hero-content-wrapper">
-        <h1 id='header-text' className='relative z-[4] opacity-0 text-center text-[3rem] lg:text-[6vw] font-bold uppercase max-sm:text-5xl'>
+        <h1
+          id='header-text'
+          className='relative z-[4] text-center text-[3rem] lg:text-[6vw] font-bold uppercase max-sm:text-5xl'
+        >
           Rebranding the Future
         </h1>
         <Cards />
@@ -59,12 +62,12 @@ const HeroSection = () => {
         <Clients />
       </div>
 
-      <div className='h-max ml-5 -mt-5 w-[92vw] absolute top-[20vh] md:top-40'>
+      <div className='max-w-[100vw] overflow-hidden h-max pl-5 -mt-5 w-[92vw] absolute top-[20vh] md:top-40'>
         <Image
           src={ring}
           alt="Logo"
           quality={100}
-          className="logo-ring absolute -left-[12%] lg:left-[2.5%] z-[3] w-[calc(52.5%-0.3em)] md:w-[calc(29%-0.3em)]"
+          className="logo-ring absolute -left-[5%] lg:left-[2.5%] z-[3] w-[calc(52.5%-0.3em)] md:w-[calc(29%-0.3em)]"
         />
 
         <Image
