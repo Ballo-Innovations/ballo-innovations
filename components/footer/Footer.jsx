@@ -34,9 +34,9 @@ const Footer = () => {
         Feel free to call, email, or hit us up on our social media accounts.
       </p>
 
-      <button className='font-bold border-white border-[3px] rounded-full px-10 py-2 z-[2]'>
+      <Link href='mailto:info@balloinnovations.com' className='font-bold border-white border-[3px] rounded-full px-10 py-2 z-[2]'>
         Contact Us
-      </button>
+      </Link>
 
       <div className="flex-center flex-col gap-5 md:flex-row md:gap-32 md:pb-10 md:pt-5 z-[2]">
         <div className='flex flex-col justify-between'>
