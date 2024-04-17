@@ -1,8 +1,5 @@
 #navbar {
   z-index: 10;
-  padding: 1.5em auto;
-  position: fixed;
-  top: 0;
   width: 100vw;
   transition: all ease-in-out 0.25s ;
 }
