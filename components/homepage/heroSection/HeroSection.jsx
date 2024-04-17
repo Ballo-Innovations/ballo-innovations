@@ -67,14 +67,14 @@ const HeroSection = () => {
           src={ring}
           alt="Logo"
           quality={100}
-          className="logo-ring absolute -left-[5%] lg:left-[2.5%] z-[3] w-[calc(52.5%-0.3em)] md:w-[calc(29%-0.3em)]"
+          className="logo-ring absolute -left-[5%] lg:left-[4%] z-[3] w-[calc(52.5%-0.3em)] md:w-[calc(29%-0.3em)]"
         />
 
         <Image
           src={bi}
           alt="Logo"
           quality={100}
-          className="bi-logo w-auto min-w-[80vh] md:min-w-0 md:w-[calc(88%-1em)] -ml-[20%] md:-ml-6 opacity-50 z-[2]"
+          className="bi-logo w-auto min-w-[142vw] md:min-w-0 md:w-[calc(89%-1em)] -ml-[20%] md:-ml-6 opacity-50 z-[2]"
         />
 
         <div className="svg-container hidden">

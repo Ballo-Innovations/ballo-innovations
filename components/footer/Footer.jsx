@@ -1,3 +1,5 @@
+import ring from '@/public/elements small/15.png'
+
 import './footer.css'
 import background from '@/public/Backgrounds/hero-bg.png'
 import logo from '@/public/Ballo Logo New/Ballo logo new copy white.png'
@@ -5,38 +7,45 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <section
+    <footer
       style={{ background: `url(${background.src})`, backgroundSize: 'cover' }}
-      className='flex-center flex-col text-white gap-10 pt-10'
+      className='flex-center flex-col text-white gap-10 pt-10 relative overflow-hidden'
     >
+      <Image
+        src={ring}
+        alt="Logo"
+        quality={100}
+        className="footer-ring"
+      />
+      
       <Image
         src={logo}
         alt="Ballo Innovations"
         quality={100}
-        className="logo-white w-11/12"
+        className="logo-white w-11/12 md:w-1/3 z-[2]"
       />
       
-      <h2 className="subheading">
+      <h2 className="subheading z-[2]">
         What&apos;s in your Ballo today?
       </h2>
 
-      <p className="bold text-center">
+      <p className="font-bold text-center z-[2]">
         Feel free to call, email, or hit us up on our social media accounts.
       </p>
 
-      <button className='font-bold border-white border-4 rounded-full px-10 py-2'>
+      <button className='font-bold border-white border-2 rounded-full px-10 py-2 z-[2]'>
         Contact Us
       </button>
 
-      <div className="flex-center flex-col gap-5 md:flex-row">
-        <div className='flex-center flex-col'>
-          <p className="font-bold">EMAIL</p>
-          <p>info@balloinnovations.com</p>
+      <div className="flex-center flex-col gap-5 md:flex-row md:gap-32 md:pb-10 md:pt-5 z-[2]">
+        <div className='flex flex-col justify-between'>
+          <p className="font-bold text-center">EMAIL</p>
+          <p className='md:pt-5'>info@balloinnovations.com</p>
         </div>
 
         <div className='flex-center flex-col'>
-          <p className="font-bold">PHONE</p>
-          <p>+260979611334</p>
+          <p className="font-bold text-center">PHONE</p>
+          <p className='md:pt-5'>+260979611334</p>
         </div>
 
         <div>
@@ -49,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   )
 }
 

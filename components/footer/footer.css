@@ -1,0 +1,6 @@
+.footer-ring {
+  position: absolute;
+  z-index: 0;
+  width: 80%;
+  opacity: 0.5;
+}
