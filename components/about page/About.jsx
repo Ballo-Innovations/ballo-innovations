@@ -1,11 +1,17 @@
-import './about.css'
 import MissionValues from './missionValues/MissionValues'
+import OurTeam from './ourTeam/OurTeam'
+import Stats from './stats/Stats'
 
 const About = () => {
   return (
-    <section className='min-h-[105vh] -mt-[5vh] min-w[100vw] text-white flex flex-col' style={{ padding: 0 }}>
+    <main
+      className='min-h-[105vh] -mt-[5vh] min-w[100vw] max-w-[w-100vw] overflow-hidden text-white flex flex-col'
+      style={{ padding: 0 }}
+    >
       <MissionValues />
-    </section>
+      <Stats />
+      <OurTeam />
+    </main>
   )
 }
 

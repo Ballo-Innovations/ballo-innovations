@@ -49,7 +49,8 @@ body {
 
 section,
 nav {
-  padding: 0 3.5vw;
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -63,6 +64,10 @@ nav {
 .subheading {
   font-size: 4rem;
   font-weight: bold;
+}
+
+.nav-padding {
+  padding-top: 45vh;
 }
 
 @layer utilities {
@@ -81,8 +86,12 @@ nav {
 
 @media (width <= 576px) {
   section {
-  padding: 0 1.5vw;
-  width: 100vw;
-  overflow-x: hidden;
+    padding: 0 1.5vw;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .nav-padding {
+    padding-top: 40vh;
   }
 }

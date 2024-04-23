@@ -6,7 +6,7 @@ import logo from '@/public/Ballo Logo New/Ballo logo new copy white.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Footer = () => {
+const index = () => {
   return (
     <footer
       style={{ background: `url(${background.src})`, backgroundSize: 'cover' }}
@@ -63,4 +63,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default index

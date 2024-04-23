@@ -6,11 +6,11 @@ import ring from '@/public/elements small/12.png'
 
 const MissionValues = () => {
   return (
-    <div
-      className='pt-[40vh] md:pt-[45vh] px-5 md:px-24 w-full relative'
+    <section
+      className='nav-paddin pt-[40vh] px-5 md:px-24 w-full relative'
       style={{ background: `url(${background.src})`, backgroundSize: 'cover' }}
     >
-      <div className='absolute opacity-50 md:opacity-100 top-[40vh] md:top-auto md:bottom-0 left-10'>
+      <div className='absolute opacity-50 md:opacity-100 top-[40vh] md:top-auto md:bottom-0 left-10 w-[75vw]'>
         <div className='relative'>
           <Image
             src={person1}
@@ -23,8 +23,22 @@ const MissionValues = () => {
             src={ring}
             alt="Mission and Values"
             quality={100}
-            className="md:absolute left-[6%] z-0 md:w-[26.5%]"
+            className="-mt-20 md:mt-0 -ml-5 md:ml-0 md:absolute top-0 left-[6%] z-0 md:w-[26.5%] opacity-50 md:opacity-100"
           />
+
+          <Image
+            src={ring}
+            alt="Mission and Values"
+            quality={100}
+            className="md:hidden absolute top-[80vh] -right-[20%] z-0 w-1/2 opacity-80"
+          />
+
+          <Image
+            src={ring}
+            alt="Mission and Values"
+            quality={100}
+            className="md:hidden absolute top-[120vh] -left-[10%] z-0 w-1/3 opacity-80"
+          />          
         </div>       
       </div>
       <div className='relative z-[3]'>
@@ -55,7 +69,7 @@ const MissionValues = () => {
           to the experts.
         </p>
       </div>
-    </div>
+    </section>
   )
 }
 

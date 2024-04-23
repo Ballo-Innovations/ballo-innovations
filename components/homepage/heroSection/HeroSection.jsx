@@ -29,12 +29,11 @@ const HeroSection = () => {
 
   return (
     <section
-      className='min-h-screen text-white'
+      className='min-h-screen text-white nav-padding'
       style={{
         minWidth: '100vw',
         background: `url(${background.src})`,
         backgroundSize: 'cover',
-        padding: '45vh 0 0 0'
       }}>
       <div id="hero-content-wrapper">
         <h1
