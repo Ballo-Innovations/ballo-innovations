@@ -1,5 +1,5 @@
 import Image from "next/image"
-import chart from '@/public/elements small/chart.png'
+import chart from '/public/elements small/stats-chart.png'
 import Counter from "./counter/Counter"
 
 const Stats = () => {
@@ -17,7 +17,7 @@ const Stats = () => {
             src={chart}
             alt='statistics'
             quality={100}
-            className="scale-[1.5] md:scale-0 md:w-4/5 -ml-16 md:-ml-10"
+            className="scale-[1.5] md:scale-1 md:w-4/5 -ml-16 md:-ml-10"
           />
         </div>
 
