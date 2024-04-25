@@ -1,0 +1,40 @@
+.sub-links-container {
+  display: none;
+  position: absolute;
+  padding-top: 0.5em;
+}
+
+.sub-links {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, #0b4e8c6b, #0b4d8c, #0b4d8c87);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  font-weight: normal;
+  color: white;
+  line-height: 1.2em;
+  box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+.sub-links li {
+  border-bottom: 1px solid rgb(3, 4, 44, 0.5);
+  padding: 0.5em 2em;
+}
+
+.sub-links li:last-child{
+  border: none;
+}
+
+.light-bg-nav .sub-links {
+  background: #03042cfc;
+  color: white;
+}
+
+.light-bg-nav .sub-links li {
+  border-color: white;
+}
+
+#works-link:hover .sub-links-container {
+  display: flex !important;
+}

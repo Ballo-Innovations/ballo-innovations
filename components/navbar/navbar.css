@@ -1,17 +1,36 @@
 #navbar {
   z-index: 10;
   width: 100vw;
-  transition: all ease-in-out 0.25s ;
+  transition: all ease-in-out 0.25s;
+  overflow: visible;
 }
 
 .nav-scrolled {
-  background: rgba(3, 4, 44, 0.99);
+  background: #03042cfc;
 }
 
 .nav-item { position: relative; }
 
 .nav-item.active {
   border-bottom: 2px solid white;
+}
+
+.light-bg-nav {
+  color: var(--brand-color-1);
+  font-weight: bold;
+}
+
+.light-bg-nav .blueIcon {
+  fill: var(--brand-color-1) !important;
+}
+
+.light-bg-nav #nav-social-links,
+.light-bg-nav .nav-item.active {
+  border-color: var(--brand-color-1) !important;
+}
+
+#navbar a:hover {
+  transform: scale(1.5) !important;
 }
 
 @media (width <= 1024px) {

@@ -13,7 +13,7 @@ const Counter = () => {
       </div>
 
       <div className="flex-center flex-col gap-5 lg:gap-0">
-      <p className="font-bold text-8xl sm:text-9xl">
+        <p className="font-bold text-8xl sm:text-9xl">
           <CountUp end={56} duration={5} suffix="%" enableScrollSpy scrollSpyOnce />
         </p>
         <p className="font-bold text-3xl lg:mt-10 lg:mb-5">ROI</p>
