@@ -1,5 +1,5 @@
 import Image from "next/image"
-import chart from '@/public/elements small/stats-chart.png'
+import chart from '@/public/elements small/chart.png'
 import Counter from "./counter/Counter"
 
 const Stats = () => {
