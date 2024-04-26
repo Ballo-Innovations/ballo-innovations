@@ -1,4 +1,4 @@
-// compress
+// compress ballo logo pattern
 import background from '@/public/Backgrounds/bi-logo-pattern.png'
 import underConstruction from '@/public/Backgrounds/under-construction.png'
 import Image from 'next/image'
