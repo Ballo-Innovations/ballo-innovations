@@ -7,13 +7,13 @@ import GetQuouteForm from './GetQuoteForm'
 const PackagesPage = () => {
   return (
     <main className='max-w-[w-100vw] overflow-hidden'>
-      <section className='relative text-white nav-padding pb-20 bg-[var(--brand-color-1)]' style={{ paddingTop: '25vh' }}>
+      <section className='relative text-white nav-padding pb-20 bg-[var(--brand-color-1)] overflow-hidden' style={{ paddingTop: '25vh' }}>
         <Image
           src={background}
           alt="background"
           quality={100}
-          fill
-          className="h-100 w-100 object-cover opacity-10"
+          className="absolute -left-[12.25%] top-0 object-cover overflow-visible opacity-10"
+          style={{height: '125%', width: '125%'}}
         />
         
         <div className='z-[2] px-[0.5em] md:px-[5em] mt-10'>
