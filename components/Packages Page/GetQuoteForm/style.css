@@ -1,0 +1,29 @@
+#get-quote-form input,
+#get-quote-form textarea,
+#get-quote-form .subject-select,
+#get-quote-form .submit-btn {
+  width: 100%;
+  border-radius: 30px;
+  padding: 1.25em 2em;
+  margin-bottom: 1.5em;
+  color: var(--brand-color-1);
+  background-color: white;
+}
+
+#get-quote-form input::placeholder,
+#get-quote-form textarea::placeholder {
+  color: var(--brand-color-1);
+  font-weight: bold;
+}
+
+#get-quote-form .input-row {
+  justify-content: center;
+  gap: 1.25em;
+}
+
+#get-quote-form .submit-btn {
+  padding: 0.75em 1.5em;
+  background: linear-gradient(45deg, #0b4d8c, #2273af);
+  color: white;
+  font-size: 1.5em;
+}

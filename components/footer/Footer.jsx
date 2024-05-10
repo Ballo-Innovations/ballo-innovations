@@ -9,6 +9,7 @@ import Link from 'next/link'
 const index = () => {
   return (
     <footer
+      id='footer'
       style={{ background: `url(${background.src})`, backgroundSize: 'cover' }}
       className='flex-center flex-col text-white gap-10 pt-10 relative overflow-hidden'
     >
@@ -30,7 +31,7 @@ const index = () => {
         What&apos;s in your Ballo today?
       </h2>
 
-      <p className="font-bold text-center z-[2]">
+      <p className="font-bold text-center z-[2] px-5 md:px-0">
         Feel free to call, email, or hit us up on our social media accounts.
       </p>
 

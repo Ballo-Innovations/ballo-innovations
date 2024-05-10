@@ -29,10 +29,6 @@
   border-color: var(--brand-color-1) !important;
 }
 
-#navbar a:hover {
-  transform: scale(1.5) !important;
-}
-
 @media (width <= 1024px) {
   #main-menu {
     flex-direction: column !important;

@@ -214,8 +214,8 @@ const Navbar = () => {
               <Link href="/packages" className="nav-link" onClick={() => setShowMenu(false)}>Packages</Link>
             </li>
 
-            <li className={`nav-item ${pathname === '/contact' ?  'active': ''}`}>
-              <Link href="/contact" className="nav-link" onClick={() => setShowMenu(false)}>Contact Us</Link>
+            <li className="nav-item">
+              <Link href="#footer" className="nav-link" onClick={() => setShowMenu(false)}>Contact Us</Link>
             </li>
           </ul>
         </div>   
