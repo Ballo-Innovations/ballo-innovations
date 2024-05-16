@@ -1,6 +1,7 @@
 import Footer from "@/components/footer/Footer";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
+import Loader from "@/components/loader";
 
 export const metadata = {
   title: "Ballo Innovations",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        {/* <Loader /> */}
       </body>
     </html>
   );
