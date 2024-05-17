@@ -16,11 +16,11 @@ const HeaderImage = () => {
       scrollTrigger: {
         trigger: "#hero-scroll-trigger",
         start: "top 0%",
-        end: "+=" + 75,
+        end: "+=" + 50,
         scrub: 1,
         anticipatePin: 1,
         onUpdate: (self) => {
-          if (self.progress >= 0.17) {
+          if (self.progress >= 0.12) {
             gsap.to(".logo-ring", { opacity: 0 });
           } else {
             gsap.to(".logo-ring", { opacity: 1 });
