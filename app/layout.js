@@ -11,11 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* <body className="no-scroll"></body> */}
       <body>
+        {/* <Loader /> */}
         <Navbar />
         {children}
         <Footer />
-        {/* <Loader /> */}
       </body>
     </html>
   );

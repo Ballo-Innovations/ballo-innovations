@@ -1,0 +1,56 @@
+.logo-ring {
+  animation: flicker ease-in-out 4s !important;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 1;
+  }
+  77.5% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1 !important;
+  }
+}
+
+.logo-ring-container svg {
+  width: 52.5%;
+  position: absolute;
+  top: 0;
+  user-select: none;
+}
+
+.svg-container {
+  position: sticky;
+  /* top: 10vh; */
+  width: 60vw;
+  transform: translate(23.5%, 8.2em);
+}
+
+#bi-2 {
+  bottom: 7em;
+  width: 56%;
+  margin-top: -2.5%;
+  margin-left: -1.7%;
+}
+
+#bi-3 {
+  margin-top: 0.25%;
+  margin-left: 0.075%;
+}

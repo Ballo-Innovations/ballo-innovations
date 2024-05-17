@@ -1,0 +1,6 @@
+.glowing-text {
+  color: white;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--brand-color);
+  filter: drop-shadow(0 0 20px #23f9f7);
+}
