@@ -3,6 +3,7 @@
 import Image from "next/image";
 import "./style.css";
 import logo from "@/public/Ballo Logo New/Ballo logo new copy white.png";
+import logoSm from "@/public/Ballo Logo New/svg/Ballo logo new-06.svg";
 import FollowMouse from "./mouseTracker";
 import RippleEffect from "./rippleEffect";
 import { useEffect, useState } from "react";
@@ -32,7 +33,7 @@ const Loader = () => {
   return (
     showLoader && (
       <div id="loader" className={fadeOut && "opacity-0"}>
-        {/* <FollowMouse /> */}
+        <FollowMouse unmount={fadeOut} />
         <RippleEffect
           top={"10%"}
           left={"-20%"}
@@ -73,7 +74,16 @@ const Loader = () => {
             src={logo}
             alt="Ballo Innovations"
             quality={100}
-            className="w-[80vw]"
+            className="w-[80vw] hidden md:block"
+            loading="eager"
+            blurDataURL={logo.blurhashDataUrl}
+          />
+
+          <Image
+            src={logoSm}
+            alt="Ballo Innovations"
+            quality={100}
+            className="w-[80vw] block md:hidden"
             loading="eager"
             blurDataURL={logo.blurhashDataUrl}
           />

@@ -1,4 +1,4 @@
-.logo-ring {
+/* .logo-ring {
   animation: flicker ease-in-out 4s !important;
 }
 
@@ -27,7 +27,7 @@
   100% {
     opacity: 1 !important;
   }
-}
+} */
 
 .logo-ring-container svg {
   width: 52.5%;

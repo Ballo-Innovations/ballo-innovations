@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./style.css";
 
-const FollowMouse = () => {
+const FollowMouse = ({ unmount }) => {
   const circleRef = useRef(null);
   const [mouse, setMouse] = useState({ x: 500, y: 210 });
   const [previousMouse, setPreviousMouse] = useState({ x: 0, y: 0 });
@@ -28,7 +28,6 @@ const FollowMouse = () => {
     const deltaMouseX = mouse.x - previousMouse.x;
     const deltaMouseY = mouse.y - previousMouse.y;
     setPreviousMouse({ x: mouse.x, y: mouse.y });
-
     const mouseVelocity = Math.min(
       Math.sqrt(deltaMouseX ** 2 + deltaMouseY ** 2) * 4,
       150
@@ -45,14 +44,18 @@ const FollowMouse = () => {
     const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
     const rotateTransform = `rotate(${currentAngle}deg)`;
 
-    circleRef.current.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
+    if (circleRef.current) {
+      circleRef.current.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
 
-    window.requestAnimationFrame(tick);
+      window.requestAnimationFrame(tick);
+    }
   };
 
   useEffect(() => {
-    tick();
-  }, [mouse, tick]);
+    if (!unmount) {
+      tick();
+    }
+  }, [mouse, tick, unmount]);
 
   return (
     <div

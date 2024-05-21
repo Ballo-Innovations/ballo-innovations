@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import services from "@/constants/services";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "./style.css";
@@ -34,20 +34,22 @@ const Cards = () => {
 
       cards.forEach((card) => {
         let text = card.querySelectorAll(".anim");
-
-        gsap.from(text, {
-          y: -130,
-          opacity: 0,
-          duration: 2,
-          ease: "elastic",
-          stagger: 0.1,
-          scrollTrigger: {
-            trigger: card,
-            containerAnimation: scrollTween,
-            start: "left 90%",
-            // markers: true,
-          },
-        });
+        console.log("text", text);
+        if (text.length) {
+          gsap.from(text, {
+            y: -130,
+            opacity: 0,
+            duration: 2,
+            ease: "elastic",
+            stagger: 0.1,
+            scrollTrigger: {
+              trigger: card,
+              containerAnimation: scrollTween,
+              start: "left 90%",
+              // markers: true,
+            },
+          });
+        }
       });
 
       // gsap.to(cards, {
@@ -66,11 +68,11 @@ const Cards = () => {
   }, [cardsWrapperRef]);
 
   return (
-    <div id="service-cards-wrapper" className="mt-52 z-[3]">
+    <div id="service-cards-wrapper" className="mt-52 z-[3] overflow-hidden">
       <div
         ref={cardsWrapperRef}
         id="services-cards-container"
-        className="w-max flex gap-5 lg:gap-10 px-5 lg:px-0"
+        className="w-max flex gap-5 lg:gap-10 px-5 lg:px-0 overflow-hidden"
       >
         {services.map((service, index) => {
           return (

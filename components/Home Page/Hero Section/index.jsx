@@ -14,7 +14,7 @@ const HeroSection = () => {
       style={{ minWidth: "100vw", paddingInline: 0 }}
       id="hero-section"
     >
-      <span id="hero-scroll-trigger" />
+      <span id="hero-scroll-trigger" className="top-[17vh] md:top[15vh]" />
       <HeaderImage />
       <div id="hero-content-wrapper" className="overflow-visible">
         <HeaderText />

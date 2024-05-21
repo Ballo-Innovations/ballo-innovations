@@ -1,5 +1,6 @@
-import clientLogos from "@/constants/clientLogos"
-import Image from "next/image"
+import clientLogos from "@/constants/clientLogos";
+import Image from "next/image";
+import "./style.css";
 
 const Clients = () => {
   return (
@@ -8,23 +9,36 @@ const Clients = () => {
         Clients & Partners
       </h2>
 
-      <div className="logos">
-        <div className="logos-slide flex w-max gap-2">
+      <div className="logos flex gap-4">
+        <div className="logos-slide flex w-max gap-4">
           {clientLogos.map((logo) => {
-            return(
-              <div key={logo.name} style={{ width: `${logo.width}em`}} className="flex-center">
-                <Image
-                  src={logo.img}
-                  alt={logo.name}
-                  quality={100}
-                />
+            return (
+              <div
+                key={logo.name}
+                style={{ width: `${logo.width}em` }}
+                className="flex-center"
+              >
+                <Image src={logo.img} alt={logo.name} quality={100} />
               </div>
-            )
+            );
+          })}
+        </div>
+        <div className="logos-slide flex w-max gap-4">
+          {clientLogos.map((logo) => {
+            return (
+              <div
+                key={logo.name}
+                style={{ width: `${logo.width}em` }}
+                className="flex-center"
+              >
+                <Image src={logo.img} alt={logo.name} quality={100} />
+              </div>
+            );
           })}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Clients
+export default Clients;

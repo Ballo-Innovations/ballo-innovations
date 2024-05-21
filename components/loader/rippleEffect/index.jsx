@@ -3,7 +3,7 @@ import "./style.css";
 const RippleEffect = ({ top, left, width, rippleClass }) => {
   return (
     <div
-      className="bg-inherit absolute bg-transparent"
+      className="absolute bg-transparent scale-[4] md:scale-100"
       style={{
         width: width,
         height: width,

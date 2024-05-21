@@ -33,7 +33,7 @@ const HeaderText = () => {
   return (
     <h1
       id="header-text"
-      className="relative z-[4] opacity-0 text-center text-[3rem] lg:text-[6vw] font-bold uppercase max-sm:text-5xl overflow-visible"
+      className="mt-[5vh] md:top-0 relative z-[4] opacity-0 text-center text-[3rem] lg:text-[6vw] font-bold uppercase max-sm:text-5xl overflow-visible"
     >
       Rebranding the Future
     </h1>
