@@ -1,18 +1,18 @@
 .ripple-container {
-  background-color: var(--brand-color-2);
+  background-color: whitesmoke;
 }
 
 .ripple {
   width: 100%;
   height: 100%;
-  background: var(--brand-color-2);
+  background: whitesmoke;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: scale(0);
-  box-shadow: 8px 8px 10px #00000030, 8px 8px 10px var(--brand-color-2),
-    inset 8px 8px 10px #00000030, inset 8px 8px 10px var(--brand-color-2);
+  box-shadow: 8px 8px 10px #00000030, 8px 8px 10px whitesmoke,
+    inset 8px 8px 10px #00000030, inset 8px 8px 10px whitesmoke;
 }
 
 .ripple-1:first-child {
@@ -40,6 +40,9 @@
   }
 }
 
+.ripple-2 {
+  opacity: 0.2 !important;
+}
 .ripple-2:first-child {
   animation: ripple-animation-2 8.6s infinite ease-in-out;
 }
@@ -66,6 +69,9 @@
   }
 }
 
+.ripple-3 {
+  opacity: 0.2 !important;
+}
 .ripple-3:first-child {
   animation: ripple-animation-3 10.6s infinite ease-in-out;
 }
@@ -89,6 +95,10 @@
     transform: scale(2);
     opacity: 0;
   }
+}
+
+.ripple-4 {
+  opacity: 0.7;
 }
 
 .ripple-4:first-child {
@@ -131,5 +141,14 @@
   100% {
     transform: scale(2);
     opacity: 0;
+  }
+}
+
+@media (width <= 768px) {
+  .ripple {
+    opacity: 0.8 !important;
+  }
+  .ripple-1 {
+    display: none;
   }
 }

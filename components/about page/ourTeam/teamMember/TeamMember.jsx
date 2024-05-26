@@ -1,19 +1,19 @@
-import './style.css'
-import Image from 'next/image'
-import arrow from '@/public/elements small/10.png'
+import "./style.css";
+import Image from "next/image";
+import arrow from "@/public/elements small/10.png";
 // import Popup from '../popup/Popup'
 
 const TeamMember = ({ photo, name, position }) => {
   return (
-    <div className='team-member  sm:w-1/4 flex-center flex-col text-[var(--brand-color-1)] mt-10 gap-3'>
+    <div className="team-member sm:w-1/4 flex-center flex-col text-[var(--brand-color-1)] mt-10 gap-3">
       {/* <Popup /> */}
-      <div className='relative'>
+      <div className="relative">
         <Image
           src={photo}
           alt={name}
           quality={100}
           className="rounded-full"
-          style={{ objectFit: 'cover', objectPosition: 'center' }}
+          style={{ objectFit: "cover", objectPosition: "center" }}
         />
 
         <Image
@@ -24,10 +24,10 @@ const TeamMember = ({ photo, name, position }) => {
         />
       </div>
 
-      <h3 className='font-bold'>{name}</h3>
+      <h3 className="font-bold">{name}</h3>
       <p>{position}</p>
     </div>
-  )
-}
+  );
+};
 
-export default TeamMember
+export default TeamMember;

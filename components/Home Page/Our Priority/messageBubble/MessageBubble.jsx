@@ -18,18 +18,28 @@ const MessageBubble = ({ text, direction, margin, loading, delay }) => {
       }, delay);
     }
   }, [inView]);
+
   return (
     <div
-      ref={ref}
       className={`relative max-w-[80vw] md:max-w-[50vw] lg:max-w-[32vw] lg:-mt-5 ${
         direction === "left" ? "pointer-left" : "pointer-right"
       } ${margin}`}
     >
-      <p className={`messageBubble ${isLoading ? "w-fit" : ""}`}>
-        {!isLoading && text}
-        {isLoading && <LoadingDots />}
-      </p>
-      <span className="pointer" />
+      <div ref={ref} className="relative">
+        <p className={`messageBubble ${isLoading ? "w-fit" : ""}`}>
+          {!isLoading && text}
+          {isLoading && <LoadingDots />}
+        </p>
+
+        <span className="pointer" />
+      </div>
+
+      <div
+        style={{ position: "absolute" }}
+        className="messageBubble w-fit opacity-0 top-0 left-0"
+      >
+        {text}
+      </div>
     </div>
   );
 };

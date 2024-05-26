@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import "./style.css";
-import logo from "@/public/Ballo Logo New/Ballo logo new copy white.png";
-import logoSm from "@/public/Ballo Logo New/svg/Ballo logo new-06.svg";
+import logo from "@/public/Ballo Logo New/svg/Ballo logo new-03.svg";
+import logoSm from "@/public/Ballo Logo New/svg/Ballo logo new-02.svg";
 import FollowMouse from "./mouseTracker";
 import RippleEffect from "./rippleEffect";
 import { useEffect, useState } from "react";
@@ -17,11 +17,11 @@ const Loader = () => {
     const fadeOutTimeout = setTimeout(() => {
       document.querySelector("body")?.classList.remove("no-scroll");
       setFadeOut(true);
-    }, 5000);
+    }, 500);
 
     const hideLoaderTimeout = setTimeout(() => {
       setShowLoader(false);
-    }, 7000);
+    }, 500);
 
     // Clear timeouts on component unmount
     return () => {
@@ -33,7 +33,7 @@ const Loader = () => {
   return (
     showLoader && (
       <div id="loader" className={fadeOut && "opacity-0"}>
-        <FollowMouse unmount={fadeOut} />
+        {/* <FollowMouse unmount={fadeOut} /> */}
         <RippleEffect
           top={"10%"}
           left={"-20%"}
@@ -59,13 +59,6 @@ const Loader = () => {
           top={"20%"}
           left={"70%"}
           width={"13vw"}
-          rippleClass="ripple-4"
-        />
-
-        <RippleEffect
-          top={"60%"}
-          left={"10%"}
-          width={"11vw"}
           rippleClass="ripple-4"
         />
 

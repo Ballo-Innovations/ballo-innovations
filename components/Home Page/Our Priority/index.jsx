@@ -17,27 +17,27 @@ const OurPriority = () => {
           loading={true}
           direction="left"
           text="nostrud eu et tempor culpa ad sint sit eiusmod laboris eu occaecat esse sunt in exercitation"
-          delay={900}
+          delay={600}
         />
         <MessageBubble
           loading={true}
           direction="right"
           margin="lg:mr-16"
           text="nostrud eu et tempor culpa ad sint sit eiusmod laboris eu occaecat esse sunt in exercitation"
-          delay={1200}
+          delay={900}
         />
         <MessageBubble
           loading={true}
           direction="left"
           margin="lg:ml-20"
           text="nostrud eu et tempor culpa ad sint sit eiusmod laboris eu occaecat esse sunt in exercitation"
-          delay={1600}
+          delay={1200}
         />
         <MessageBubble
           loading={true}
           direction="right"
           text="nostrud eu et tempor culpa ad sint sit eiusmod laboris eu occaecat esse sunt in exercitation"
-          delay={2000}
+          delay={1300}
         />
       </div>
     </section>

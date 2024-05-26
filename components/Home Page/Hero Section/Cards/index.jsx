@@ -1,5 +1,6 @@
 "use client";
 
+import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import services from "@/constants/services";
 import { useRef } from "react";
@@ -51,19 +52,6 @@ const Cards = () => {
           });
         }
       });
-
-      // gsap.to(cards, {
-      //   xPercent: -100 * (cards.length - 1),
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: "#service-cards-wrapper",
-      //     start: "top 35%",
-      //     end: "+=" + amountToScroll,
-      //     pin: true,
-      //     scrub: true,
-      //     anticipatePin: 5,
-      //   },
-      // });
     }
   }, [cardsWrapperRef]);
 

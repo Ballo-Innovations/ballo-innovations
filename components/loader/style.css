@@ -4,11 +4,7 @@
   height: 100vh;
   width: 100vw;
   z-index: 20;
-  background: linear-gradient(
-    to bottom right,
-    var(--brand-color-2) 85%,
-    var(--brand-color-1)
-  );
+  background: whitesmoke;
 }
 
 .loader-container {

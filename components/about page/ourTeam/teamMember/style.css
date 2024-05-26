@@ -9,3 +9,11 @@
 .team-member:hover .arrow {
   transform: scale(1.1);
 }
+
+/* .team-member h3,
+.team-member p {
+  background: linear-gradient(to left, white, var(--brand-color-1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
