@@ -146,9 +146,10 @@
 
 @media (width <= 768px) {
   .ripple {
-    opacity: 0.8 !important;
+    opacity: 0.5 !important;
   }
-  .ripple-1 {
+  .ripple-1,
+  .ripple-4 {
     display: none;
   }
 }
