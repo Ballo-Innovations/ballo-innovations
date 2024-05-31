@@ -2,5 +2,14 @@
   position: absolute;
   top: 30vh;
   left: 0;
-  /* color: #d8f5ff41; */
+  color: #d8f5ff0e;
 }
+
+/* @media (width < 768px) {
+  #svg_plane {
+    position: absolute;
+    top: 20vh;
+    left: -2em;
+    color: #d8f5ff0e;
+  }
+} */

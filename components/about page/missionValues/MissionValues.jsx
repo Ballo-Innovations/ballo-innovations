@@ -56,7 +56,7 @@ const MissionValues = () => {
         src={plane}
         alt="Mission and Values"
         id="paper-plane"
-        className="text-5xl font-bold absolute top-[-30vh] md:top-0 left-[50vw] md:left-0 w-[10] md:w-60"
+        className="text-5xl font-bold absolute top-[-40vh] md:top-0 left-[10vw] md:left-0 w-[10] md:w-60"
       />
       <div
         id="mission-container"

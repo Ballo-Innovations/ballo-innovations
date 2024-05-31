@@ -16,7 +16,6 @@ const HeaderText = () => {
 
   const tick = () => {
     const updatedText = fullText.substring(0, text.length + 1);
-    console.log("tick", text, updatedText);
     setText(updatedText);
 
     if (updatedText === fullText) {
@@ -28,7 +27,7 @@ const HeaderText = () => {
   useEffect(() => {
     let tickerDelay = setTimeout(() => {
       setStartTicker(true);
-    }, 5000);
+    }, 3000);
 
     return () => {
       clearTimeout(tickerDelay);
@@ -49,30 +48,19 @@ const HeaderText = () => {
   }, [startTicker, text]);
 
   useGSAP(() => {
-    gsap.to("#header-text", {
-      ease: "power3.out",
-      webkitTextStroke: "1px var(--brand-color)",
-      TextStroke: "1px var(--brand-color)",
-      filter: "drop-shadow(0 0 20px #23f9f7)",
-      scrollTrigger: {
-        trigger: "#hero-scroll-trigger",
-        start: "top 10%",
-        scrub: 1,
-        // markers: true,
-      },
-    });
-
     if (text === fullText) {
+      gsap.to("#header-text", {
+        delay: 1,
+        ease: "power3.out",
+        webkitTextStroke: "1px var(--brand-color)",
+        TextStroke: "1px var(--brand-color)",
+        filter: "drop-shadow(0 0 20px #23f9f7)",
+      });
+
       gsap.to(".blinker", {
+        delay: 0.5,
         animation: "none",
         opacity: 0,
-        scrollTrigger: {
-          trigger: "#navbar",
-          start: "+=50",
-          end: "top",
-          scrub: 1,
-          // markers: true,
-        },
       });
     }
   }, [text]);

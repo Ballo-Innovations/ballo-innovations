@@ -3,7 +3,7 @@
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import services from "@/constants/services";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "./style.css";
@@ -12,6 +12,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Cards = () => {
   const cardsWrapperRef = useRef(null);
+  // const [screenLarge, setScreenLarge] = useState(window.innerWidth > 768);
+
+  // window.addEventListener("resize", () =>
+  //   setScreenLarge(window.innerWidth > 768)
+  // );
+
   useGSAP(() => {
     if (cardsWrapperRef) {
       const cards = gsap.utils.toArray(".service-card");
@@ -29,26 +35,28 @@ const Cards = () => {
           end: "+=" + amountToScroll,
           pin: true,
           scrub: true,
-          anticipatePin: 5,
+          // anticipatePin: 5,
         },
       });
 
       cards.forEach((card) => {
         let text = card.querySelectorAll(".anim");
-        console.log("text", text);
         if (text.length) {
-          gsap.from(text, {
-            y: -130,
-            opacity: 0,
-            duration: 2,
-            ease: "elastic",
-            stagger: 0.1,
-            scrollTrigger: {
-              trigger: card,
-              containerAnimation: scrollTween,
-              start: "left 90%",
-              // markers: true,
-            },
+          let desktopView = gsap.matchMedia();
+          desktopView.add("(min-width: 640px)", () => {
+            gsap.from(text, {
+              y: -130,
+              opacity: 0,
+              duration: 2,
+              ease: "elastic",
+              stagger: 0.1,
+              scrollTrigger: {
+                trigger: card,
+                containerAnimation: scrollTween,
+                start: "left 90%",
+                // markers: true,
+              },
+            });
           });
         }
       });

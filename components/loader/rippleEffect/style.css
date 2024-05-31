@@ -97,10 +97,6 @@
   }
 }
 
-.ripple-4 {
-  opacity: 0.7;
-}
-
 .ripple-4:first-child {
   animation: ripple-animation-4 30.6s infinite ease-in-out;
 }
@@ -145,9 +141,6 @@
 }
 
 @media (width <= 768px) {
-  .ripple {
-    opacity: 0.5 !important;
-  }
   .ripple-1,
   .ripple-4 {
     display: none;

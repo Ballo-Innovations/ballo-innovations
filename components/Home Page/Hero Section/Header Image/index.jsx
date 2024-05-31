@@ -29,20 +29,20 @@ const HeaderImage = () => {
   return (
     <div
       id="hero-logo-img"
-      className="max-w-[100vw] overflow-hidden h-max pl-5 -mt-5 w-[92vw] absolute top-[25vh] md:top-52"
+      className="max-w-[100vw] overflow-hidden h-max pl-5 -mt-5 w-[92vw] absolute "
     >
       <Image
         src={ring}
         alt="Logo"
         quality={100}
-        className=" logo-ring absolute -left-[5%] lg:left-[4%] z-[3] w-[calc(52.5%-0.3em)] md:w-[calc(29%-0.3em)]"
+        className=" logo-ring absolute z-[3]"
       />
 
       <Image
         src={bi}
         alt="Logo"
         quality={100}
-        className="bi-logo w-auto min-w-[142vw] md:min-w-0 md:w-[calc(89%-1em)] -ml-[20%] md:-ml-6 opacity-50 z-[2]"
+        className="bi-logo opacity-50 z-[2]"
       />
     </div>
   );
