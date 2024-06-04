@@ -19,7 +19,7 @@
   bottom: 0;
   left: 11vw;
   width: 0%;
-  overflow: visible;
+  /* overflow: visible; */
 }
 
 #svg_leads {
@@ -39,6 +39,12 @@
 @media (max-width: 576px) {
   .line-container {
     top: 10vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stats-chart svg {
+    width: 100em;
   }
 }
 
@@ -72,14 +78,26 @@
   }
 }
 
-@media ((min-width: 701px) and (max-width: 800px)) {
+@media ((min-width: 701px) and (max-width: 768px)) {
   .line-container {
     left: -40vw;
   }
 }
 
-@media ((min-width: 801px) and (max-width: 1000px)) {
+@media ((min-width: 768px) and (max-width: 800px)) {
   .line-container {
-    left: -20vw;
+    left: -50vw;
+  }
+}
+
+@media ((min-width: 801px) and (max-width: 900px)) {
+  .line-container {
+    left: -40vw;
+  }
+}
+
+@media ((min-width: 901px) and (max-width: 1024px)) {
+  .line-container {
+    left: -27.5vw;
   }
 }

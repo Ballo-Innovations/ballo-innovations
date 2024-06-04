@@ -18,7 +18,7 @@ const Stats = () => {
     gsap.from("#svg_engagement", {
       scrollTrigger: {
         trigger: ".stats-chart",
-        start: "-=300",
+        start: "-=350",
         onUpdate: () => {
           if (!animateLine) {
             setAnimateLine(true);
@@ -28,10 +28,16 @@ const Stats = () => {
     });
 
     if (animateLine) {
-      gsap.to("#svg_engagement", {
-        width: "100%",
-        duration: 15,
-      });
+      gsap.fromTo(
+        "#svg_engagement",
+        {
+          width: "0%",
+        },
+        {
+          width: "100%",
+          duration: 15,
+        }
+      );
 
       gsap.to("#engagement-text", {
         transformOrigin: "50% 50%",
@@ -45,10 +51,16 @@ const Stats = () => {
         },
       });
 
-      gsap.to("#svg_reach", {
-        width: "100%",
-        duration: 17,
-      });
+      gsap.fromTo(
+        "#svg_reach",
+        {
+          width: "0%",
+        },
+        {
+          width: "100%",
+          duration: 17,
+        }
+      );
 
       gsap.to("#reach-text", {
         transformOrigin: "50% 50%",
@@ -62,11 +74,17 @@ const Stats = () => {
         },
       });
 
-      gsap.to("#svg_leads", {
-        width: "100%",
-        duration: 12,
-        delay: 1,
-      });
+      gsap.fromTo(
+        "#svg_leads",
+        {
+          width: "0%",
+        },
+        {
+          width: "100%",
+          duration: 12,
+          delay: 1,
+        }
+      );
 
       gsap.to("#leads-text", {
         transformOrigin: "50% 50%",
@@ -80,11 +98,17 @@ const Stats = () => {
         },
       });
 
-      gsap.to("#svg_roi", {
-        width: "100%",
-        duration: 13,
-        delay: 0.5,
-      });
+      gsap.fromTo(
+        "#svg_roi",
+        {
+          width: "0%",
+        },
+        {
+          duration: 13,
+          delay: 0.5,
+          width: "100%",
+        }
+      );
 
       gsap.to("#roi-text", {
         transformOrigin: "50% 50%",

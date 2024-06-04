@@ -31,7 +31,7 @@ const Cards = () => {
         duration: 0.1,
         scrollTrigger: {
           trigger: "#service-cards-wrapper",
-          start: "top 35%",
+          start: "top 33%",
           end: "+=" + amountToScroll,
           pin: true,
           scrub: true,
@@ -74,9 +74,13 @@ const Cards = () => {
           return (
             <div
               key={index}
-              className="service-card overflow-hidden flex flex-col text-white w-80 lg:w-[30vw] justify-between p-5 rounded-[50px] shadow-2xl"
+              className="service-card overflow-hidden flex flex-col text-white w-80 lg:w-[30vw] gap-1 p-5 rounded-[50px] shadow-2xl"
             >
-              <div className={`fex flex-col ${index >= 2 && "anim"}`}>
+              <div
+                className={`flex flex-col items-center text-center ${
+                  index >= 2 && "anim"
+                }`}
+              >
                 <Image
                   src={service.img}
                   alt={service.name}

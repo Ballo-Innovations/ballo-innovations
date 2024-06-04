@@ -16,11 +16,35 @@ const HeaderImage = () => {
         scrollTrigger: {
           trigger: "#hero-logo-img",
           start: "top 10%",
-          end: "+=1000",
+          end: "+=1600",
           pin: true,
           scrub: 1,
           anticipatePin: 1,
           // markers: true,
+        },
+      });
+    });
+
+    let desktopView = gsap.matchMedia();
+    desktopView.add("(min-width: 641px)", () => {
+      gsap.to("#hero-logo-img", {
+        transformOrigin: "10% 0%",
+        scrollTrigger: {
+          trigger: "#hero-logo-img",
+          start: "top 10%",
+          end: "bottom",
+          pin: true,
+          scrub: 1,
+          anticipatePin: 1,
+          // markers: true,
+          onUpdate: (self) => {
+            if (self.progress <= 0.08) {
+              const scale = 1 - (self.progress * 0.5) / 0.08;
+              gsap.to("#hero-logo-img", { scale: scale, overwrite: "auto" });
+            } else {
+              gsap.to("#hero-logo-img", { scale: 0.5, overwrite: "auto" });
+            }
+          },
         },
       });
     });
@@ -29,7 +53,7 @@ const HeaderImage = () => {
   return (
     <div
       id="hero-logo-img"
-      className="max-w-[100vw] overflow-hidden h-max pl-5 -mt-5 w-[92vw] absolute "
+      className="max-w-[100vw] overflow-hidden h-[200vh] md:h-[200vh] pl-5 -mt-5 w-[92vw] absolute"
     >
       <Image
         src={ring}

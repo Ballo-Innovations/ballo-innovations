@@ -45,6 +45,7 @@ const MissionValues = () => {
       },
     });
   }, []);
+
   return (
     <section
       className="nav-paddin pt-[40vh] px-5 md:px-24 w-full relative overflow-visible"
@@ -118,9 +119,11 @@ const MissionValues = () => {
           Our experts have the knowledge, skills, and experience to develop
           effective marketing strategies and campaigns that can help achieve
           your business objectives. Partnering with us will save you time and
-          resources as we assure to give you service that is FAST, EXCELLENT and
-          AFFORDABLE. This allows your business to focus on its core
-          competencies and operations while leaving marketing to the experts.
+          resources as we assure to give you service that is
+          <span className="font-semibold"> FAST, EXCELLENT </span> and
+          <span className="font-semibold"> AFFORDABLE</span>. This allows your
+          business to focus on its core competencies and operations while
+          leaving marketing to the experts.
         </p>
       </div>
 
@@ -128,7 +131,7 @@ const MissionValues = () => {
         src={ring}
         alt="Mission and Values"
         quality={100}
-        className="md:hidden absolute bottom-[-5%] left-[20%] z-0 w-[40%] opacity-80"
+        className="md:hidden absolute bottom-[-5%] left-[20%] z-0 w-[40%]"
       />
     </section>
   );
