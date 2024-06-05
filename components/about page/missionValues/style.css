@@ -5,11 +5,10 @@
   color: #d8f5ff0e;
 }
 
-/* @media (width < 768px) {
-  #svg_plane {
-    position: absolute;
-    top: 20vh;
-    left: -2em;
-    color: #d8f5ff0e;
+@media (width < 586px) {
+  #paper-plane {
+    top: -112vh !important;
+    left: -38vh !important;
+    z-index: 1;
   }
-} */
+}
