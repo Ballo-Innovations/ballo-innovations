@@ -2,7 +2,7 @@ import MessageBubble from "./messageBubble/MessageBubble";
 
 const OurPriority = () => {
   return (
-    <section className="bg-[var(--brand-color-5)] pt-20 pb-14 px-5 md:px-32 overflow-hidden min-h-screen">
+    <section className="bg-[var(--brand-color-5)] pt-20 pb-14 px-5 md:px-32 overflow-hidden min-h-screen z-[5]">
       <div className="flex flex-col">
         <h2 className="subheading mb-10 lg:mb-0 text-[var(--brand-color-1)] text-center lg:text-start">
           Our Priority
@@ -10,33 +10,33 @@ const OurPriority = () => {
         <MessageBubble
           loading={true}
           direction="right"
-          text="nostrud eu et tempor culpa ad sint sit eiusmod laboris eu occaecat esse sunt in exercitation nostrud eu et tempor culpa ad sint sit eiusmod laboris"
+          text="Here at Ballo, your goals are our goals – we turn your vision into reality."
           delay={500}
         />
         <MessageBubble
           loading={true}
           direction="left"
-          text="nostrud eu et tempor culpa ad sint sit eiusmod laboris eu occaecat esse sunt in exercitation"
+          text="Our focus is on you; we build personalised marketing plans that resonate with your audience."
           delay={600}
         />
         <MessageBubble
           loading={true}
           direction="right"
           margin="lg:mr-16"
-          text="nostrud eu et tempor culpa ad sint sit eiusmod laboris eu occaecat esse sunt in exercitation"
+          text="We listen, we strategise, we deliver – your business growth is our top priority."
           delay={900}
         />
         <MessageBubble
           loading={true}
           direction="left"
           margin="lg:ml-20"
-          text="nostrud eu et tempor culpa ad sint sit eiusmod laboris eu occaecat esse sunt in exercitation"
+          text="Your success is our mission – we craft marketing strategies that elevate your brand to new heights."
           delay={1200}
         />
         <MessageBubble
           loading={true}
           direction="right"
-          text="nostrud eu et tempor culpa ad sint sit eiusmod laboris eu occaecat esse sunt in exercitation"
+          text="Your brand isn’t just another project – it’s a passion we invest in wholeheartedly"
           delay={1300}
         />
       </div>

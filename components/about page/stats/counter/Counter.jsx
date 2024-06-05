@@ -17,8 +17,8 @@ const Counter = () => {
         </p>
         <p className="font-bold text-3xl lg:mt-10 lg:mb-5">Reach</p>
         <p className="lg:px-20">
-          nostrud eu et tempor culpa ad sint sit eiusmod laboris eu occaecat
-          esse sunt in exercitation{" "}
+          We expand Your horizons, maximising Your reach to transform Potential
+          into Performance!
         </p>
       </div>
 
@@ -34,8 +34,8 @@ const Counter = () => {
         </p>
         <p className="font-bold text-3xl lg:mt-10 lg:mb-5">ROI</p>
         <p className="lg:px-20">
-          nostrud eu et tempor culpa ad sint sit eiusmod laboris eu occaecat
-          esse sunt in exercitation{" "}
+          We Boost Your Bottom Line by maximising Your ROI with Our Expert
+          Marketing Strategies!
         </p>
       </div>
     </div>

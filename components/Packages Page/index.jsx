@@ -26,7 +26,7 @@ const PackagesPage = () => {
 
           <div className="packages-container relative pt-10">
             <div className="package">
-              <h3>Tiye Tiye</h3>
+              <h3>Tamanga</h3>
               <div className="text-[var(--brand-color-1)] bg-[var(--brand-color-5)]">
                 <p>
                   Logo Architecture Letterhead design Email Signature Design &
@@ -38,7 +38,7 @@ const PackagesPage = () => {
             </div>
 
             <div className="package">
-              <h3>Laka Laka</h3>
+              <h3>Tamanga Pro</h3>
               <div className="bg-[var(--brand-color-3)]">
                 <p>
                   Logo Architecture Letterhead design Email Signature Design &
@@ -51,7 +51,7 @@ const PackagesPage = () => {
             </div>
 
             <div className="package">
-              <h3>Best Best</h3>
+              <h3>Tiye Tiye</h3>
               <div className="bg-[var(--brand-color-2)]">
                 <p>
                   Logo Architecture Letterhead design Email Signature Design &
