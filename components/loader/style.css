@@ -5,6 +5,7 @@
   width: 100vw;
   z-index: 20;
   background: whitesmoke;
+  transition: opacity ease 0.3s;
 }
 
 .loader-container {

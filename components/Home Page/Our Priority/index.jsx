@@ -10,33 +10,33 @@ const OurPriority = () => {
         <MessageBubble
           loading={true}
           direction="right"
-          text="Here at Ballo, your goals are our goals – we turn your vision into reality."
+          text="Here at Ballo, your goals are our goals. We turn your vision into reality."
           delay={500}
         />
         <MessageBubble
           loading={true}
           direction="left"
-          text="Our focus is on you; we build personalised marketing plans that resonate with your audience."
+          text="Our focus is on you! We build personalised marketing plans that resonate with your audience."
           delay={600}
         />
         <MessageBubble
           loading={true}
           direction="right"
           margin="lg:mr-16"
-          text="We listen, we strategise, we deliver – your business growth is our top priority."
+          text="We listen, we strategise, we deliver. Your business growth is our top priority."
           delay={900}
         />
         <MessageBubble
           loading={true}
           direction="left"
           margin="lg:ml-20"
-          text="Your success is our mission – we craft marketing strategies that elevate your brand to new heights."
+          text="Your success is our mission. We craft marketing strategies that elevate your brand to new heights."
           delay={1200}
         />
         <MessageBubble
           loading={true}
           direction="right"
-          text="Your brand isn’t just another project – it’s a passion we invest in wholeheartedly"
+          text="Your brand isn’t just another project, it’s a passion we invest in wholeheartedly"
           delay={1300}
         />
       </div>

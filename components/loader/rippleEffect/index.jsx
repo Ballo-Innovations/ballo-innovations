@@ -3,7 +3,7 @@ import "./style.css";
 const RippleEffect = ({ top, left, width, rippleClass }) => {
   return (
     <div
-      className="absolute bg-transparent scale-[3] md:scale-100 opacity-40"
+      className="absolute bg-transparent scale-[3] md:scale-100 opacity-80 md:opacity-40"
       style={{
         width: width,
         height: width,

@@ -19,7 +19,6 @@
   bottom: 0;
   left: 11vw;
   width: 0%;
-  /* overflow: visible; */
 }
 
 #svg_leads {
@@ -39,12 +38,6 @@
 @media (max-width: 576px) {
   .line-container {
     top: 10vh;
-  }
-}
-
-@media (max-width: 1024px) {
-  .stats-chart svg {
-    width: 100em;
   }
 }
 
@@ -96,7 +89,7 @@
   }
 }
 
-@media ((min-width: 901px) and (max-width: 1024px)) {
+@media ((min-width: 901px) and (max-width: 1050px)) {
   .line-container {
     left: -27.5vw;
   }

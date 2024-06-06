@@ -34,8 +34,8 @@ const Stats = () => {
           width: "0%",
         },
         {
-          width: "100%",
-          duration: 15,
+          width: "60rem",
+          duration: 7,
         }
       );
 
@@ -43,7 +43,7 @@ const Stats = () => {
         transformOrigin: "50% 50%",
         opacity: 1,
         duration: 5,
-        delay: 1,
+        delay: 1.5,
         motionPath: {
           path: "#path_engagement",
           align: "#path_engagement",
@@ -57,7 +57,7 @@ const Stats = () => {
           width: "0%",
         },
         {
-          width: "100%",
+          width: "60rem",
           duration: 17,
         }
       );
@@ -80,7 +80,7 @@ const Stats = () => {
           width: "0%",
         },
         {
-          width: "100%",
+          width: "60rem",
           duration: 12,
           delay: 1,
         }
@@ -106,7 +106,7 @@ const Stats = () => {
         {
           duration: 13,
           delay: 0.5,
-          width: "100%",
+          width: "60rem",
         }
       );
 
