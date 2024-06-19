@@ -53,7 +53,7 @@ const HeaderImage = () => {
   return (
     <div
       id="hero-logo-img"
-      className="max-w-[100vw] overflow-hidden h-[200vh] md:h-[200vh] pl-5 -mt-5 w-[92vw] absolute"
+      className="max-w-[100vw] overflow-hidden h-[200vh] md:h-[450vh] pl-5 -mt-5 w-[92vw] absolute"
     >
       <Image
         src={ring}

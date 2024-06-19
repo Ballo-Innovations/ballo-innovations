@@ -9,7 +9,9 @@
   background: #03042cfc;
 }
 
-.nav-item { position: relative; }
+.nav-item {
+  position: relative;
+}
 
 .nav-item.active {
   border-bottom: 2px solid white;
@@ -27,6 +29,12 @@
 .light-bg-nav #nav-social-links,
 .light-bg-nav .nav-item.active {
   border-color: var(--brand-color-1) !important;
+}
+
+@media (width > 1024px) {
+  #blue-mobile-logo {
+    display: none !important;
+  }
 }
 
 @media (width <= 1024px) {
@@ -56,7 +64,7 @@
 
   .nav-links {
     font-size: 1.2em;
-    color: #2273AF;
+    color: #2273af;
   }
 
   .nav-links .active {

@@ -1,6 +1,22 @@
 .footer-ring {
   position: absolute;
   z-index: 0;
-  width: 80%;
+  height: 125%;
+  width: auto;
   opacity: 0.5;
+  animation: footer-ring-glow 7s ease-in-out infinite;
+}
+
+@keyframes footer-ring-glow {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
 }

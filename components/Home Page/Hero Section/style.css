@@ -4,3 +4,7 @@
   width: 100%;
   left: 0;
 }
+
+#hero-section > .pin-spacer {
+  height: auto !important;
+}

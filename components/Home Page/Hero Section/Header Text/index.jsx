@@ -27,7 +27,7 @@ const HeaderText = () => {
   useEffect(() => {
     let tickerDelay = setTimeout(() => {
       setStartTicker(true);
-    }, 3000);
+    }, 1500);
 
     return () => {
       clearTimeout(tickerDelay);

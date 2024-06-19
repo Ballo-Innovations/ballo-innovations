@@ -53,8 +53,9 @@ const Cards = () => {
               scrollTrigger: {
                 trigger: card,
                 containerAnimation: scrollTween,
-                start: "left 90%",
+                start: "left 110%",
                 // markers: true,
+                anticipatePin: 1,
               },
             });
           });
@@ -74,7 +75,7 @@ const Cards = () => {
           return (
             <div
               key={index}
-              className="service-card overflow-hidden flex flex-col text-white w-80 lg:w-[30vw] gap-1 p-5 rounded-[50px] shadow-2xl"
+              className="service-card overflow-hidden flex flex-col text-white w-80 lg:w-[30vw] gap-1 py-5 rounded-[50px] shadow-2xl"
             >
               <div
                 className={`flex flex-col items-center text-center ${
@@ -97,12 +98,39 @@ const Cards = () => {
                 </h2>
               </div>
 
-              <p className={`text-sm text-center ${index >= 2 && "anim"}`}>
+              <p className={`text-sm text-center px-5 ${index >= 2 && "anim"}`}>
                 {service.summary}
               </p>
             </div>
           );
         })}
+
+        <div
+          id="view-portfolio"
+          className="service-card overflow-hidden flex-center cursor-pointer text-white w-80 lg:w-[30vw] gap-1 p-5 rounded-[50px] shadow-2xl"
+        >
+          <div id="view-portfolio-bg" className="flex-center">
+            <div className="flex-center text-center anim gap-2">
+              <h2 className={`font-bold text-[1.6em] py-2 leading-7 anim`}>
+                View Portifolio
+              </h2>
+              <svg
+                height="34"
+                width="34"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                className="z-[3]"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="blob" />
+        </div>
       </div>
     </div>
   );
