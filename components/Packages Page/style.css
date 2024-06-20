@@ -27,7 +27,7 @@
   font-size: 1.5em;
 }
 
-@media (width <= 1024px){
+@media (width <= 1024px) {
   .packages-container {
     flex-wrap: wrap;
   }
@@ -37,7 +37,7 @@
   }
 }
 
-@media (width <= 576px){
+@media (width <= 576px) {
   .packages-container {
     flex-direction: column;
   }
