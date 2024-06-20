@@ -419,7 +419,7 @@ const Navbar = () => {
 
             <li className="nav-item">
               <Link
-                href="#footer"
+                href="#footer_"
                 className="nav-link"
                 onClick={() => setShowMenu(false)}
               >

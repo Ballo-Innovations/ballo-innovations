@@ -114,19 +114,21 @@ const Cards = () => {
               <h2 className={`font-bold text-[1.6em] py-2 leading-7 anim`}>
                 View Portifolio
               </h2>
-              <svg
-                height="34"
-                width="34"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-                className="z-[3]"
-              >
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                  fill="currentColor"
-                ></path>
-              </svg>
+              <div className="rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill="white"
+                    fill-rule="evenodd"
+                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14M5 7.25a.75.75 0 0 0 0 1.5h4.19l-.72.72a.75.75 0 0 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06l-2-2a.75.75 0 0 0-1.06 1.06l.72.72z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
             </div>
           </div>
           <div class="blob" />
