@@ -2,12 +2,29 @@
   cursor: pointer;
 }
 
-.arrow {
-  transition: all 0.05s ease-in-out;
+.details-btn {
+  transition: all 0.6s ease-in-out;
+  border-radius: 50% !important;
 }
 
-.team-member:hover .arrow {
+.show-details {
+  transform: scale(50);
+  z-index: 9;
+}
+
+.show-details img {
+  transition: all 0.15s ease-in-out;
+  opacity: 0;
+}
+
+.team-member:hover .hidden-details img {
+  transition: all 0.05s ease-in-out;
+  transition-delay: 0.5s;
   transform: scale(1.1);
+}
+
+.delay-anim {
+  z-index: 9;
 }
 
 /* .team-member h3,
