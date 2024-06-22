@@ -18,7 +18,7 @@ const Popup = ({ toggleDetails, photo, name, position }) => {
     <>
       <button
         onClick={toggleDetails}
-        className="fade-in bg-red-600 fixed top-24 right-10 p-1 rounded-md z-30 opacity-0"
+        className="fade-in fixed top-24 right-10 p-1 rounded-md z-30 opacity-0"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const Popup = ({ toggleDetails, photo, name, position }) => {
       </button>
       <div className="fade-in popup z-20 h-[100vh] w-[100vw]  cursor-auto fixed flex-center overflow-auto opacity-0">
         <div className="relative pt-[40vh] overflow-visible">
-          <div className="flex-center flex-col pb-10">
+          <div className="flex-center flex-col pb-10 gap-10">
             <Image
               src={photo}
               alt={name}
