@@ -16,7 +16,7 @@ const PackagesPage = () => {
           src={background}
           alt="background"
           quality={100}
-          className="fixed scale-[1] md:scale-[2.3] -left-[19%] md:-left-[12.25%] top-0 object-cover overflow-visible opacity-10"
+          className="fixed scale-[1] md:scale-[2.3] -left-[19%] md:-left-[12.25%] top-0 object-cover overflow-visible opacity-[0.12]"
           style={{ height: "125%", width: "125%" }}
         />
 

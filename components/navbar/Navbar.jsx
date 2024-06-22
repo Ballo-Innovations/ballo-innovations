@@ -24,15 +24,16 @@ const Navbar = () => {
   const [lightBackground, setLightBackground] = useState(true);
 
   useEffect(() => {
-    setLightBackground(pathname.includes("/works/"));
-
+    // setLightBackground(pathname.includes("/works/"));
+    setLightBackground(false);
     const onScroll = () => {
       const positionY = window.scrollY;
       if (positionY > 50) {
         setLightBackground(false);
       } else {
         if (pathname.includes("/works/")) {
-          setLightBackground(true);
+          // setLightBackground(true);
+          setLightBackground(false);
         }
         if (!pathname.includes("/works/")) {
           setLightBackground(false);
