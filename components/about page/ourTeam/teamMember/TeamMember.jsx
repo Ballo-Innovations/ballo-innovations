@@ -22,7 +22,6 @@ const TeamMember = ({ photo, name, position }) => {
         setDelayAnim(false);
       }, 1000);
     }
-    console.log(delayAnim);
   };
 
   return (
@@ -53,8 +52,13 @@ const TeamMember = ({ photo, name, position }) => {
         </div>
       </div>
 
-      <h3 className="font-bold">{name}</h3>
-      <p>{position}</p>
+      <div
+        className="flex-center flex-col bg-clip-text"
+        onClick={toggleDetails}
+      >
+        <h3 className="font-bold">{name}</h3>
+        <p>{position}</p>
+      </div>
     </div>
   );
 };

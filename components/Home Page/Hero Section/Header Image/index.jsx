@@ -12,15 +12,24 @@ const HeaderImage = () => {
     let mobileView = gsap.matchMedia();
     mobileView.add("(max-width: 640px)", () => {
       gsap.to("#hero-logo-img", {
-        transformOrigin: "10% -50%",
+        transformOrigin: "80% 10%",
         scrollTrigger: {
           trigger: "#hero-logo-img",
           start: "top 10%",
-          end: "+=1600",
+          end: "+=3500",
           pin: true,
           scrub: 1,
           anticipatePin: 1,
           // markers: true,
+          onUpdate: (self) => {
+            if (self.progress <= 0.08) {
+              console.log(self.progress);
+              const scale = 1 - self.progress;
+              gsap.to("#hero-logo-img", { scale: scale, overwrite: "auto" });
+            } else {
+              gsap.to("#hero-logo-img", { scale: 0.93, overwrite: "auto" });
+            }
+          },
         },
       });
     });
@@ -53,7 +62,7 @@ const HeaderImage = () => {
   return (
     <div
       id="hero-logo-img"
-      className="max-w-[100vw] overflow-hidden h-[200vh] md:h-[450vh] pl-5 -mt-5 w-[92vw] absolute"
+      className="max-w-[100vw] overflow-hidden h-[200vh] md:h-[450vh] pl-5 -mt-5 w-[94vw] absolute"
     >
       <Image
         src={ring}

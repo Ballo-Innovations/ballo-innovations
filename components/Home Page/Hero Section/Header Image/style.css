@@ -24,45 +24,77 @@
   margin-left: 0.075%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .logo-ring {
+    left: -1.5% !important;
+  }
+}
+
+@media ((min-width: 351px) and (max-width: 400px)) {
+  .logo-ring {
+    top: -0.1%;
+    left: -2.5% !important;
+  }
+}
+
+@media ((min-width: 401px) and (max-width: 415px)) {
+  .logo-ring {
+    top: -0.1%;
+    left: -3% !important;
+  }
+}
+
+@media ((min-width: 416px) and (max-width: 450px)) {
+  .logo-ring {
+    top: -0.1%;
     left: -4% !important;
   }
 }
 
-@media ((min-width: 408px) and (max-width: 500px)) {
+@media ((min-width: 451px) and (max-width: 500px)) {
   .logo-ring {
-    left: -7% !important;
+    top: -0.1%;
+    left: -4.5% !important;
   }
 }
 
-@media ((min-width: 501px) and (max-width: 640px)) {
+@media ((min-width: 501px) and (max-width: 550px)) {
   .logo-ring {
-    left: -7.5% !important;
+    top: -0.3%;
+    left: -5.5% !important;
+  }
+}
+
+@media ((min-width: 551px) and (max-width: 600px)) {
+  .logo-ring {
+    top: -0.3%;
+    left: -6% !important;
+  }
+}
+
+@media ((min-width: 601px) and (max-width: 640px)) {
+  .logo-ring {
+    top: -0.3%;
+    left: -6.5% !important;
   }
 }
 
 @media ((min-width: 641px) and (max-width: 720px)) {
   .logo-ring {
-    width: calc(52% - 0.3em) !important;
-    left: -8.5% !important;
-  }
-}
-
-@media ((min-width: 601px) and (max-width: 700px)) {
-  .logo-ring {
-    left: -8% !important;
+    width: calc(51% - 0.3em) !important;
+    left: -7% !important;
   }
 }
 
 @media (max-width: 720px) {
   #hero-logo-img {
     top: 25vh;
+    padding-left: 1.8rem !important;
   }
 
   .logo-ring {
-    width: calc(52.5% - 0.3em);
-    left: -6%;
+    width: calc(52% - 0.3em);
+    left: -5.5%;
   }
 
   .bi-logo {
@@ -78,7 +110,7 @@
   }
 
   .logo-ring {
-    left: 4%;
+    left: 3.5%;
     width: calc(28% - 0.3em);
   }
 
