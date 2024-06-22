@@ -1,8 +1,8 @@
 .footer-ring {
   position: absolute;
   z-index: 0;
-  height: 125%;
-  width: auto;
+  height: auto;
+  width: 61%;
   opacity: 0.5;
   animation: footer-ring-glow 7s ease-in-out infinite;
 }
@@ -18,5 +18,11 @@
 
   100% {
     opacity: 0.5;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-ring {
+    width: 100%;
   }
 }

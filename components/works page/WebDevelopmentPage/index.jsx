@@ -8,16 +8,16 @@ import "./style.css";
 import Image from "next/image";
 import background from "@/public/Ballo Logo New/svg/Ballo logo new-01.svg";
 import background2 from "@/public/Backgrounds/About.png";
-import test1 from "@/public/elements small/phone.png";
-import test2 from "@/public/elements small/13.png";
-import test3 from "@/public/elements small/11.png";
-import test4 from "@/public/team/team-1.jpg";
+import test1 from "@/public/projects/web-development/2.png";
+import test2 from "@/public/projects/web-development/4.png";
+import test3 from "@/public/projects/web-development/1.png";
+import test4 from "@/public/projects/web-development/10.png";
 import { useState } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const WebDevelopmentPage = () => {
-  const works = [test1, test2, test3, test4];
+  const works = [test4, test3, test2, test1];
   const [freezeSlide, setFreezeSlide] = useState(true);
 
   // Tutorial link: https://www.youtube.com/watch?v=aAGypqJd818
@@ -125,13 +125,13 @@ const WebDevelopmentPage = () => {
                   <p className="font-bold text-4xl">Client Name</p>
                   <p id="index">Project Name</p>
                 </div>
-                <div className="slide-img">
+                <div className="slide-img overflow-visible mb-5">
                   <Image
                     key={index}
                     src={work}
                     alt="web development works"
                     quality={100}
-                    className="flex-center flex-col md:w-[50%] mt-10 md:-ml-10"
+                    className=" object-contain flex-center flex-col rounded-md"
                   />
                 </div>
               </div>

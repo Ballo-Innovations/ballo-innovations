@@ -47,6 +47,7 @@
   position: absolute;
   width: 400px;
   height: 500px;
+  /* overflow: visible; */
   overflow: hidden;
 }
 
@@ -88,7 +89,7 @@
 
 #work-web-dev .slider #slide-4 {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 70%;
   transform: translateX(-50%) translateY(-50%) translateZ(-1500px);
   opacity: 0; /*Last item has opacity 1*/
@@ -96,7 +97,7 @@
 
 #work-web-dev .slider #slide-3 {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 30%;
   transform: translateX(-50%) translateY(-50%) translateZ(-3000px); /*Increment translateZ by 2500px*/
   opacity: 0; /*Second last item has opacity 0.5*/
@@ -104,7 +105,7 @@
 
 #work-web-dev .slider #slide-2 {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 70%;
   transform: translateX(-50%) translateY(-50%) translateZ(-4500px);
   opacity: 0;
@@ -112,7 +113,7 @@
 
 #work-web-dev .slider #slide-1 {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 30%;
   transform: translateX(-50%) translateY(-50%) translateZ(-6000px);
   opacity: 0;
