@@ -113,7 +113,7 @@ const WebDevelopmentPage = () => {
                 src={work}
                 alt="web development works"
                 quality={100}
-                className="flex-center flex-col md:w-[50%] mt-10 md:-ml-10"
+                className="flex-center flex-col md:w-[50%]"
               />
             ))}
           </div>
