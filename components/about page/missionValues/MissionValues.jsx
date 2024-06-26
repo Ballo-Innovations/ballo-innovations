@@ -9,6 +9,7 @@ import plane from "@/public/elements small/blue paper plane.png";
 import { PlanePath } from "./icon";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Clouds from "./Clouds";
 
 const MissionValues = () => {
   useGSAP(() => {
@@ -52,6 +53,7 @@ const MissionValues = () => {
       style={{ background: `url(${background.src})`, backgroundSize: "cover" }}
       id="mission"
     >
+      <Clouds />
       <PlanePath />
       <Image
         src={plane}

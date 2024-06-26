@@ -11,6 +11,7 @@ const PackagesPage = () => {
       <section
         className="relative text-white nav-padding pb-20 bg-[var(--brand-color-1)] overflow-hidden"
         style={{ paddingTop: "25vh" }}
+        id="packages-section"
       >
         <Image
           src={background}

@@ -10,9 +10,19 @@
   background-color: white;
 }
 
-#get-quote-form input::placeholder,
-#get-quote-form textarea::placeholder {
+#get-quote-form input::placeholder {
+  color: #010055a1;
+  font-weight: bold;
+}
+
+#get-quote-form input,
+#get-quote-form textarea {
   color: var(--brand-color-1);
+  font-weight: bolder;
+}
+
+#get-quote-form textarea::placeholder {
+  color: #010055a1;
   font-weight: bold;
 }
 
@@ -26,4 +36,17 @@
   background: linear-gradient(45deg, #0b4d8c, #2273af);
   color: white;
   font-size: 1.5em;
+}
+
+.quote-option-dropdown {
+  box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.7);
+}
+
+.quote-option-dropdown button {
+  padding: 0.75rem 2.5rem;
+}
+
+.quote-option-dropdown button:hover {
+  background-color: var(--brand-color-2);
+  color: white;
 }

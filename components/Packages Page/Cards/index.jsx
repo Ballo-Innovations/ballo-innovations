@@ -2,6 +2,24 @@
 import { useState } from "react";
 import "./style.css";
 
+const CheckMark = ({ color }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="40"
+      height="40"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill={color}
+        fill-rule="evenodd"
+        d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  );
+};
+
 const PackageCards = () => {
   const [showMoreTamanga, setShowMoreTamanga] = useState(false);
   const [showMoreTamangaPro, setShowMoreTamangaPro] = useState(false);
@@ -12,11 +30,33 @@ const PackageCards = () => {
       <div className="package">
         <h3>Tamanga</h3>
         <div className="text-[var(--brand-color-1)] bg-[var(--brand-color-5)]">
-          <p>
-            Logo Architecture Letterhead design Email Signature Design & Set up
-            Business Cards Design (100 Print) Social Media Starter Kit
-          </p>
-          <h4 className={`${showMoreTamanga ? "h-full" : "h-0 opacity-0"}`}>
+          <ul className="text-left">
+            <li className="flex">
+              <CheckMark color="#020055" />
+              <span>Logo Architecture</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="#020055" />
+              <span>Letterhead design</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="#020055" />
+              <span>Email Signature Design & Set up</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="#020055" />
+              <span>Business Cards Design (100 Print)</span>
+            </li>
+            <li className={`${showMoreTamanga ? "flex" : "hidden opacity-0"}`}>
+              <CheckMark color="#020055" />
+              <span>Social Media Starter Kit</span>
+            </li>
+          </ul>
+          <h4
+            className={`${
+              showMoreTamanga ? "flex-center" : "hidden opacity-0"
+            }`}
+          >
             K7,000
           </h4>
           <button
@@ -47,12 +87,51 @@ const PackageCards = () => {
       <div className="package">
         <h3>Tamanga Pro</h3>
         <div className="bg-[var(--brand-color-3)]">
-          <p>
-            Logo Architecture Letterhead design Email Signature Design & Set up
-            Business Cards Design (100 Print) Social Media Starter Kit
-            Powerpoint Presentation Template Company Profile Brand Manual
-          </p>
-          <h4 className={`${showMoreTamangaPro ? "h-full" : "h-0 opacity-0"}`}>
+          <ul className="text-left">
+            <li className="flex">
+              <CheckMark color="white" />
+              <span>Logo Architecture</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="white" />
+              <span>Letterhead design</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="white" />
+              <span>Email Signature Design & Set up</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="white" />
+              <span>Business Cards Design (100 Print)</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="white" />
+              <span>Social Media Starter Kit</span>
+            </li>
+            <li
+              className={`${showMoreTamangaPro ? "flex" : "hidden opacity-0"}`}
+            >
+              <CheckMark color="white" />
+              <span>Powerpoint Presentation Template</span>
+            </li>
+            <li
+              className={`${showMoreTamangaPro ? "flex" : "hidden opacity-0"}`}
+            >
+              <CheckMark color="white" />
+              <span>Company Profile</span>
+            </li>
+            <li
+              className={`${showMoreTamangaPro ? "flex" : "hidden opacity-0"}`}
+            >
+              <CheckMark color="white" />
+              Brand Manual
+            </li>
+          </ul>
+          <h4
+            className={`${
+              showMoreTamangaPro ? "flex-center" : "hidden opacity-0"
+            }`}
+          >
             K12,500
           </h4>
           <button
@@ -83,13 +162,49 @@ const PackageCards = () => {
       <div className="package">
         <h3>Tiye Tiye</h3>
         <div className="bg-[var(--brand-color-2)]">
-          <p>
-            Logo Architecture Letterhead design Email Signature Design & set up
-            Business Cards Design (100 Print) Social Media Starter Kit
-            Powerpoint Presentation Template Company Profile Brand Manual
-            Website Design and Development
-          </p>
-          <h4 className={`${showMoreTiyeTiye ? "h-full" : "h-0 opacity-0"}`}>
+          <ul className="text-left">
+            <li className="flex">
+              <CheckMark color="white" />
+              <span>Logo Architecture</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="white" />
+              <span>Letterhead design</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="white" />
+              <span>Email Signature Design & set up</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="white" />
+              <span>Business Cards Design (100 Print)</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="white" />
+              <span>Social Media Starter Kit</span>
+            </li>
+            <li className="flex">
+              <CheckMark color="white" />
+              <span>Powerpoint Presentation Template</span>
+            </li>
+            <li className={`${showMoreTiyeTiye ? "flex" : "hidden opacity-0"}`}>
+              <CheckMark color="white" />
+              <span>Company Profile</span>
+            </li>
+            <li className={`${showMoreTiyeTiye ? "flex" : "hidden opacity-0"}`}>
+              <CheckMark color="white" />
+              <span>Brand Manual</span>
+            </li>
+            <li className={`${showMoreTiyeTiye ? "flex" : "hidden opacity-0"}`}>
+              <CheckMark color="white" />
+              <span>Website Design and Development</span>
+            </li>
+          </ul>
+          <h4
+            className={`${
+              showMoreTiyeTiye ? "flex-center" : "hidden opacity-0"
+            }`}
+          >
             K25,000
           </h4>
           <button
