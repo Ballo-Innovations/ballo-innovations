@@ -112,7 +112,7 @@ const Cards = () => {
           <div id="view-portfolio-bg" className="flex-center">
             <div className="flex-center text-center anim gap-2">
               <h2 className={`font-bold text-[1.6em] py-2 leading-7 anim`}>
-                View Portifolio
+                View Our Portifolio
               </h2>
               <div className="rounded-full">
                 <svg

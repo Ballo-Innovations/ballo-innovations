@@ -6,9 +6,12 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import "./style.css";
+import { useState } from "react";
 
 const HeaderImage = () => {
+  const [flicker, setFlicker] = useState(false);
   useGSAP(() => {
+    setFlicker(true);
     let mobileView = gsap.matchMedia();
     mobileView.add("(max-width: 640px)", () => {
       gsap.to("#hero-logo-img", {
@@ -37,7 +40,7 @@ const HeaderImage = () => {
     let desktopView = gsap.matchMedia();
     desktopView.add("(min-width: 641px)", () => {
       gsap.to("#hero-logo-img", {
-        transformOrigin: "10% 0%",
+        transformOrigin: "10% 1%",
         scrollTrigger: {
           trigger: "#hero-logo-img",
           start: "top 10%",
@@ -48,10 +51,10 @@ const HeaderImage = () => {
           // markers: true,
           onUpdate: (self) => {
             if (self.progress <= 0.08) {
-              const scale = 1 - (self.progress * 0.5) / 0.08;
+              const scale = 1 - (self.progress * 0.4) / 0.08;
               gsap.to("#hero-logo-img", { scale: scale, overwrite: "auto" });
             } else {
-              gsap.to("#hero-logo-img", { scale: 0.5, overwrite: "auto" });
+              gsap.to("#hero-logo-img", { scale: 0.4, overwrite: "auto" });
             }
           },
         },
@@ -62,13 +65,13 @@ const HeaderImage = () => {
   return (
     <div
       id="hero-logo-img"
-      className="max-w-[100vw] overflow-hidden h-[200vh] md:h-[450vh] pl-5 -mt-5 w-[94vw] absolute"
+      className="max-w-[100vw] overflow-hidden h-[200vh] md:h-[520vh] pl-5 -mt-5 w-[94vw] absolute"
     >
       <Image
         src={ring}
         alt="Logo"
         quality={100}
-        className=" logo-ring absolute z-[3]"
+        className={`logo-ring absolute z-[3] ${flicker && "logo-ring-flicker"}`}
       />
 
       <Image
