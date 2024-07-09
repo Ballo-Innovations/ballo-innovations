@@ -1,5 +1,3 @@
-"use client";
-
 // Import Assets
 import Clients from "./Clients";
 import Cards from "./Cards";

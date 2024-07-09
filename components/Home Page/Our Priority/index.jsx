@@ -2,7 +2,7 @@ import MessageBubble from "./messageBubble/MessageBubble";
 
 const OurPriority = () => {
   return (
-    <section className="bg-[var(--brand-color-5)] pt-20 pb-14 px-5 md:px-32 overflow-hidden min-h-screen z-[5]">
+    <section className="bg-[var(--brand-color-5)] pt-20 pb-14 px-5 md:px-32 overflow-hidden z-[5]">
       <div className="flex flex-col">
         <h2 className="subheading mb-10 lg:mb-0 text-[var(--brand-color-1)] text-center lg:text-start">
           Our Priority

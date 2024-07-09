@@ -1,6 +1,5 @@
 .logo-ring-flicker {
   animation: flicker ease-in-out 4s !important;
-  animation-delay: 2s;
 }
 
 @keyframes flicker {
