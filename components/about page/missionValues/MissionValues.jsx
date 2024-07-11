@@ -49,7 +49,7 @@ const MissionValues = () => {
 
   return (
     <section
-      className="nav-paddin pt-[40vh] px-5 md:px-24 w-full relative overflow-visible"
+      className="nav-paddin pt-[40vh] px-5 md:px-24 w-full relative overflow-x-hidden md:overflow-visible"
       style={{ background: `url(${background.src})`, backgroundSize: "cover" }}
       id="mission"
     >

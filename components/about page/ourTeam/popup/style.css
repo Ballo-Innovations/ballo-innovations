@@ -6,15 +6,26 @@
   z-index: 20;
   /* backdrop-filter: blur(1px);
   background: rgba(0, 0, 0, 0.1); */
-  background: transparent;
+  background: #000;
 }
 
-.popup::-webkit-scrollbar {
-  width: 12px;
-  background: #e5e1e1;
-  border-radius: 15px;
+.team-member-content {
+  box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden !important;
 }
-.popup::-webkit-scrollbar-thumb {
-  border-radius: 15px;
-  background-color: var(--brand-color-3);
+
+.team-socials img {
+  cursor: pointer !important;
+}
+
+@media (width >= 786px) {
+  .popup::-webkit-scrollbar {
+    width: 10px;
+    background: #e5e1e1;
+    border-radius: 15px;
+  }
+  .popup::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: var(--brand-color-3);
+  }
 }

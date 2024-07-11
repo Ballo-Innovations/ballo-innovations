@@ -6,7 +6,7 @@ import arrow from "@/public/elements small/10.png";
 import { useState } from "react";
 import Popup from "../popup/Popup";
 
-const TeamMember = ({ photo, name, position }) => {
+const TeamMember = ({ photo, name, position, bg, description }) => {
   const [showDetails, setShowDetails] = useState(false);
   const [delayAnim, setDelayAnim] = useState(false);
 
@@ -32,6 +32,8 @@ const TeamMember = ({ photo, name, position }) => {
           photo={photo}
           name={name}
           position={position}
+          bg={bg}
+          description={description}
         />
       )}
       <div className="relative" onClick={toggleDetails}>
@@ -56,8 +58,8 @@ const TeamMember = ({ photo, name, position }) => {
         className="flex-center flex-col bg-clip-text"
         onClick={toggleDetails}
       >
-        <h3 className="font-bold">{name}</h3>
-        <p>{position}</p>
+        <h3 className="font-bold text-xl text-center">{name}</h3>
+        <p className="text-black font-bold">{position}</p>
       </div>
     </div>
   );
