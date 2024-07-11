@@ -23,7 +23,7 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
     <>
       <button
         onClick={toggleDetails}
-        className="fade-in fixed top-24 right-5 md:right-10 p-0 rounded-full z-30 opacity-0 bg-white scale-125 md:scale-100"
+        className="fade-in fixed top-28 right-5 md:right-10 p-0 rounded-full z-30 opacity-0 bg-white scale-125 md:scale-100"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
           ></path>
         </svg>
       </button>
-      <div className="fade-in popup z-20 h-[100vh] w-[100vw] cursor-auto fixed flex-center overflow-auto opacity-0">
+      <div className="fade-in popup z-20 h-[100vh] w-[100vw] cursor-auto fixed flex-center overflow-x-hidden overflow-y-auto opacity-0">
         <Image
           src={bg}
           alt={name}
@@ -46,10 +46,14 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
           className="blur-sm opacity-100"
           style={{ objectFit: "cover", objectPosition: "top 20%" }}
         />
-        <div className="relative overflow-visible pt-32">
-          <div className="team-member-content relative flex flex-col md:flex-row justify-between w-screen rounded-sm">
+        <div className="relative overflow-visible pt-32 lg:pt-36">
+          <div className="team-member-content relative flex flex-col md:flex-row justify-between w-screen min-h-[100vh]">
             <div className="team-socials gap-1 flex-center flex-col absolute left-5 top-[33.33%] md:top-[33.333%]">
-              <Link href="#" onClick={toggleDetails}>
+              <Link
+                href="#"
+                onClick={toggleDetails}
+                className="hover:scale-125"
+              >
                 <Image src={linkedin} alt="linkedin" className="w-10" />{" "}
               </Link>
               <Link href="#" onClick={toggleDetails}>
@@ -64,11 +68,11 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
               src={photo}
               alt={name}
               quality={100}
-              className="w-full md:w-[35vw]"
+              className="w-full md:w-[40vw]"
               style={{ objectFit: "cover", objectPosition: "center" }}
             />
 
-            <div className="justify-center p-2 w-full flex-col gap-2 bg-blue-400 text-white">
+            <div className="justify-center p-2 w-full flex-col gap-2 bg-gradient-to-l from-blue-400 to-[var(--brand-color-3)] text-white lg:pt-10">
               <h3 className="font-bold text-4xl">{name}</h3>
               <h4 className="font-bold">{position}</h4>
               <p className="mt-10">{description}</p>
