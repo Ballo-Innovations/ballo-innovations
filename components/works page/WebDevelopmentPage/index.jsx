@@ -25,7 +25,7 @@ const WebDevelopmentPage = () => {
   useGSAP(() => {
     // Wrap elements of interest in arrays
     const slides = gsap.utils.toArray(".slide");
-    const activeSlideImages = gsap.utils.toArray(".active-slide img");
+    // const activeSlideImages = gsap.utils.toArray(".active-slide img");
 
     // Get starting Z axis value
     const getInitialTranslateZ = (slideItem) => {
@@ -82,21 +82,6 @@ const WebDevelopmentPage = () => {
           slide.style.opacity = opacity;
 
           slide.style.transform = `translateX(-50%) translateY(-50%) translateZ(${currentZ}px)`; // Transform based on calculated current Z value
-
-          // Animate active slide's image opacity in the background
-          if (currentZ < 100) {
-            gsap.to(activeSlideImages[index], {
-              duration: 1.5,
-              opacity: 1,
-              ease: "power3.out",
-            });
-          } else {
-            gsap.to(activeSlideImages[index], {
-              duration: 0,
-              opacity: 0,
-              ease: "power3.out",
-            });
-          }
         },
       });
     });
@@ -106,32 +91,33 @@ const WebDevelopmentPage = () => {
     <section id="work-web-dev" className="pt-[30vh] px-0">
       <div className="flex flex-col">
         <div className="slider-container">
-          <div className="active-slide">
-            {works.map((work, index) => (
-              <Image
-                key={index}
-                src={work}
-                alt="web development works"
-                quality={100}
-                className="flex-center flex-col md:w-[50%]"
-              />
-            ))}
-          </div>
-
           <div className="slider">
             {works.map((work, index) => (
-              <div key={index} className="slide" id={`slide-${index + 1}`}>
-                <div className="slide-copy text-white">
-                  <p className="font-bold text-4xl">Client Name</p>
-                  <p id="index">Project Name</p>
-                </div>
-                <div className="slide-img overflow-visible mb-5">
+              <div
+                key={index}
+                className="slide overflow-visible"
+                id={`slide-${index + 1}`}
+              >
+                <div className="slide-img relative overflow-hidden cursor-pointer hover:scale-110">
+                  <div className="follow-link-bubble absolute rounded-bl-full w-0 h-0 -top-10 -right-10 bg-white" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="120"
+                    height="120"
+                    viewBox="0 0 12 12"
+                    className="absolute top-5 right-5 rotate-45"
+                  >
+                    <path
+                      fill="#020055"
+                      d="M6 10.5a.75.75 0 0 0 .75-.75V3.81l1.97 1.97a.75.75 0 0 0 1.06-1.06L6.53 1.47a.75.75 0 0 0-1.06 0L2.22 4.72a.75.75 0 1 0 1.06 1.06l1.97-1.97v5.94c0 .414.336.75.75.75"
+                    ></path>
+                  </svg>
                   <Image
                     key={index}
                     src={work}
                     alt="web development works"
                     quality={100}
-                    className=" object-contain flex-center flex-col rounded-md"
+                    className="object-contain flex-center flex-col rounded-md"
                   />
                 </div>
               </div>
