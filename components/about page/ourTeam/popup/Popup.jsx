@@ -46,16 +46,16 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
           className="blur-sm opacity-100"
           style={{ objectFit: "cover", objectPosition: "top 20%" }}
         />
-        <div className="relative overflow-visible pt-32 md:pt-[20vh] md:pb-10 ">
-          <div className="team-member-content relative flex flex-col md:flex-row justify-between w-screen md:w-[80vw] rounded-sm">
-            <div className="team-socials gap-1 flex-center flex-col absolute left-[85%] md:left-5 top-[33.33%] md:top-[33.333%]">
-              <Link href="#">
+        <div className="relative overflow-visible pt-32">
+          <div className="team-member-content relative flex flex-col md:flex-row justify-between w-screen rounded-sm">
+            <div className="team-socials gap-1 flex-center flex-col absolute left-5 top-[33.33%] md:top-[33.333%]">
+              <Link href="#" onClick={toggleDetails}>
                 <Image src={linkedin} alt="linkedin" className="w-10" />{" "}
               </Link>
-              <Link href="#">
+              <Link href="#" onClick={toggleDetails}>
                 <Image src={instagram} alt="instagram" className="w-10" />{" "}
               </Link>
-              <Link href="#">
+              <Link href="#" onClick={toggleDetails}>
                 <Image src={facebook} alt="facebook" className="w-10" />{" "}
               </Link>
             </div>
