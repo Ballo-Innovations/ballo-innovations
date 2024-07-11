@@ -1,18 +1,18 @@
-import Link from "next/link"
-import './style.css'
+import Link from "next/link";
+import "./style.css";
 
-const SubLinks = ({items}) => {
+const SubLinks = ({ items }) => {
   return (
     <div className="sub-links-container">
       <ul className="sub-links">
-        { items.map((item, index) => (
-          <li key={index}>
-            <Link href={item.path}>{item.name}</Link>
-          </li>
-        )) }
+        {items.map((item, index) => (
+          <Link href={item.path} key={index}>
+            <li>{item.name}</li>
+          </Link>
+        ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default SubLinks
+export default SubLinks;
