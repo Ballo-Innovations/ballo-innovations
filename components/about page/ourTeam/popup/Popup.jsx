@@ -70,7 +70,7 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
                 alt={name}
                 // className="absolute top-0 left-0 w-full h-3/5 rounded-bl-2xl rounded-br-2xl"
                 className="absolute h-full opacity-20 z-[0] right-0 brightness-[0.3] blur-[2px]"
-                style={{ objectFit: "cover", objectPosition: "top 20%" }}
+                style={{ objectFit: "cover", objectPosition: "top" }}
               />
               <div className="px-2 md:px-10 pt-10 md:pt-28 justify-center flex-col gap-2 text-white z-10 relative">
                 <h3 className="font-bold text-4xl">{name}</h3>

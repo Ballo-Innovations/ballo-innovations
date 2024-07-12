@@ -11,7 +11,7 @@
 #work-web-dev .slider-container {
   width: 100%;
   scroll-behavior: smooth;
-  height: 500vh;
+  height: 550vh;
 }
 
 #work-web-dev .slider-container * {
@@ -126,13 +126,13 @@
   opacity: 0;
 }
 
-.slide-img * {
-  transition: all 5s ease-in-out;
+.follow-link-bubble {
+  transition: all 1s ease-in-out;
 }
 
 .slide-img:hover .follow-link-bubble {
-  height: 15rem;
-  width: 15rem;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 @media (width <= 768px) {

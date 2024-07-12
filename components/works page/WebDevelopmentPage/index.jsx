@@ -98,20 +98,12 @@ const WebDevelopmentPage = () => {
                 className="slide overflow-visible"
                 id={`slide-${index + 1}`}
               >
-                <div className="slide-img relative overflow-hidden cursor-pointer hover:scale-110">
-                  <div className="follow-link-bubble absolute rounded-bl-full w-0 h-0 -top-10 -right-10 bg-white" />
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="120"
-                    height="120"
-                    viewBox="0 0 12 12"
-                    className="absolute top-5 right-5 rotate-45"
-                  >
-                    <path
-                      fill="#020055"
-                      d="M6 10.5a.75.75 0 0 0 .75-.75V3.81l1.97 1.97a.75.75 0 0 0 1.06-1.06L6.53 1.47a.75.75 0 0 0-1.06 0L2.22 4.72a.75.75 0 1 0 1.06 1.06l1.97-1.97v5.94c0 .414.336.75.75.75"
-                    ></path>
-                  </svg>
+                <div className="slide-img relative overflow-hidden cursor-pointer">
+                  <div className="follow-link-bubble absolute w-full h-full flex-center opacity-0">
+                    <span className="border-4 border-white rounded-full text-white py-5 px-10 font-semibold text-4xl">
+                      View Project
+                    </span>
+                  </div>
                   <Image
                     key={index}
                     src={work}
