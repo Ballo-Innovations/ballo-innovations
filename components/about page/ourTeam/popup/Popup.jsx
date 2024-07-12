@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import "./style.css";
-import background2 from "@/public/Ballo Logo New/svg/Ballo logo new-01.svg";
+import background from "@/public/team/lines-pattern.png";
 import linkedin from "@/public/elements small/linkedin-rect.png";
 import instagram from "@/public/elements small/instagram-solid.png";
 import facebook from "@/public/elements small/facebook-rect.png";
@@ -38,17 +38,9 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
         </svg>
       </button>
       <div className="fade-in popup z-20 h-[100vh] w-[100vw] cursor-auto fixed flex-center overflow-x-hidden overflow-y-auto opacity-0">
-        <Image
-          src={bg}
-          alt={name}
-          fill
-          // className="absolute top-0 left-0 w-full h-3/5 rounded-bl-2xl rounded-br-2xl"
-          className="blur-sm opacity-100"
-          style={{ objectFit: "cover", objectPosition: "top 20%" }}
-        />
-        <div className="relative overflow-visible pt-32 lg:pt-36">
-          <div className="team-member-content relative flex flex-col md:flex-row justify-between w-screen min-h-[100vh]">
-            <div className="team-socials gap-1 flex-center flex-col absolute left-5 top-[33.33%] md:top-[33.333%]">
+        <div className="relative overflow-visible ">
+          <div className="team-member-content relative flex flex-col md:flex-row w-screen min-h-[100vh] bg-gradient-to-l from-blue-400 to-[var(--brand-color-3)]">
+            <div className="team-socials gap-1 flex-center flex-col absolute left-5 top-[33.33%] md:top-[33.333%] z-30">
               <Link
                 href="#"
                 onClick={toggleDetails}
@@ -68,14 +60,23 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
               src={photo}
               alt={name}
               quality={100}
-              className="w-full md:w-[40vw]"
+              className="team-member-photo w-full md:w-[40vw] z-10 relative"
               style={{ objectFit: "cover", objectPosition: "center" }}
             />
 
-            <div className="justify-center p-2 w-full flex-col gap-2 bg-gradient-to-l from-blue-400 to-[var(--brand-color-3)] text-white lg:pt-10">
-              <h3 className="font-bold text-4xl">{name}</h3>
-              <h4 className="font-bold">{position}</h4>
-              <p className="mt-10">{description}</p>
+            <div className="relative w-full bg-gradient-to-l from-blue-400 to-[var(--brand-color-3)]">
+              <Image
+                src={bg}
+                alt={name}
+                // className="absolute top-0 left-0 w-full h-3/5 rounded-bl-2xl rounded-br-2xl"
+                className="absolute h-full opacity-20 z-[0] right-0 brightness-[0.3] blur-[2px]"
+                style={{ objectFit: "cover", objectPosition: "top 20%" }}
+              />
+              <div className="px-2 md:px-10 pt-10 md:pt-28 justify-center flex-col gap-2 text-white z-10 relative">
+                <h3 className="font-bold text-4xl">{name}</h3>
+                <h4 className="font-bold">{position}</h4>
+                <p className="mt-10">{description}</p>
+              </div>
             </div>
           </div>
         </div>

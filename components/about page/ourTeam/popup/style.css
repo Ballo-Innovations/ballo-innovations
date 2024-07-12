@@ -28,3 +28,39 @@
     background-color: var(--brand-color-3);
   }
 }
+
+@media (height <= 600px) {
+  .team-member-photo {
+    padding-top: 68vw;
+  }
+}
+
+@media (width >= 1060px) {
+  .team-member-photo {
+    padding-top: 4.8rem;
+  }
+}
+
+@media (width >= 768px) {
+  .team-member-photo {
+    padding-top: 3.8rem;
+  }
+}
+
+@media (width < 768px) {
+  .team-member-photo {
+    padding-top: 10vh;
+  }
+}
+
+@media (width <= 400px) {
+  .team-member-photo {
+    padding-top: 20vh;
+  }
+}
+
+@media (width <= 350px) {
+  .team-member-photo {
+    padding-top: 40vh;
+  }
+}
