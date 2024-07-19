@@ -1,0 +1,16 @@
+.logos-slide {
+  animation: 30s scroll infinite linear;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}

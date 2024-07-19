@@ -1,0 +1,52 @@
+#get-quote-form input,
+#get-quote-form textarea,
+#get-quote-form .subject-select,
+#get-quote-form .submit-btn {
+  width: 100%;
+  border-radius: 30px;
+  padding: 1.25em 2em;
+  margin-bottom: 1.5em;
+  color: var(--brand-color-1);
+  background-color: white;
+}
+
+#get-quote-form input::placeholder {
+  color: #010055a1;
+  font-weight: bold;
+}
+
+#get-quote-form input,
+#get-quote-form textarea {
+  color: var(--brand-color-1);
+  font-weight: bolder;
+}
+
+#get-quote-form textarea::placeholder {
+  color: #010055a1;
+  font-weight: bold;
+}
+
+#get-quote-form .input-row {
+  justify-content: center;
+  gap: 1.25em;
+}
+
+#get-quote-form .submit-btn {
+  padding: 0.75em 1.5em;
+  background: linear-gradient(45deg, #0b4d8c, #2273af);
+  color: white;
+  font-size: 1.5em;
+}
+
+.quote-option-dropdown {
+  box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.7);
+}
+
+.quote-option-dropdown button {
+  padding: 0.75rem 2.5rem;
+}
+
+.quote-option-dropdown button:hover {
+  background-color: var(--brand-color-2);
+  color: white;
+}

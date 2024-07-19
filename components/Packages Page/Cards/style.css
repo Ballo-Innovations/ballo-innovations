@@ -1,0 +1,61 @@
+.package {
+  flex: 1;
+  text-align: center;
+}
+
+.package h3 {
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.package > div {
+  border-radius: 25px;
+  padding: 1em;
+  padding-bottom: 2em;
+}
+
+.package h4 {
+  font-weight: bold;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.package * {
+  transition: all ease-in-out 0.25s;
+}
+
+.package ul li {
+  align-items: center;
+  font-weight: 300;
+  padding-block: 0.5em;
+}
+
+.package ul li svg {
+  margin-right: 1em;
+  width: 2em;
+  min-width: 2em;
+  height: 2em;
+  opacity: 0.8;
+}
+
+@media (width <= 1024px) {
+  .packages-container {
+    flex-wrap: wrap;
+  }
+
+  .package {
+    width: 50%;
+  }
+}
+
+@media (width <= 576px) {
+  .package {
+    width: 100%;
+  }
+
+  .package h3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+}

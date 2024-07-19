@@ -1,0 +1,18 @@
+.packages-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10%;
+}
+
+@media (width <= 1024px) {
+  .packages-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (width <= 576px) {
+  .packages-container {
+    flex-direction: column;
+  }
+}

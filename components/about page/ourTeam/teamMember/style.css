@@ -1,0 +1,36 @@
+.team-member:hover {
+  cursor: pointer;
+}
+
+.details-btn {
+  transition: all 0.6s ease-in-out;
+  border-radius: 50% !important;
+}
+
+.show-details {
+  transform: scale(50);
+  z-index: 9;
+}
+
+.show-details img {
+  transition: all 0.15s ease-in-out;
+  opacity: 0;
+}
+
+.team-member:hover .hidden-details img {
+  transition: all 0.05s ease-in-out;
+  transition-delay: 0.5s;
+  transform: scale(1.1);
+}
+
+.delay-anim {
+  z-index: 9;
+}
+
+/* .team-member h3,
+.team-member p {
+  background: linear-gradient(to left, white, var(--brand-color-1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */

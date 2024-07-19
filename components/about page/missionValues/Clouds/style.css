@@ -1,0 +1,33 @@
+.cloud {
+  position: absolute;
+  top: 0;
+}
+
+.cloud:nth-child(5) {
+  left: 80%;
+  width: 20%;
+}
+
+.cloud:nth-child(4) {
+  left: 60%;
+  width: 25%;
+  top: -7%;
+}
+
+.cloud:nth-child(3) {
+  left: 60%;
+  width: 10%;
+}
+
+.cloud:nth-child(2) {
+  right: 19%;
+  width: 7%;
+  top: 14%;
+}
+
+.cloud:nth-child(1) {
+  top: 10%;
+  right: 2%;
+  width: 20%;
+  z-index: 5;
+}
