@@ -81,7 +81,7 @@ const OurTeam = () => {
         src={bg}
         alt="ballo innovations"
         quality={100}
-        className="z-0 absolute bottom-[7%] -left-[10%] scale-[1.3] opacity-80"
+        className="z-0 absolute top-[20%] -left-[10%] scale-[1.3] opacity-80"
         style={{
           objectFit: "cover",
           objectPosition: "center",

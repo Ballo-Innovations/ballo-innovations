@@ -44,7 +44,8 @@ const GetQuouteForm = () => {
   useEffect(() => {
     const packageSection = document.querySelector("#packages-section");
     showDropdown
-      ? packageSection.addEventListener("click", () => {
+      ? packageSection.addEventListener("click", (e) => {
+          console.log(e.target);
           setShowDropdown(false);
         })
       : packageSection.removeEventListener;
@@ -128,7 +129,14 @@ const GetQuouteForm = () => {
         </div>
 
         <div className="relative">
-          <div className="subject-select flex justify-between items-center">
+          <div
+            className="subject-select flex justify-between items-center cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault();
+              console.log(showDropdown);
+              setShowDropdown(!showDropdown);
+            }}
+          >
             <span
               className={`font-bold ${
                 !formDetails.subject && "text-[#010055a1]"
@@ -138,12 +146,7 @@ const GetQuouteForm = () => {
                 ? "I’d Like to get more Information on...."
                 : formDetails.subject}
             </span>
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                setShowDropdown(!showDropdown);
-              }}
-            >
+            <button>
               <svg
                 className={`transition-transform ${
                   showDropdown && "-rotate-180"

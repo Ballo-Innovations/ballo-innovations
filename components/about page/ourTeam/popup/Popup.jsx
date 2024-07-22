@@ -37,23 +37,25 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
           ></path>
         </svg>
       </button>
-      <div className="fade-in popup z-20 h-[100vh] w-[100vw] cursor-auto fixed flex-center overflow-x-hidden overflow-y-auto opacity-0">
+      <div className="fade-in popup z-20 h-[100dvh] w-[100dvw] cursor-auto fixed flex-center overflow-x-hidden overflow-y-auto opacity-0">
         <div className="relative overflow-visible ">
-          <div className="team-member-content relative flex flex-col md:flex-row w-screen min-h-[100vh] bg-gradient-to-l from-blue-400 to-[var(--brand-color-3)]">
-            <div className="team-socials gap-1 flex-center flex-col absolute left-5 top-[33.33%] md:top-[33.333%] z-30">
-              <Link
-                href="#"
-                onClick={toggleDetails}
-                className="hover:scale-125"
-              >
-                <Image src={linkedin} alt="linkedin" className="w-10" />{" "}
-              </Link>
-              <Link href="#" onClick={toggleDetails}>
-                <Image src={instagram} alt="instagram" className="w-10" />{" "}
-              </Link>
-              <Link href="#" onClick={toggleDetails}>
-                <Image src={facebook} alt="facebook" className="w-10" />{" "}
-              </Link>
+          <div className="team-member-content relative flex flex-col md:flex-row w-screen min-h-[100dvh] bg-gradient-to-l from-blue-400 to-[var(--brand-color-3)]">
+            <div className="absolute left-5 flex-center z-30 h-5/6 md:h-full">
+              <div className="team-socials gap-1 flex-center flex-col">
+                <Link
+                  href="#"
+                  onClick={toggleDetails}
+                  className="hover:scale-125"
+                >
+                  <Image src={linkedin} alt="linkedin" className="w-10" />{" "}
+                </Link>
+                <Link href="#" onClick={toggleDetails}>
+                  <Image src={instagram} alt="instagram" className="w-10" />{" "}
+                </Link>
+                <Link href="#" onClick={toggleDetails}>
+                  <Image src={facebook} alt="facebook" className="w-10" />{" "}
+                </Link>
+              </div>
             </div>
 
             <Image

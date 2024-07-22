@@ -10,7 +10,7 @@ const PackagesPage = () => {
     <main className="max-w-[w-100vw] overflow-hidden">
       <section
         className="relative text-white nav-padding pb-20 bg-[var(--brand-color-1)] overflow-hidden"
-        style={{ paddingTop: "25vh" }}
+        style={{ paddingTop: "25dvh" }}
         id="packages-section"
       >
         <Image
@@ -18,7 +18,6 @@ const PackagesPage = () => {
           alt="background"
           quality={100}
           className="fixed scale-[1] md:scale-[2.3] -left-[19%] md:-left-[12.25%] top-0 object-cover overflow-visible opacity-[0.12]"
-          style={{ height: "125%", width: "125%" }}
         />
 
         <div className="z-[2] px-[0.5em] md:px-[5em] mt-10">
