@@ -63,14 +63,14 @@ const BalloAdsDemo = () => {
             src={appleStore}
             alt="Available on Apple Store"
             quality={100}
-            className="mobile-app-1 opacity-0 absolute top-[48%] left-[10%] w-1/3"
+            className="mobile-app-1 opacity-0 absolute top-[48%] left-[10%] w-1/3 rounded-xl"
           />
 
           <Image
             src={playStore}
             alt="Available on Paly Store"
             quality={100}
-            className="mobile-app-2 opacity-0 absolute top-[62%] left-[10%] w-1/3"
+            className="mobile-app-2 opacity-0 absolute top-[62%] left-[10%] w-1/3 rounded-xl"
           />
         </div>
 
