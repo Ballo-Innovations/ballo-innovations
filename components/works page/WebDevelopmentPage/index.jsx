@@ -6,19 +6,27 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./style.css";
 
 import Image from "next/image";
-import background from "@/public/Ballo Logo New/svg/Ballo logo new-01.svg";
+import background from "@/public/Ballo Logo New/svg/Ballo logo new-06.svg";
 import background2 from "@/public/Backgrounds/About.png";
-import test1 from "@/public/projects/web-development/2.png";
-import test2 from "@/public/projects/web-development/4.png";
-import test3 from "@/public/projects/web-development/1.png";
-import test4 from "@/public/projects/web-development/10.png";
+import maluba from "@/public/projects/web-development/maluba-tv.png";
+import swr from "@/public/projects/web-development/swr.png";
+import insizwe from "@/public/projects/web-development/insizwe.png";
+import mudenda from "@/public/projects/web-development/mudenda-capital.png";
+import seneca from "@/public/projects/web-development/seneca-dsc.png";
 import { useState } from "react";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const WebDevelopmentPage = () => {
-  const works = [test4, test3, test2, test1];
+  const works = [
+    {cover: swr, link: "https://style-with-roses.vercel.app/"},
+    {cover: insizwe, link: "https://insizwebrokers.com/"},
+    {cover: mudenda, link: "https://insizwebrokers.com"},
+    {cover: seneca, link: "https://senecazambia.com/"}
+  ];
   const [freezeSlide, setFreezeSlide] = useState(true);
+  const [projectbg, setprojectbg] = useState('');
 
   // Tutorial link: https://www.youtube.com/watch?v=aAGypqJd818
 
@@ -38,11 +46,6 @@ const WebDevelopmentPage = () => {
       }
 
       return 0;
-    };
-
-    // Calculates each slides opacity based on it's current possition
-    const mapRange = (value, inMin, inMax, outMin, outMax) => {
-      return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
     };
 
     gsap.to(".slider", {
@@ -71,16 +74,6 @@ const WebDevelopmentPage = () => {
           const zIncrement = progress * 6000; // Value should depend on distance of last slide
           const currentZ = initialZ + zIncrement;
 
-          let opacity;
-
-          if (currentZ > -1500) {
-            opacity = mapRange(currentZ, -1500, 0, 0.5, 1); // Make slide fully visible when it's between -2500 and 0
-          } else {
-            opacity = mapRange(currentZ, -3000, -1500, 0, 0.5); // Make slide less visible as it moves furter back
-          }
-
-          slide.style.opacity = opacity;
-
           slide.style.transform = `translateX(-50%) translateY(-50%) translateZ(${currentZ}px)`; // Transform based on calculated current Z value
         },
       });
@@ -89,24 +82,33 @@ const WebDevelopmentPage = () => {
 
   return (
     <section id="work-web-dev" className="pt-[30vh] px-0">
+      {projectbg && (
+        <Image
+          id="works-default-bg"
+          src={projectbg}
+          alt="web development works"
+          quality={100}
+          className="fixed top-[55%] blur-sm"
+        />
+      )}
       <div className="flex flex-col">
         <div className="slider-container">
           <div className="slider">
             {works.map((work, index) => (
               <div
                 key={index}
-                className="slide overflow-visible"
+                className={`slide overflow-visible ${freezeSlide ? "opacity-0" : "opacity-100"}`}
                 id={`slide-${index + 1}`}
               >
-                <div className="slide-img relative overflow-hidden cursor-pointer">
+                <div className="slide-img relative overflow-hidden cursor-pointer" onMouseOver={() => setprojectbg(work.cover)} onTouchStart={() => setprojectbg(work.cover)} onMouseLeave={() => setprojectbg('')} onTouchEnd={() => setprojectbg('')}>
                   <div className="follow-link-bubble absolute w-full h-full flex-center opacity-0">
-                    <span className="border-4 border-white rounded-full text-white py-5 px-10 font-semibold text-4xl">
+                    <Link href={work.link} target="_blank" className="border-4 border-white rounded-full text-white py-5 px-10 font-semibold text-4xl">
                       View Project
-                    </span>
+                    </Link>
                   </div>
                   <Image
                     key={index}
-                    src={work}
+                    src={work.cover}
                     alt="web development works"
                     quality={100}
                     className="object-contain flex-center flex-col rounded-md"
