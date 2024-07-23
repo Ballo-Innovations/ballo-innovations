@@ -11,6 +11,7 @@ const CategoryLinks = ({ category }) => {
           alt="Mission and Values"
           quality={100}
           className="md:-ml-10"
+          style={{ width: category.width }}
         />
       </Link>
 

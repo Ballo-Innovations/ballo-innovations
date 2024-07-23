@@ -1,6 +1,5 @@
 import background from "@/public/Backgrounds/hero-bg.png";
 import Categories from "./categories/Categories";
-import "./style.css";
 
 const Works = () => {
   return (

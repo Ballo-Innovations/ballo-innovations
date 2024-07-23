@@ -7,7 +7,12 @@ import marketingAnalysis from "@/public/elements small/market-analysis.png";
 import strategy from "@/public/elements small/strategy.png";
 import research from "@/public/elements small/research-icon.png";
 import fingerprint from "@/public/elements small/fingerprint-icon.png";
-import content from "@/public/elements small/content-icon.png";
+import social_media_cover from "@/public/projects/project-covers/social-media-management.png";
+import web_development_cover from "@/public/projects/project-covers/web-development.png";
+import photography_cover from "@/public/projects/project-covers/photography.png";
+import graphic_design_cover from "@/public/projects/project-covers/graphic-design.png";
+import advertising_cover from "@/public/projects/project-covers/advertising.png";
+
 
 const services = [
   {
@@ -50,28 +55,33 @@ const services = [
 export const categoryPaths = [
   {
     name: "Social Media Management",
-    cover: phone,
+    cover: social_media_cover,
     path: "/works/social-media-management",
+    width: "2em"
   },
   {
     name: "Graphic Design",
-    cover: phone,
+    cover: graphic_design_cover,
     path: "/works/graphic-design",
+    width: "2em"
   },
   {
     name: "Photography",
-    cover: phone,
+    cover: photography_cover,
     path: "/works/photography",
+    width: "2em"
   },
   {
     name: "Web Development ",
-    cover: phone,
+    cover: web_development_cover,
     path: "/works/web-development",
+    width: "2em"
   },
   {
     name: "Advertising",
-    cover: phone,
+    cover: advertising_cover,
     path: "/works/advertising",
+    width: "2em"
   },
 ];
 
