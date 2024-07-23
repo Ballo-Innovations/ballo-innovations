@@ -53,8 +53,7 @@ body {
 
 section,
 nav {
-  padding-left: 3.5vw;
-  padding-right: 3.5vw;
+  padding-inline: 3.5vw;
   width: 100vw;
   overflow-x: hidden;
 }

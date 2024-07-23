@@ -10,10 +10,10 @@ const GraphicDesignPage = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-  const openLightbox = useCallback((event, { photo, index }) => {
+  const openLightbox = ({ photo, index }) => {
     setCurrentImage(index);
     setViewerIsOpen(true);
-  }, []);
+  };
 
   const closeLightbox = () => {
     setCurrentImage(0);
@@ -21,11 +21,10 @@ const GraphicDesignPage = () => {
   };
 
   return (
-    <section className="pt-[30vh] pb-10 bg-[var(--brand-color-5)] blue-black-bg-grandient-2">
+    <section className="pt-[30vh] pb-10 bg-[var(--brand-color-5)] blue-black-bg-grandient-2 pl-5 pr-8">
       <div className="flex flex-col">
         <div className="md:px-32 text-white text-center lg:text-start">
           <h1 className="subheading">Our Works</h1>
-
           <h2 className="text-3xl font-bold my-6">Graphic Design</h2>
         </div>
 
