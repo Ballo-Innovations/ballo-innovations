@@ -1,0 +1,30 @@
+#graphics-gallery .react-photo-gallery--gallery img:hover {
+  transform: scale(1.5) !important;
+  cursor: pointer;
+}
+
+#graphics-gallery img:nth-child(3) {
+  object-fit: cover;
+}
+
+#graphics-gallery img:nth-child(6) {
+  object-fit: cover;
+  object-position: 30% 50%;
+}
+
+#graphics-gallery img:nth-child(8) {
+  object-fit: cover;
+  object-position: right;
+}
+
+#graphics-gallery img:nth-child(10) {
+  object-fit: cover;
+}
+
+#graphics-gallery img:nth-child(12) {
+  object-fit: cover;
+}
+
+#graphics-gallery img:nth-child(13) {
+  object-fit: cover;
+}
