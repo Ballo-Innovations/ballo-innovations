@@ -1,8 +1,3 @@
-/* #categories-container .category-cover {
-    width: 20vw;
-} */
-
-#categories-container .category-cover {
-    width: 25vw;
-    height: 60vh;
+.category-card-container:hover .category-cover-img {
+    filter: drop-shadow(0 0 20px var(--brand-color-4));
 }
