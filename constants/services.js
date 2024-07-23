@@ -57,31 +57,26 @@ export const categoryPaths = [
     name: "Social Media Management",
     cover: social_media_cover,
     path: "/works/social-media-management",
-    width: "2em"
   },
   {
     name: "Graphic Design",
     cover: graphic_design_cover,
     path: "/works/graphic-design",
-    width: "2em"
   },
   {
     name: "Photography",
     cover: photography_cover,
     path: "/works/photography",
-    width: "2em"
   },
   {
     name: "Web Development ",
     cover: web_development_cover,
     path: "/works/web-development",
-    width: "2em"
   },
   {
     name: "Advertising",
     cover: advertising_cover,
     path: "/works/advertising",
-    width: "2em"
   },
 ];
 

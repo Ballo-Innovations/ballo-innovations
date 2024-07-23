@@ -5,13 +5,12 @@ import Link from 'next/link'
 const CategoryLinks = ({ category }) => {
   return (
     <div className="flex-center flex-col md:w-[30%] mt-10">
-      <Link href={`${category.path}`} className='w-1/2 flex-center'>
+      <Link href={`${category.path}`} className='flex-center category-cover'>
         <Image
           src={category.cover}
           alt="Mission and Values"
           quality={100}
           className="md:-ml-10"
-          style={{ width: category.width }}
         />
       </Link>
 

@@ -1,0 +1,8 @@
+/* #categories-container .category-cover {
+    width: 20vw;
+} */
+
+#categories-container .category-cover {
+    width: 25vw;
+    height: 60vh;
+}
