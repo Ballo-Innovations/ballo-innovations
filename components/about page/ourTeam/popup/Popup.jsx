@@ -45,14 +45,22 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
                 <Link
                   href="#"
                   onClick={toggleDetails}
-                  className="hover:scale-125"
+                  className="hover:scale-110"
                 >
                   <Image src={linkedin} alt="linkedin" className="w-10" />{" "}
                 </Link>
-                <Link href="#" onClick={toggleDetails}>
+                <Link
+                  href="#"
+                  onClick={toggleDetails}
+                  className="hover:scale-110"
+                >
                   <Image src={instagram} alt="instagram" className="w-10" />{" "}
                 </Link>
-                <Link href="#" onClick={toggleDetails}>
+                <Link
+                  href="#"
+                  onClick={toggleDetails}
+                  className="hover:scale-110"
+                >
                   <Image src={facebook} alt="facebook" className="w-10" />{" "}
                 </Link>
               </div>

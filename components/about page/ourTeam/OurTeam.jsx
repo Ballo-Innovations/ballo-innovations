@@ -9,7 +9,8 @@ import michael from "@/public/team/michael.jpg";
 import emmanuel from "@/public/team/emmanuel_phiri.jpg";
 import mwali from "@/public/team/mwali.jpg";
 import lombeBG from "@/public/team/lombe-bg.jpg";
-import georgeBG from "@/public/team/george-bg.jpg";
+import georgeBG from "@/public/team/george-bg.png";
+import michaelBG from "@/public/team/michael-bg.jpg";
 import jonahBG from "@/public/team/jonah-bg.jpg";
 import emmaBG from "@/public/team/emma-bg.jpg";
 import mwaliBG from "@/public/team/mwali-bg.jpg";
@@ -53,7 +54,7 @@ const OurTeam = () => {
       name: "Michael Chuba",
       position: "Software Engineer",
       photo: michael,
-      bg: georgeBG,
+      bg: michaelBG,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolores accusamus veritatis. Eaque cumque doloremque sunt, similique ex magni voluptates, velit dolores veniam rem recusandae accusantium rerum consequuntur molestias soluta.",
     },
