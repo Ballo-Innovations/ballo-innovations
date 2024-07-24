@@ -22,6 +22,7 @@ const GraphicDesignPage = () => {
 
   return (
     <section className="pt-[30vh] pb-10 bg-[var(--brand-color-5)] blue-black-bg-grandient-2">
+      {/* <section className="pt-[30vh] pb-10 bg-[var(--brand-color-5)] blue-black-bg-grandient-2 pl-10 pr-10"></section> */}
       <div className="flex flex-col">
         <div className="md:px-32 text-white text-center lg:text-start">
           <h1 className="subheading">Our Works</h1>

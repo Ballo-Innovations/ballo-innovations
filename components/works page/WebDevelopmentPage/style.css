@@ -101,7 +101,7 @@
 #work-web-dev .slider #slide-4 {
   position: absolute;
   top: 55%;
-  left: 77%;
+  left: 76%;
   transform: translateX(-50%) translateY(-50%) translateZ(-1500px);
 }
 
@@ -115,7 +115,7 @@
 #work-web-dev .slider #slide-2 {
   position: absolute;
   top: 55%;
-  left: 77%;
+  left: 75%;
   transform: translateX(-50%) translateY(-50%) translateZ(-4500px);
 }
 
@@ -132,40 +132,36 @@
 
 .slide-img:hover .follow-link-bubble {
   opacity: 1;
-  background: rgba(1, 0, 31, 0.95);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95));
   border-radius: 5px;
 }
 
 @media (width <= 768px) {
   #work-web-dev .slider #slide-4 {
     position: absolute;
-    top: 90%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateZ(-1500px);
-    opacity: 0; /*Last item has opacity 1*/
   }
 
   #work-web-dev .slider #slide-3 {
     position: absolute;
-    top: 90%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateZ(-3000px); /*Increment translateZ by 2500px*/
-    opacity: 0; /*Second last item has opacity 0.5*/
   }
 
   #work-web-dev .slider #slide-2 {
     position: absolute;
-    top: 90%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateZ(-4500px);
-    opacity: 0;
   }
 
   #work-web-dev .slider #slide-1 {
     position: absolute;
-    top: 90%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateZ(-6000px);
-    opacity: 0;
   }
 }

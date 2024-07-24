@@ -88,7 +88,7 @@ const WebDevelopmentPage = () => {
           src={projectbg}
           alt="web development works"
           quality={100}
-          className="fixed top-[55%] blur-sm"
+          className="fixed top-[55%] blur-sm opacity-20"
         />
       )}
       <div className="flex flex-col">

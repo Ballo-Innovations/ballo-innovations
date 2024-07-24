@@ -5,12 +5,12 @@ import Link from 'next/link'
 const CategoryLinks = ({ category }) => {
   return (
     <div className="flex-center flex-col md:w-[30%] mt-10 category-card-container">
-      <Link href={`${category.path}`} className='flex-center md:w-[30vw] md:h-[50vh] overflow-visible'>
+      <Link href={`${category.path}`} className='flex-center w-full md:w-[30vw] md:h-[50vh] overflow-visible'>
         <Image
           src={category.cover}
           alt="Mission and Values"
           quality={100}
-          className="md:-ml-10 h-full w-auto object-contain overflow-visible category-cover-img"
+          className="md:-ml-10 w-[80vh] md:w-auto h-full object-contain overflow-visible category-cover-img"
         />
       </Link>
 
