@@ -21,7 +21,7 @@ const GraphicDesignPage = () => {
   };
 
   return (
-    <section className="pt-[30vh] pb-10 bg-[var(--brand-color-5)] blue-black-bg-grandient-2 pl-9 pr-15">
+    <section className="pt-[30vh] pb-10 bg-[var(--brand-color-5)] blue-black-bg-grandient-2 md:pl-9 md:pr-15">
       <div className="flex flex-col">
         <div className="md:px-32 text-white text-center lg:text-start">
           <h1 className="subheading">Our Works</h1>
@@ -29,7 +29,7 @@ const GraphicDesignPage = () => {
         </div>
 
         <div id="graphics-gallery">
-          <Gallery photos={graphicDesignWorks} onClick={openLightbox} />
+          <Gallery photos={graphicDesignWorks} onClick={() => {openLightbox(); console.log("clicked")}} />
           <ModalGateway>
             {viewerIsOpen ? (
               <Modal onClose={closeLightbox}>
