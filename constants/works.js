@@ -22,16 +22,16 @@ import bayport_time_is_money from "@/public/projects/graphic-design/21.jpg";
 import grow_your_future from "@/public/projects/graphic-design/22.jpg";
 
 export const graphicDesignWorks = [
-  { src: grow_your_future.src, width: 3, height: 2 },
+  { src: grow_your_future.src, width: 5, height: 3 },
   { src: workers_day.src, width: 9, height: 7 },
-  { src: discover_van_front.src, width: 3, height: 4 },
-  { src: insizswe_experience_security.src, width: 3, height: 2 },
+  { src: discover_van_front.src, width: 3, height: 3 },
+  { src: insizswe_experience_security.src, width: 5, height: 3 },
   { src: bayport_time_is_money.src, width: 6, height: 4 },
   { src: graphic_5.src, width: 10, height: 9 },
   { src: swr_community_building.src, width: 6, height: 4 },
-  { src: graphic_8.src, width: 1, height: 1 },
+  { src: graphic_8.src, width: 5, height: 4 },
   { src: fiz_tourism_show.src, width: 4, height: 3 },
-  { src: iv_starts_with_within.src, width: 1, height: 1 },
+  { src: iv_starts_with_within.src, width: 3, height: 2 },
   { src: mudenda_learning.src, width: 4, height: 3 },
   { src: debbie_in_debt.src, width: 1, height: 1 },
   { src: discover_van_back.src, width: 1, height: 1 },
