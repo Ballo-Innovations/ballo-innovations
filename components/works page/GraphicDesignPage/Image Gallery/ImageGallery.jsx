@@ -1,3 +1,5 @@
+'use client'
+
 import workers_day from "@/public/projects/graphic-design/1.png";
 import eu from "@/public/projects/graphic-design/2.png";
 import debbie_in_debt from "@/public/projects/graphic-design/3.png";
