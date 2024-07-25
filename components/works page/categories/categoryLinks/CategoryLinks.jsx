@@ -1,11 +1,19 @@
-import Image from 'next/image'
-import arrow from '@/public/elements small/10.png'
-import Link from 'next/link'
+import Image from "next/image";
+import arrow from "@/public/elements small/10.png";
+import Link from "next/link";
+import "./style.css";
 
 const CategoryLinks = ({ category }) => {
   return (
-    <div className="flex-center flex-col md:w-[30%] mt-10 category-card-container">
-      <Link href={`${category.path}`} className='flex-center w-full md:w-[30vw] md:h-[50vh] overflow-visible'>
+    <div className="flex-center flex-col md:w-[30%] mt-10 category-card-container px-3">
+      <Link
+        href={`${category.path}`}
+        className={`flex-center ${
+          category.name === "Social Media Management" ? "w-2/3" : "w-full"
+        } ${
+          category.name === "Advertising" ? "w-9/12" : "w-full"
+        } md:w-[30vw] md:h-[50vh] overflow-visible`}
+      >
         <Image
           src={category.cover}
           alt="Mission and Values"
@@ -14,19 +22,24 @@ const CategoryLinks = ({ category }) => {
         />
       </Link>
 
-      <Link href={`${category.path}`} className='flex relative gap-5 mt-3 ml-10 md:ml-0'>
-        <h2 className='font-bold text-3xl break-words w-min text-center'>{category.name}</h2>
+      <Link
+        href={`${category.path}`}
+        className="flex relative gap-5 mt-3 ml-10 md:ml-0"
+      >
+        <h2 className="font-bold text-3xl break-words w-min text-center">
+          {category.name}
+        </h2>
         <span className="arrow flex-center">
           <Image
             src={arrow}
             alt={category.name}
             quality={100}
-            className='w-10 md:opacity-0 lg:opacity-100'
+            className="w-10 md:opacity-0 lg:opacity-100"
           />
         </span>
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default CategoryLinks
+export default CategoryLinks;
