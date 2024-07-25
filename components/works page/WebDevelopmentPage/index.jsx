@@ -20,13 +20,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 const WebDevelopmentPage = () => {
   const works = [
-    {cover: swr, link: "https://style-with-roses.vercel.app/"},
-    {cover: insizwe, link: "https://insizwebrokers.com/"},
-    {cover: mudenda, link: "https://insizwebrokers.com"},
-    {cover: seneca, link: "https://senecazambia.com/"}
+    { cover: swr, link: "https://style-with-roses.vercel.app/" },
+    { cover: insizwe, link: "https://insizwebrokers.com/" },
+    { cover: mudenda, link: "https://insizwebrokers.com" },
+    { cover: seneca, link: "https://senecazambia.com/" },
   ];
   const [freezeSlide, setFreezeSlide] = useState(true);
-  const [projectbg, setprojectbg] = useState('');
 
   // Tutorial link: https://www.youtube.com/watch?v=aAGypqJd818
 
@@ -82,27 +81,24 @@ const WebDevelopmentPage = () => {
 
   return (
     <section id="work-web-dev" className="pt-[30vh] px-0">
-      {projectbg && (
-        <Image
-          id="works-default-bg"
-          src={projectbg}
-          alt="web development works"
-          quality={100}
-          className="fixed top-[55%] blur-sm opacity-20"
-        />
-      )}
       <div className="flex flex-col">
         <div className="slider-container">
           <div className="slider">
             {works.map((work, index) => (
               <div
                 key={index}
-                className={`slide overflow-visible ${freezeSlide ? "opacity-0" : "opacity-100"}`}
+                className={`slide overflow-visible ${
+                  freezeSlide ? "opacity-0" : "opacity-100"
+                }`}
                 id={`slide-${index + 1}`}
               >
-                <div className="slide-img relative overflow-hidden cursor-pointer" onMouseOver={() => setprojectbg(work.cover)} onTouchStart={() => setprojectbg(work.cover)} onMouseLeave={() => setprojectbg('')} onTouchEnd={() => setprojectbg('')}>
+                <div className="slide-img relative overflow-hidden cursor-pointer">
                   <div className="follow-link-bubble absolute w-full h-full flex-center opacity-0">
-                    <Link href={work.link} target="_blank" className="border-4 border-white rounded-full text-white py-5 px-10 font-semibold text-4xl">
+                    <Link
+                      href={work.link}
+                      target="_blank"
+                      className="border-4 border-white rounded-full text-white py-5 px-10 font-semibold text-4xl"
+                    >
                       View Project
                     </Link>
                   </div>
