@@ -21,34 +21,6 @@ const Navbar = () => {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const [lightBackground, setLightBackground] = useState(true);
-
-  useEffect(() => {
-    // setLightBackground(pathname.includes("/works/"));
-    setLightBackground(false);
-    const onScroll = () => {
-      const positionY = window.scrollY;
-      if (positionY > 50) {
-        setLightBackground(false);
-      } else {
-        if (pathname.includes("/works/")) {
-          // setLightBackground(true);
-          setLightBackground(false);
-        }
-        if (!pathname.includes("/works/")) {
-          setLightBackground(false);
-        }
-      }
-    };
-
-    // Attach the scroll event listener
-    window.addEventListener("scroll", onScroll);
-
-    // Cleanup function to remove the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, [pathname]);
 
   useEffect(() => {
     // Scrolled page logic
@@ -143,9 +115,7 @@ const Navbar = () => {
   return (
     <nav
       id="navbar"
-      className={`opacity-0 p-0 ${
-        lightBackground ? "light-bg-nav" : ""
-      } text-white top-0 ${scrolled ? "fixed" : "absolute"} ${
+      className={`opacity-0 p-0 text-white top-0 ${scrolled ? "fixed" : "absolute"} ${
         scrolled || showMenu ? "nav-scrolled" : ""
       }`}
     >
@@ -277,24 +247,12 @@ const Navbar = () => {
       <div className="px-10 flex items-center flex-col lg:flex-row">
         <div className="w-screen lg:w-1/4 flex justify-between items-center max-sm:pt-2">
           <Link href="/" className="z-[3]">
-            {!lightBackground && (
-              <Image
-                src={logo}
-                alt="Logo"
-                quality={100}
-                className="hidden lg:block logo-white w-11/12"
-              />
-            )}
-
-            {lightBackground && (
-              <Image
-                src={logo_2}
-                alt="Logo"
-                quality={100}
-                id="white-large-logo"
-                className="hidden lg:block logo-white w-11/12"
-              />
-            )}
+            <Image
+              src={logo}
+              alt="Logo"
+              quality={100}
+              className="hidden lg:block logo-white w-11/12"
+            />
 
             <Image
               src={logo_sm}
@@ -304,10 +262,6 @@ const Navbar = () => {
               className={`w-12 lg:hidden logo-white m-2 ${
                 showMenu ? "hidden" : ""
               }`}
-              style={{
-                display:
-                  pathname.includes("/works/") && !scrolled ? "none" : "",
-              }}
             />
 
             <Image
@@ -317,11 +271,7 @@ const Navbar = () => {
               id="blue-mobile-logo"
               className={`w-12 lg:hidden logo-white m-2 pt-1 opacity-0 ${
                 !showMenu ? "hidden" : ""
-              }`}
-              style={{
-                display:
-                  pathname.includes("/works/") && !scrolled ? "block" : "",
-              }}
+              }`} 
             />
           </Link>
 
@@ -334,11 +284,7 @@ const Navbar = () => {
                 viewBox="-5 -7 24 24"
               >
                 <path
-                  fill={
-                    pathname.includes("/works/") && !scrolled
-                      ? "#020055"
-                      : "white"
-                  }
+                  fill="white"
                   d="M1 0h5a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2m7 8h5a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2M1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2"
                 ></path>
               </svg>
