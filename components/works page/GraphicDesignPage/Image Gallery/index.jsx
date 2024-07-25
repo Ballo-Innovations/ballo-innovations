@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import workers_day from "@/public/projects/graphic-design/1.png";
 import eu from "@/public/projects/graphic-design/2.png";
@@ -25,39 +25,41 @@ import bayport_banking from "@/public/projects/graphic-design/20.jpg";
 import bayport_time_is_money from "@/public/projects/graphic-design/21.jpg";
 import grow_your_future from "@/public/projects/graphic-design/22.jpg";
 
-import LightGallery from 'lightgallery/react';
+import LightGallery from "lightgallery/react";
 
 // import styles
-import 'lightgallery/css/lightgallery.css';
-import 'lightgallery/css/lg-zoom.css';
-import 'lightgallery/css/lg-thumbnail.css';
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
 // import plugins if you need
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import lgZoom from 'lightgallery/plugins/zoom';
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
 
-import fjGallery from 'flickr-justified-gallery';
+import fjGallery from "flickr-justified-gallery";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
 
 const ImageGallery = () => {
   useEffect(() => {
-    fjGallery(document.querySelectorAll('.gallery'), {
-      itemSelector: '.gallery__item',
-      rowHeight: 450,
-      lastRow: 'start',
-      gutter: 7,
-      rowHeightTolerance: 0.1,
-      calculateItemsHeight: false,
-    });
+    if (typeof window !== "undefined") {
+      fjGallery(document.querySelectorAll(".gallery"), {
+        itemSelector: ".gallery__item",
+        rowHeight: 450,
+        lastRow: "start",
+        gutter: 7,
+        rowHeightTolerance: 0.1,
+        calculateItemsHeight: false,
+      });
+    }
   }, []);
 
   return (
     <div>
       <LightGallery
         speed={500}
-        plugins={[lgThumbnail, lgZoom ]}
-        elementClassNames={'gallery'}
+        plugins={[lgThumbnail, lgZoom]}
+        elementClassNames={"gallery"}
         mode="lg-fade"
         pager={false}
         thumbnail={true}
@@ -261,7 +263,7 @@ const ImageGallery = () => {
             className="img-responsive"
           />
         </Link>
-        
+
         <Link href={eu.src} className="gallery__item">
           <Image
             id="works-default-bg"
@@ -285,6 +287,5 @@ const ImageGallery = () => {
     </div>
   );
 };
-
 
 export default ImageGallery;
