@@ -40,7 +40,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
 
-const index = () => {
+const ImageGallery = () => {
   useEffect(() => {
     fjGallery(document.querySelectorAll('.gallery'), {
       itemSelector: '.gallery__item',
@@ -287,4 +287,4 @@ const index = () => {
 };
 
 
-export default index;
+export default ImageGallery;

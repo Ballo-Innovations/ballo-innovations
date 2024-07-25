@@ -1,5 +1,5 @@
 "use client";
-import ImageGallery from "./Image Gallery/ImageGallery"
+import ImageGallery from "./Image Gallery"
 
 const GraphicDesignPage = () => {
 
