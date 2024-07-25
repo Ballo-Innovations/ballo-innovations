@@ -4,7 +4,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import "./style.css";
-import background from "@/public/team/lines-pattern.png";
 import linkedin from "@/public/elements small/linkedin-rect.png";
 import instagram from "@/public/elements small/instagram-solid.png";
 import facebook from "@/public/elements small/facebook-rect.png";
