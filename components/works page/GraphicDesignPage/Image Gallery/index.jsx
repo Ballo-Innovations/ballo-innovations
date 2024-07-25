@@ -42,15 +42,22 @@ import { useEffect } from "react";
 
 const ImageGallery = () => {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      fjGallery(document.querySelectorAll(".gallery"), {
-        itemSelector: ".gallery__item",
-        rowHeight: 450,
-        lastRow: "start",
-        gutter: 7,
-        rowHeightTolerance: 0.1,
-        calculateItemsHeight: false,
-      });
+    // Ensure the document is ready before selecting elements
+    if (typeof window !== "undefined" && typeof document !== "undefined") {
+      // Select the gallery elements
+      const galleries = document.querySelectorAll(".gallery");
+
+      // Ensure galleries exist
+      if (galleries.length > 0) {
+        fjGallery(galleries, {
+          itemSelector: ".gallery__item",
+          rowHeight: 450,
+          lastRow: "start",
+          gutter: 7,
+          rowHeightTolerance: 0.1,
+          calculateItemsHeight: false,
+        });
+      }
     }
   }, []);
 
