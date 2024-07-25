@@ -8,6 +8,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "./style.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 const Cards = () => {
@@ -109,7 +110,7 @@ const Cards = () => {
           id="view-portfolio"
           className="service-card overflow-hidden flex-center cursor-pointer text-white w-80 lg:w-[30vw] gap-1 p-5 rounded-[50px] shadow-2xl"
         >
-          <div id="view-portfolio-bg" className="flex-center">
+          <Link href="/works" id="view-portfolio-bg" className="flex-center">
             <div className="flex-center text-center anim gap-2">
               <h2 className={`font-bold text-[1.6em] py-2 leading-7 anim`}>
                 View Our Portifolio
@@ -130,7 +131,7 @@ const Cards = () => {
                 </svg>
               </div>
             </div>
-          </div>
+          </Link>
           <div class="blob" />
         </div>
       </div>

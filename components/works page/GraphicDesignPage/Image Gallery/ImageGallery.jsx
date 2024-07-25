@@ -32,7 +32,6 @@ import 'lightgallery/css/lg-thumbnail.css';
 // import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
-import lgFullscreen from 'lightgallery/plugins/fullScreen';
 
 import fjGallery from 'flickr-justified-gallery';
 import Link from "next/link";
@@ -55,7 +54,7 @@ const index = () => {
     <div>
       <LightGallery
         speed={500}
-        plugins={[lgThumbnail, lgZoom, lgFullscreen ]}
+        plugins={[lgThumbnail, lgZoom ]}
         elementClassNames={'gallery'}
         mode="lg-fade"
         pager={false}
