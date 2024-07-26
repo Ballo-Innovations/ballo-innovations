@@ -39,39 +39,31 @@ import fjGallery from "flickr-justified-gallery";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
+import "./style.css";
 
 const ImageGallery = () => {
-  useEffect(() => {
-    // Ensure the document is ready before selecting elements
-    if (typeof window !== "undefined" && typeof document !== "undefined") {
-      // Select the gallery elements
-      const galleries = document.querySelectorAll(".gallery");
-
-      // Ensure galleries exist
-      if (galleries.length > 0) {
-        fjGallery(galleries, {
-          itemSelector: ".gallery__item",
-          rowHeight: 450,
-          lastRow: "start",
-          gutter: 7,
-          rowHeightTolerance: 0.1,
-          calculateItemsHeight: false,
-        });
-      }
-    }
-  }, []);
+  // useEffect(() => {
+  //   fjGallery(document.querySelectorAll(".gallery"), {
+  //     itemSelector: ".gallery-item",
+  //     rowHeight: 450,
+  //     lastRow: "start",
+  //     gutter: 7,
+  //     rowHeightTolerance: 0.1,
+  //     calculateItemsHeight: false,
+  //   });
+  // }, []);
 
   return (
     <div>
       <LightGallery
         speed={500}
         plugins={[lgThumbnail, lgZoom]}
-        elementClassNames={"gallery"}
+        elementClassNames={"gallery-container"}
         mode="lg-fade"
         pager={false}
         thumbnail={true}
       >
-        <Link href={workers_day.src} className="gallery__item">
+        <Link href={workers_day.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={workers_day}
@@ -81,7 +73,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={grow_your_future.src} className="gallery__item">
+        <Link href={grow_your_future.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={grow_your_future}
@@ -91,7 +83,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={discover_van_front_lg.src} className="gallery__item">
+        <Link href={discover_van_front_lg.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={discover_van_front}
@@ -101,7 +93,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={insizswe_experience_security.src} className="gallery__item">
+        <Link href={insizswe_experience_security.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={insizswe_experience_security}
@@ -111,7 +103,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={bayport_time_is_money.src} className="gallery__item">
+        <Link href={bayport_time_is_money.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={bayport_time_is_money}
@@ -121,7 +113,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={swr_community_building.src} className="gallery__item">
+        <Link href={swr_community_building.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={swr_community_building}
@@ -131,7 +123,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={graphic_5.src} className="gallery__item">
+        <Link href={graphic_5.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={graphic_5}
@@ -141,7 +133,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={discover_van_back_lg.src} className="gallery__item">
+        <Link href={discover_van_back_lg.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={discover_van_back}
@@ -151,7 +143,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={graphic_8.src} className="gallery__item">
+        <Link href={graphic_8.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={graphic_8}
@@ -161,7 +153,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={fiz_tourism_show.src} className="gallery__item">
+        <Link href={fiz_tourism_show.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={fiz_tourism_show}
@@ -171,7 +163,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={iv_starts_with_within.src} className="gallery__item">
+        <Link href={iv_starts_with_within.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={iv_starts_with_within}
@@ -181,7 +173,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={mudenda_learning.src} className="gallery__item">
+        <Link href={mudenda_learning.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={mudenda_learning}
@@ -191,7 +183,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={debbie_in_debt.src} className="gallery__item">
+        <Link href={debbie_in_debt.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={debbie_in_debt}
@@ -201,7 +193,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={insizwe_motor_insurance.src} className="gallery__item">
+        <Link href={insizwe_motor_insurance.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={insizwe_motor_insurance}
@@ -211,7 +203,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={insizwe_med.src} className="gallery__item">
+        <Link href={insizwe_med.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={insizwe_med}
@@ -221,7 +213,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={fiz_chess.src} className="gallery__item">
+        <Link href={fiz_chess.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={fiz_chess}
@@ -231,7 +223,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={bayport_banking.src} className="gallery__item">
+        <Link href={bayport_banking.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={bayport_banking}
@@ -241,7 +233,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={swr_congrats.src} className="gallery__item">
+        <Link href={swr_congrats.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={swr_congrats}
@@ -251,7 +243,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={mining_indaba.src} className="gallery__item">
+        <Link href={mining_indaba.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={mining_indaba}
@@ -261,7 +253,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={iv_winter_tips.src} className="gallery__item">
+        <Link href={iv_winter_tips.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={iv_winter_tips}
@@ -271,7 +263,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={eu.src} className="gallery__item">
+        <Link href={eu.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={eu}
@@ -281,7 +273,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={graphic_13.src} className="gallery__item">
+        <Link href={graphic_13.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={graphic_13}

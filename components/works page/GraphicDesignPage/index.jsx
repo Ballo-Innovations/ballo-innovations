@@ -1,8 +1,6 @@
-"use client";
-import ImageGallery from "./Image Gallery"
+import ImageGallery from "./Image Gallery";
 
 const GraphicDesignPage = () => {
-
   return (
     <section className="pt-[30vh] pb-10 bg-[var(--brand-color-5)] blue-black-bg-grandient-2 md:pl-9 md:pr-15">
       <div className="flex flex-col">
