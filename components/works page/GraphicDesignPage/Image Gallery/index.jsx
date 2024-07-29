@@ -39,20 +39,19 @@ import fjGallery from "flickr-justified-gallery";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
+import $ from "jquery";
+
 // import "./style.css";
 
 const ImageGallery = () => {
   useEffect(() => {
-    const galleries = document.querySelectorAll(".gallery");
-    galleries.forEach((gallery) => {
-      fjGallery(gallery, {
-        itemSelector: ".gallery-item",
-        rowHeight: 450,
-        lastRow: "start",
-        gutter: 7,
-        rowHeightTolerance: 0.1,
-        calculateItemsHeight: false,
-      });
+    fjGallery(document.querySelectorAll(".gallery"), {
+      itemSelector: ".gallery-item",
+      rowHeight: 450,
+      lastRow: "start",
+      gutter: 7,
+      rowHeightTolerance: 0.1,
+      calculateItemsHeight: false,
     });
   }, []);
 
