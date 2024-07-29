@@ -43,25 +43,25 @@ import { useEffect } from "react";
 
 const ImageGallery = () => {
   useEffect(() => {
-    fjGallery(document.querySelectorAll(".gallery"), {
-      itemSelector: ".gallery-item",
-      rowHeight: 450,
-      lastRow: "start",
-      gutter: 7,
-      rowHeightTolerance: 0.1,
-      calculateItemsHeight: false,
+    const galleries = document.querySelectorAll(".gallery");
+    galleries.forEach((gallery) => {
+      fjGallery(gallery, {
+        itemSelector: ".gallery-item",
+        rowHeight: 450,
+        lastRow: "start",
+        gutter: 7,
+        rowHeightTolerance: 0.1,
+        calculateItemsHeight: false,
+      });
     });
   }, []);
 
   return (
     <div>
       <LightGallery
-        // speed={500}
+        speed={500}
         plugins={[lgThumbnail, lgZoom]}
         elementClassNames={"gallery"}
-        // mode="lg-fade"
-        // pager={false}
-        // thumbnail={true}
       >
         <Link href={workers_day.src} className="gallery-item">
           <Image
