@@ -39,29 +39,29 @@ import fjGallery from "flickr-justified-gallery";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
-import "./style.css";
+// import "./style.css";
 
 const ImageGallery = () => {
-  // useEffect(() => {
-  //   fjGallery(document.querySelectorAll(".gallery"), {
-  //     itemSelector: ".gallery-item",
-  //     rowHeight: 450,
-  //     lastRow: "start",
-  //     gutter: 7,
-  //     rowHeightTolerance: 0.1,
-  //     calculateItemsHeight: false,
-  //   });
-  // }, []);
+  useEffect(() => {
+    fjGallery(document.querySelectorAll(".gallery"), {
+      itemSelector: ".gallery-item",
+      rowHeight: 450,
+      lastRow: "start",
+      gutter: 7,
+      rowHeightTolerance: 0.1,
+      calculateItemsHeight: false,
+    });
+  }, []);
 
   return (
     <div>
       <LightGallery
-        speed={500}
+        // speed={500}
         plugins={[lgThumbnail, lgZoom]}
-        elementClassNames={"gallery-container"}
-        mode="lg-fade"
-        pager={false}
-        thumbnail={true}
+        elementClassNames={"gallery"}
+        // mode="lg-fade"
+        // pager={false}
+        // thumbnail={true}
       >
         <Link href={workers_day.src} className="gallery-item">
           <Image
