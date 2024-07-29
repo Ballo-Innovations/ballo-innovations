@@ -39,18 +39,26 @@ import fjGallery from "flickr-justified-gallery";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
-import "./style.css";
+import $ from "jquery";
+
+// import "./style.css";
 
 const ImageGallery = () => {
   useEffect(() => {
-    fjGallery(document.querySelectorAll(".gallery"), {
-      itemSelector: ".gallery-item",
-      rowHeight: 450,
-      lastRow: "start",
-      gutter: 7,
-      rowHeightTolerance: 0.1,
-      calculateItemsHeight: false,
-    });
+    if (typeof window !== "undefined") {
+      $(document).ready(() => {
+        $(".gallery").each((index, element) => {
+          fjGallery($(element), {
+            itemSelector: ".gallery-item",
+            rowHeight: 450,
+            lastRow: "start",
+            gutter: 7,
+            rowHeightTolerance: 0.1,
+            calculateItemsHeight: false,
+          });
+        });
+      });
+    }
   }, []);
 
   return (
@@ -58,10 +66,7 @@ const ImageGallery = () => {
       <LightGallery
         speed={500}
         plugins={[lgThumbnail, lgZoom]}
-        elementClassNames={"gallery-container"}
-        mode="lg-fade"
-        pager={false}
-        thumbnail={true}
+        elementClassNames={"gallery"}
       >
         <Link href={workers_day.src} className="gallery-item">
           <Image
