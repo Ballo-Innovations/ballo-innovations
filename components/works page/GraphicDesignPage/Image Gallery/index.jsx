@@ -45,13 +45,17 @@ import $ from "jquery";
 
 const ImageGallery = () => {
   useEffect(() => {
-    fjGallery(document.querySelectorAll(".gallery"), {
-      itemSelector: ".gallery-item",
-      rowHeight: 450,
-      lastRow: "start",
-      gutter: 7,
-      rowHeightTolerance: 0.1,
-      calculateItemsHeight: false,
+    $(document).ready(() => {
+      $(".gallery").each((index, element) => {
+        fjGallery($(element), {
+          itemSelector: ".gallery-item",
+          rowHeight: 450,
+          lastRow: "start",
+          gutter: 7,
+          rowHeightTolerance: 0.1,
+          calculateItemsHeight: false,
+        });
+      });
     });
   }, []);
 
