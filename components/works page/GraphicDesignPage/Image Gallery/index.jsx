@@ -38,29 +38,10 @@ import lgZoom from "lightgallery/plugins/zoom";
 // import fjGallery from "flickr-justified-gallery";
 import Link from "next/link";
 import Image from "next/image";
-// import { useEffect } from "react";
-// import $ from "jquery";
 
 import "./style.css";
 
 const ImageGallery = () => {
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     $(document).ready(() => {
-  //       $(".gallery").each((index, element) => {
-  //         fjGallery($(element), {
-  //           itemSelector: ".gallery-item",
-  //           rowHeight: 450,
-  //           lastRow: "start",
-  //           gutter: 7,
-  //           rowHeightTolerance: 0.1,
-  //           calculateItemsHeight: false,
-  //         });
-  //       });
-  //     });
-  //   }
-  // }, []);
-
   return (
     <div>
       <LightGallery
@@ -68,7 +49,7 @@ const ImageGallery = () => {
         plugins={[lgThumbnail, lgZoom]}
         elementClassNames={"gallery-container"}
       >
-        <Link href={workers_day.src} className="gallery-item">
+        <Link href={workers_day.src} className="gallery-item big">
           <Image
             id="works-default-bg"
             src={workers_day}
@@ -78,10 +59,63 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={grow_your_future.src} className="gallery-item">
+        <Link href={bayport_time_is_money.src} className="gallery-item small">
+          <Image
+            id="works-default-bg"
+            src={bayport_time_is_money}
+            alt=""
+            quality={100}
+            className="img-responsive"
+          />
+        </Link>
+
+        <Link href={swr_community_building.src} className="gallery-item small">
+          <Image
+            id="works-default-bg"
+            src={swr_community_building}
+            alt=""
+            quality={100}
+            className="img-responsive"
+          />
+        </Link>
+
+        <Link href={grow_your_future.src} className="gallery-item big">
           <Image
             id="works-default-bg"
             src={grow_your_future}
+            alt=""
+            quality={100}
+            className="img-responsive"
+          />
+        </Link>
+
+        <Link href={graphic_8.src} className="gallery-item wide">
+          <Image
+            id="works-default-bg"
+            src={graphic_8}
+            alt=""
+            quality={100}
+            className="img-responsive"
+          />
+        </Link>
+
+        <Link href={graphic_5.src} className="gallery-item big">
+          <Image
+            id="works-default-bg"
+            src={graphic_5}
+            alt=""
+            quality={100}
+            className="img-responsive"
+          />
+        </Link>
+
+        <Link
+          href={insizswe_experience_security.src}
+          className="gallery-item big"
+        >
+          <Image
+            id="works-default-bg"
+            src={insizswe_experience_security}
             alt=""
             quality={100}
             className="img-responsive"
@@ -98,70 +132,20 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={insizswe_experience_security.src} className="gallery-item">
-          <Image
-            id="works-default-bg"
-            src={insizswe_experience_security}
-            alt=""
-            quality={100}
-            className="img-responsive"
-          />
-        </Link>
-
-        <Link href={bayport_time_is_money.src} className="gallery-item">
-          <Image
-            id="works-default-bg"
-            src={bayport_time_is_money}
-            alt=""
-            quality={100}
-            className="img-responsive"
-          />
-        </Link>
-
-        <Link href={swr_community_building.src} className="gallery-item">
-          <Image
-            id="works-default-bg"
-            src={swr_community_building}
-            alt=""
-            quality={100}
-            className="img-responsive"
-          />
-        </Link>
-
-        <Link href={graphic_5.src} className="gallery-item">
-          <Image
-            id="works-default-bg"
-            src={graphic_5}
-            alt=""
-            quality={100}
-            className="img-responsive"
-          />
-        </Link>
-
-        <Link href={discover_van_back_lg.src} className="gallery-item">
-          <Image
-            id="works-default-bg"
-            src={discover_van_back}
-            alt=""
-            quality={100}
-            className="img-responsive"
-          />
-        </Link>
-
-        <Link href={graphic_8.src} className="gallery-item">
-          <Image
-            id="works-default-bg"
-            src={graphic_8}
-            alt=""
-            quality={100}
-            className="img-responsive"
-          />
-        </Link>
-
-        <Link href={fiz_tourism_show.src} className="gallery-item">
+        <Link href={fiz_tourism_show.src} className="gallery-item smaller">
           <Image
             id="works-default-bg"
             src={fiz_tourism_show}
+            alt=""
+            quality={100}
+            className="img-responsive"
+          />
+        </Link>
+
+        <Link href={discover_van_back_lg.src} className="gallery-item smaller">
+          <Image
+            id="works-default-bg"
+            src={discover_van_back}
             alt=""
             quality={100}
             className="img-responsive"
@@ -178,17 +162,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={mudenda_learning.src} className="gallery-item">
-          <Image
-            id="works-default-bg"
-            src={mudenda_learning}
-            alt=""
-            quality={100}
-            className="img-responsive"
-          />
-        </Link>
-
-        <Link href={debbie_in_debt.src} className="gallery-item">
+        <Link href={debbie_in_debt.src} className="gallery-item mid">
           <Image
             id="works-default-bg"
             src={debbie_in_debt}
@@ -198,40 +172,10 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={insizwe_motor_insurance.src} className="gallery-item">
+        <Link href={mudenda_learning.src} className="gallery-item mid">
           <Image
             id="works-default-bg"
-            src={insizwe_motor_insurance}
-            alt=""
-            quality={100}
-            className="img-responsive"
-          />
-        </Link>
-
-        <Link href={insizwe_med.src} className="gallery-item">
-          <Image
-            id="works-default-bg"
-            src={insizwe_med}
-            alt=""
-            quality={100}
-            className="img-responsive"
-          />
-        </Link>
-
-        <Link href={fiz_chess.src} className="gallery-item">
-          <Image
-            id="works-default-bg"
-            src={fiz_chess}
-            alt=""
-            quality={100}
-            className="img-responsive"
-          />
-        </Link>
-
-        <Link href={bayport_banking.src} className="gallery-item">
-          <Image
-            id="works-default-bg"
-            src={bayport_banking}
+            src={mudenda_learning}
             alt=""
             quality={100}
             className="img-responsive"
@@ -248,7 +192,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={mining_indaba.src} className="gallery-item">
+        <Link href={mining_indaba.src} className="gallery-item smaller">
           <Image
             id="works-default-bg"
             src={mining_indaba}
@@ -268,7 +212,48 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={eu.src} className="gallery-item">
+        <Link href={insizwe_motor_insurance.src} className="gallery-item big">
+          <Image
+            id="works-default-bg"
+            src={insizwe_motor_insurance}
+            alt=""
+            quality={100}
+            className="img-responsive"
+          />
+        </Link>
+
+        <Link href={fiz_chess.src} className="gallery-item big">
+          <Image
+            id="works-default-bg"
+            src={fiz_chess}
+            alt=""
+            quality={100}
+            className="img-responsive"
+          />
+        </Link>
+
+        <Link href={bayport_banking.src} className="gallery-item big">
+          <Image
+            id="works-default-bg"
+            src={bayport_banking}
+            alt=""
+            quality={100}
+            style={{ objectFit: "fill" }}
+            className="img-responsive"
+          />
+        </Link>
+
+        <Link href={insizwe_med.src} className="gallery-item big">
+          <Image
+            id="works-default-bg"
+            src={insizwe_med}
+            alt=""
+            quality={100}
+            className="img-responsive"
+          />
+        </Link>
+
+        <Link href={eu.src} className="gallery-item smaller">
           <Image
             id="works-default-bg"
             src={eu}
@@ -278,7 +263,7 @@ const ImageGallery = () => {
           />
         </Link>
 
-        <Link href={graphic_13.src} className="gallery-item">
+        <Link href={graphic_13.src} className="gallery-item smaller">
           <Image
             id="works-default-bg"
             src={graphic_13}
