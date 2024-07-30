@@ -144,6 +144,10 @@
     grid-column: span 6 !important;
   }
 
+  .gallery-item:nth-child(9) {
+    grid-column: span 5 !important;
+  }
+
   .gallery-item:nth-last-child(10) {
     grid-row: span 2 !important;
     grid-column: span 5 !important;
