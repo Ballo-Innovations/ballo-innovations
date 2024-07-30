@@ -9,9 +9,11 @@ const CategoryLinks = ({ category }) => {
       <Link
         href={`${category.path}`}
         className={`flex-center ${
-          category.name === "Social Media Management" ? "w-2/3" : "w-full"
-        } ${
-          category.name === "Advertising" ? "w-9/12" : "w-full"
+          category.name === "Social Media Management" ? "w-[45%]" : ""
+        } ${category.name === "Advertising" ? "w-2/3" : ""} ${
+          category.name === "Photography" || category.name === "Graphic Design"
+            ? "w-4/5"
+            : ""
         } md:w-[30vw] md:h-[50vh] overflow-visible`}
       >
         <Image

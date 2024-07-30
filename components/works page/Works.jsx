@@ -8,7 +8,7 @@ const Works = () => {
         id="works-section"
         className="text-white pt-[39vh] blue-black-bg-grandient-2"
       >
-        <h2 className="font-bold text-7xl mb-12 text-center">Our Works</h2>
+        <h2 className="font-bold text-8xl mb-12 text-center">Our Works</h2>
         <Categories />
       </section>
     </main>

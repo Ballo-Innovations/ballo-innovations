@@ -6,7 +6,7 @@ const GraphicDesignPage = () => {
       <div className="flex flex-col">
         <div className="md:px-32 text-white text-center lg:text-start">
           <h1 className="font-bold text-8xl">Our Works</h1>
-          <h2 className="text-3xl font-bold my-6">Graphic Design</h2>
+          <h2 className="text-3xl font-bold mt-6">Graphic Design</h2>
         </div>
 
         <div id="graphics-gallery" className="mt-16">
