@@ -81,6 +81,11 @@ const WebDevelopmentPage = () => {
 
   return (
     <section id="work-web-dev" className="pt-[30vh] px-0">
+      <div className="fixed top-[22vh] md:hidden text-white text-center w-full">
+        <h1 className="font-bold text-6xl px-10">Our Works</h1>
+        <h2 className="text-2xl font-bold mt-3">Web Development</h2>
+      </div>
+
       <div className="flex flex-col">
         <div className="slider-container">
           <div className="slider">
@@ -112,10 +117,9 @@ const WebDevelopmentPage = () => {
                 </div>
               </div>
             ))}
-
             <div
               id="slide-5" // Should be value greater than 1 of last slide
-              className={`slide text-white text-center lg:text-start title-slide ${
+              className={`hidden md:block slide text-white text-center lg:text-start title-slide ${
                 freezeSlide && "freezeTitleSlide"
               }`}
             >

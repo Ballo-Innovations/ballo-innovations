@@ -143,28 +143,28 @@
 @media (width <= 768px) {
   #work-web-dev .slider #slide-4 {
     position: absolute;
-    top: 70%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateZ(-1500px);
   }
 
   #work-web-dev .slider #slide-3 {
     position: absolute;
-    top: 70%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateZ(-3000px); /*Increment translateZ by 2500px*/
   }
 
   #work-web-dev .slider #slide-2 {
     position: absolute;
-    top: 70%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateZ(-4500px);
   }
 
   #work-web-dev .slider #slide-1 {
     position: absolute;
-    top: 70%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateZ(-6000px);
   }
