@@ -154,7 +154,7 @@
   }
 
   .gallery-item:nth-last-child(6) {
-    grid-row: span 2 !important;
+    grid-row: span 5 !important;
     grid-column: span 5 !important;
   }
 
@@ -165,7 +165,7 @@
 
   .gallery-item:nth-last-child(7) {
     /* grid-row: span 2 !important; */
-    grid-column: span 10 !important;
+    grid-column: span 5 !important;
   }
 
   .gallery-item:nth-last-child(4) {
