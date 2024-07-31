@@ -11,9 +11,9 @@ const CategoryLinks = ({ category }) => {
         className={`flex-center ${
           category.name === "Social Media Management" ? "w-[45%]" : ""
         } ${category.name === "Advertising" ? "w-2/3" : ""} ${
-          category.name === "Photography" || category.name === "Graphic Design"
-            ? "w-4/5"
-            : ""
+          category.name === "Graphic Design" ? "w-4/5 md:mr-10" : ""
+        } ${
+          category.name === "Photography" ? "w-4/5" : ""
         } md:w-[30vw] md:h-[50vh] overflow-visible`}
       >
         <Image

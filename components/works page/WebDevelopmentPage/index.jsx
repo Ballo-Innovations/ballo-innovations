@@ -30,6 +30,33 @@ const WebDevelopmentPage = () => {
   // Tutorial link: https://www.youtube.com/watch?v=aAGypqJd818
 
   useGSAP(() => {
+    let mobileView = gsap.matchMedia();
+    mobileView.add("(max-width: 768px)", () => {
+      gsap.to("#webdev-mobile-title", {
+        top: "20%",
+        opacity: 0,
+        scale: 0.7,
+        scrollTrigger: {
+          trigger: "#work-web-dev",
+          start: "top 10%",
+          end: "+=1000",
+          scrub: 1,
+          // markers: true,
+        },
+      });
+
+      gsap.to(".slider", {
+        opacity: 1,
+        scrollTrigger: {
+          trigger: "#webdev-mobile-title",
+          start: "top 10%",
+          end: "+=1000",
+          scrub: 1,
+          // markers: true,
+        },
+      });
+    });
+
     // Wrap elements of interest in arrays
     const slides = gsap.utils.toArray(".slide");
     // const activeSlideImages = gsap.utils.toArray(".active-slide img");
@@ -47,18 +74,20 @@ const WebDevelopmentPage = () => {
       return 0;
     };
 
-    gsap.to(".slider", {
-      scrollTrigger: {
-        trigger: ".slider-container",
-        start: "top 10%",
-        onUpdate: (self) => {
-          if (self.progress > 0) {
-            setFreezeSlide(false);
-          }
+    let DesktopView = gsap.matchMedia();
+    DesktopView.add("(min-width: 768px)", () => {
+      gsap.to(".slider", {
+        scrollTrigger: {
+          trigger: ".slider-container",
+          start: "top 10%",
+          onUpdate: (self) => {
+            if (self.progress > 0) {
+              setFreezeSlide(false);
+            }
+          },
         },
-      },
+      });
     });
-
     // Fetch starting position for each slide
     slides.forEach((slide, index) => {
       const initialZ = getInitialTranslateZ(slide);
@@ -81,19 +110,22 @@ const WebDevelopmentPage = () => {
 
   return (
     <section id="work-web-dev" className="pt-[30vh] px-0">
-      <div className="fixed top-[22vh] md:hidden text-white text-center w-full">
-        <h1 className="font-bold text-6xl px-10">Our Works</h1>
-        <h2 className="text-2xl font-bold mt-3">Web Development</h2>
+      <div
+        id="webdev-mobile-title"
+        className="fixed top-[37%] md:hidden text-white text-center w-full"
+      >
+        <h1 className="font-bold text-7xl px-10">Our Works</h1>
+        <h2 className="text-3xl font-bold mt-3">Web Development</h2>
       </div>
 
       <div className="flex flex-col">
         <div className="slider-container">
-          <div className="slider">
+          <div className="slider opacity-0 md:opacity-100">
             {works.map((work, index) => (
               <div
                 key={index}
                 className={`slide overflow-visible ${
-                  freezeSlide ? "opacity-0" : "opacity-100"
+                  freezeSlide ? "md:opacity-0" : "opacity-100"
                 }`}
                 id={`slide-${index + 1}`}
               >
