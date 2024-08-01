@@ -57,7 +57,7 @@ const SocialMediaPage = () => {
             <Insizwe />
             <MudendaCapital />
             <IVLounge />
-            <div className="section">
+            <div className="section blue-black-bg-grandient">
               <Footer />
             </div>
           </ReactFullpage.Wrapper>
