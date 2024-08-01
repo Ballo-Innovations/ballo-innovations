@@ -1,31 +1,20 @@
-import phone from '@/public/elements small/phone.png'
-import Image from 'next/image'
-import './style.css'
+import phone from "@/public/elements small/phone.png";
+import Image from "next/image";
+import "./style.css";
 
 const PhotographyPage = () => {
-  const works = [
-    phone,
-    phone,
-    phone,
-    phone,
-    phone,
-    phone,
-  ];
+  const works = [phone, phone, phone, phone, phone, phone];
   return (
-    <section className='pt-[30vh] bg-[var(--brand-color-5)] md:px-32'>
+    <section className="pt-[30vh] bg-[var(--brand-color-5)] md:px-32">
       <div className="flex flex-col">
-        <div className='text-[var(--brand-color-1)] text-center lg:text-start'>
-          <h1 className='subheading'>
-            Our Works
-          </h1>
+        <div className="text-[var(--brand-color-1)] text-center lg:text-start">
+          <h1 className="subheading">Our Works</h1>
 
-          <h2 className='text-3xl font-bold my-6'>
-            Photography
-          </h2>
+          <h2 className="text-3xl font-bold my-6">Photography</h2>
         </div>
-        
-        <div className='flex-center flex-wrap gap-5 pb-[20vh]'>
-          {works.map((work, index) => (          
+
+        <div className="flex-center flex-wrap gap-5 pb-[20vh]">
+          {works.map((work, index) => (
             <Image
               key={index}
               src={work}
@@ -37,7 +26,7 @@ const PhotographyPage = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default PhotographyPage
+export default PhotographyPage;

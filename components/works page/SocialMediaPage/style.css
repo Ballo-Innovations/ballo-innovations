@@ -1,3 +1,3 @@
-.socials-works img:nth-child(2n-1) {
-  transform: scale(0.75);
+#bayport-socials .fp-overflow {
+  height: 100%;
 }

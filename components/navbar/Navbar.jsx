@@ -115,9 +115,9 @@ const Navbar = () => {
   return (
     <nav
       id="navbar"
-      className={`opacity-0 p-0 text-white top-0 ${scrolled ? "fixed" : "absolute"} ${
-        scrolled || showMenu ? "nav-scrolled" : ""
-      }`}
+      className={`opacity-0 p-0 text-white top-0 ${
+        scrolled ? "fixed" : "absolute"
+      } ${scrolled || showMenu ? "nav-scrolled" : ""}`}
     >
       <div
         id="animate-mobile-menu"
@@ -271,7 +271,7 @@ const Navbar = () => {
               id="blue-mobile-logo"
               className={`w-12 lg:hidden logo-white m-2 pt-1 opacity-0 ${
                 !showMenu ? "hidden" : ""
-              }`} 
+              }`}
             />
           </Link>
 

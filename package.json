@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",
+    "@fullpage/react-fullpage": "^0.1.42",
     "@gsap/react": "^2.1.0",
     "gsap": "^3.12.5",
     "justifiedGallery": "^3.8.1",
@@ -18,7 +19,8 @@
     "react": "^18",
     "react-countup": "^6.5.3",
     "react-dom": "^18",
-    "react-intersection-observer": "^9.10.2"
+    "react-intersection-observer": "^9.10.2",
+    "react-page-scroller": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
