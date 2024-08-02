@@ -49,8 +49,8 @@ const WebDevelopmentPage = () => {
         opacity: 1,
         scrollTrigger: {
           trigger: "#webdev-mobile-title",
-          start: "top 10%",
-          end: "+=1000",
+          start: "top 0%",
+          // end: "+=1000",
           scrub: 1,
           // markers: true,
         },
