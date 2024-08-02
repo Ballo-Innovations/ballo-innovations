@@ -5,10 +5,10 @@
   color: #d8f5ff0e;
 }
 
-/* @media (width < 586px) {
+@media (width < 586px) {
   #paper-plane {
-    margin-top: -25em !important;
-    margin-left: -13em !important;
+    margin-top: -30em !important;
+    margin-left: -16em !important;
     z-index: 1;
   }
-} */
+}

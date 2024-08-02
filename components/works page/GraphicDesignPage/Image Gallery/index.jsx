@@ -24,6 +24,10 @@ import discover_van_back_lg from "@/public/projects/graphic-design/19-full.jpg";
 import bayport_banking from "@/public/projects/graphic-design/20.jpg";
 import bayport_time_is_money from "@/public/projects/graphic-design/21.jpg";
 import grow_your_future from "@/public/projects/graphic-design/22.jpg";
+import matsib from "@/public/projects/graphic-design/new_1.jpeg";
+import football from "@/public/projects/graphic-design/new_2.jpeg";
+import cholera from "@/public/projects/graphic-design/new_3.jpeg";
+import zale from "@/public/projects/graphic-design/new_4.jpeg";
 
 import LightGallery from "lightgallery/react";
 
@@ -56,6 +60,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -66,16 +71,18 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
-        <Link href={swr_community_building.src} className="gallery-item small">
+        <Link href={matsib.src} className="gallery-item small">
           <Image
             id="works-default-bg"
-            src={swr_community_building}
+            src={matsib}
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -86,6 +93,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -96,6 +104,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -106,6 +115,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -119,6 +129,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -129,16 +140,18 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
-        <Link href={fiz_tourism_show.src} className="gallery-item smaller">
+        <Link href={football.src} className="gallery-item smaller">
           <Image
             id="works-default-bg"
-            src={fiz_tourism_show}
+            src={football}
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -149,6 +162,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -159,6 +173,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -169,6 +184,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -179,6 +195,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -189,6 +206,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -199,6 +217,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -209,6 +228,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -219,6 +239,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -229,6 +250,7 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -240,6 +262,7 @@ const ImageGallery = () => {
             quality={100}
             style={{ objectFit: "fill" }}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
@@ -250,26 +273,76 @@ const ImageGallery = () => {
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
-        <Link href={eu.src} className="gallery-item smaller">
+        <Link href={zale.src} className="gallery-item smaller">
           <Image
             id="works-default-bg"
-            src={eu}
+            src={zale}
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
           />
         </Link>
 
-        <Link href={graphic_13.src} className="gallery-item smaller">
+        <Link
+          href={swr_community_building.src}
+          className="gallery-item smaller"
+        >
+          <Image
+            id="works-default-bg"
+            src={swr_community_building}
+            alt=""
+            quality={100}
+            className="img-responsive"
+            placeholder="blur"
+          />
+        </Link>
+
+        <Link href={fiz_tourism_show.src} className="gallery-item">
+          <Image
+            id="works-default-bg"
+            src={fiz_tourism_show}
+            alt=""
+            quality={100}
+            className="img-responsive"
+            placeholder="blur"
+          />
+        </Link>
+
+        <Link href={cholera.src} className="gallery-item mid">
+          <Image
+            id="works-default-bg"
+            src={cholera}
+            alt=""
+            quality={100}
+            className="img-responsive"
+            placeholder="blur"
+          />
+        </Link>
+
+        <Link href={graphic_13.src} className="gallery-item">
           <Image
             id="works-default-bg"
             src={graphic_13}
             alt=""
             quality={100}
             className="img-responsive"
+            placeholder="blur"
+          />
+        </Link>
+
+        <Link href={eu.src} className="gallery-item mid">
+          <Image
+            id="works-default-bg"
+            src={eu}
+            alt=""
+            quality={100}
+            className="img-responsive"
+            placeholder="blur"
           />
         </Link>
       </LightGallery>

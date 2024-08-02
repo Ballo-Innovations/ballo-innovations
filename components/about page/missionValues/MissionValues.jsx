@@ -15,41 +15,78 @@ const MissionValues = () => {
   useGSAP(() => {
     gsap.defaults({ ease: "power4.out" });
 
-    const motion = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#mission",
-        scrub: true,
-        start: "top",
-        end: () => "+=" + window.innerWidth * 3,
-      },
+    let desktopView = gsap.matchMedia();
+    desktopView.add("(min-width: 641px)", () => {
+      const motion = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#mission",
+          scrub: true,
+          start: "top",
+          end: () => "+=" + window.innerWidth * 3,
+        },
+      });
+
+      motion.to("#paper-plane", {
+        width: 50,
+        transformOrigin: "50% 50%",
+        duration: 50,
+        motionPath: {
+          path: "#path_plane",
+          align: "#path_plane",
+          alignOrigin: [0.5, 0.5],
+          autoRotate: true,
+        },
+      });
+
+      motion.from("#svg_plane", {
+        width: "0%",
+        scrollTrigger: {
+          trigger: "#mission",
+          start: 0,
+          end: "+=7000",
+          scrub: 1,
+        },
+      });
     });
 
-    motion.to("#paper-plane", {
-      width: 50,
-      transformOrigin: "50% 50%",
-      duration: 50,
-      motionPath: {
-        path: "#path_plane",
-        align: "#path_plane",
-        alignOrigin: [0.5, 0.5],
-        autoRotate: true,
-      },
-    });
+    let mobileView = gsap.matchMedia();
+    mobileView.add("(max-width: 640px)", () => {
+      const motion = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#mission",
+          scrub: true,
+          start: "top",
+          end: () => "+=" + window.innerWidth * 3,
+        },
+      });
 
-    motion.from("#svg_plane", {
-      width: "0%",
-      scrollTrigger: {
-        trigger: "#mission",
-        start: 0,
-        end: "+=7000",
-        scrub: 1,
-      },
+      motion.to("#paper-plane", {
+        width: 50,
+        transformOrigin: "50% 50%",
+        duration: 50,
+        motionPath: {
+          path: "#path_plane",
+          align: "#path_plane",
+          alignOrigin: [0.5, 0.5],
+          autoRotate: true,
+        },
+      });
+
+      motion.from("#svg_plane", {
+        width: "0%",
+        scrollTrigger: {
+          trigger: "#mission",
+          start: 0,
+          end: "+=7000",
+          scrub: 1,
+        },
+      });
     });
   }, []);
 
   return (
     <section
-      className="nav-paddin pt-[40vh] px-5 md:px-24 w-full relative overflow-x-hidden md:overflow-visible"
+      className="nav-paddin pt-[40vh] px-5 md:px-24 w-full relative overflow-hidden md:overflow-visible"
       style={{ background: `url(${background.src})`, backgroundSize: "cover" }}
       id="mission"
     >
@@ -59,7 +96,7 @@ const MissionValues = () => {
         src={plane}
         alt="Mission and Values"
         id="paper-plane"
-        className="text-5xl font-bold absolute top-[-40vh] md:top-0 left-[10vw] md:left-0 w-[10] md:w-60"
+        className="text-5xl font-bold absolute top-[-40vh] md:top-0 left-[10vw] md:left-0 w-[13rem] md:w-60"
       />
       <div
         id="mission-container"
