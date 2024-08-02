@@ -7,7 +7,7 @@ const Bayport = () => {
   return (
     <div className="section bg-white h-screen" id="bayport-socials">
       <div className="h-full flex-center flex-col lg:flex-row">
-        <div className="h-[70%] lg:w-1/2 lg:h-full flex items-end lg:items-center pb-10 lg:pb-0 lg:pl-5">
+        <div className="h-[70%] lg:w-1/2 lg:h-full flex items-end lg:items-center px-5 pb-10 lg:pb-0 lg:pl-5">
           <Image
             id="works-default-bg"
             src={BayportLogo}
@@ -17,8 +17,8 @@ const Bayport = () => {
           />
         </div>
 
-        <div className="bg-[#0f397c] text-white h-full w-full lg:w-1/2 flex-center flex-col px-5 lg:pl-10 lg:ml-5 gap-5 lg:gap-10 overflow-y-auto rounded-tl-[10%] rounded-tr-[10%] lg:rounded-tl-full lg:rounded-tr-none lg:rounded-bl-full">
-          <p className="text-xl text-center lg:text-center lg:pt-[15vh]">
+        <div className="bg-[#0f397c] font-bold lg:font-normal text-white h-full w-full lg:w-1/2 flex-center flex-col lg:pl-10 lg:ml-5 gap-5 lg:gap-10 overflow-y-auto lg:rounded-tl-full lg:rounded-tr-none lg:rounded-bl-full">
+          <p className="lg:text-xl text-center lg:text-center lg:pt-[15vh]">
             Our management of Bayport Financial Services Zambia&apos;s Facebook
             and LinkedIn pages led to significant growth in followers and leads
             within three months, demonstrating our ability to drive organic

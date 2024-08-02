@@ -17,7 +17,7 @@ const IVLounge = () => {
         />
 
         <div className="text-white relative z-[2] w-full lg:w-1/2 flex-center flex-col px-5 lg:px-10 gap-5 lg:gap-10 overflow-y-auto lg:overflow-visible">
-          <p className="text-xl text-center lg:text-left lg:pt-[10vh]">
+          <p className="lg:text-xl text-center lg:text-left lg:pt-[10vh]">
             Our integrated strategy for The IV Lounge&apos;s social media pages
             has driven significant organic and paid growth, attracting new leads
             within just four months. We create compelling content and targeted

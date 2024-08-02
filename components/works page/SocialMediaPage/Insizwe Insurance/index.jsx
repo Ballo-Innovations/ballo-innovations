@@ -16,7 +16,7 @@ const Insizwe = () => {
         />
 
         <div className="text-white w-full lg:w-1/2 flex-center flex-col px-5 lg:px-10 gap-5 lg:gap-10 overflow-y-auto">
-          <p className="text-xl text-center lg:text-left lg:pt-[15vh]">
+          <p className="lg:text-xl text-center lg:text-left lg:pt-[15vh]">
             Our strategic management and targeted paid ads for Insizwe Private
             Brokers&apos; social media pages on Facebook, Instagram, and
             LinkedIn led to significant growth in followers, increased office

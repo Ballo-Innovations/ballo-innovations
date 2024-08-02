@@ -16,7 +16,7 @@ const MudendaCapital = () => {
         />
 
         <div className="text-white w-full lg:w-1/2 flex-center flex-col px-5 lg:px-10 gap-5 lg:gap-10 overflow-y-auto">
-          <p className="text-xl text-center lg:text-left">
+          <p className="lg:text-xl text-center lg:text-left">
             Our content strategy for Mudenda Capital Partners&apos; LinkedIn
             page organically grew followers to 1,000 in four months, generating
             new capital deals and leads without paid ads, showcasing our
