@@ -1,43 +1,12 @@
-import phone from '@/public/elements small/phone.png'
-import Image from 'next/image'
+import BalloAdsDemo from "@/components/Home Page/Ballo Ads/BalloAdsDemo";
+import "./style.css";
 
 const AdvertisingPage = () => {
-  const works = [
-    phone,
-    phone,
-    phone,
-    phone,
-    phone,
-  ];
-
   return (
-    <section className='pt-[30vh] bg-[var(--brand-color-5)] md:px-32'>
-      <div className="flex flex-col">
-        <div className='text-[var(--brand-color-1)] text-center lg:text-start'>
-          <h1 className='subheading'>
-            Our Works
-          </h1>
-
-          <h2 className='text-3xl font-bold my-6'>
-            Advertising
-          </h2>
-        </div>
-        
-
-        <div className='flex-center flex-wrap gap-5 pb-[20vh]'>
-          {works.map((work, index) => (          
-            <Image
-              key={index}
-              src={work}
-              alt="web development works"
-              quality={100}
-              className="flex-center flex-col md:w-[30%] mt-10 md:-ml-10"
-            />
-          ))}
-        </div>
-      </div>
+    <section id="advertising-section">
+      <BalloAdsDemo />
     </section>
-  )
-}
+  );
+};
 
-export default AdvertisingPage
+export default AdvertisingPage;

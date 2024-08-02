@@ -1,3 +1,7 @@
 #bayport-socials .fp-overflow {
   height: 100%;
 }
+
+.fp-watermark * {
+  display: none !important;
+}

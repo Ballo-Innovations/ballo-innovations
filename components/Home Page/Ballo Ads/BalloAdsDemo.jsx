@@ -15,6 +15,7 @@ import appIcon from "@/public/Ballo Logo New/App icon 1.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 const BalloAdsDemo = () => {
   const [revealPhone, setRevealPhone] = useState(false);
@@ -55,23 +56,27 @@ const BalloAdsDemo = () => {
             src={balloAdsPhone}
             alt="Ballo Ads"
             quality={100}
-            className={`w-full opacity-0 `}
+            className="w-full opacity-0"
             id="phone"
           />
 
-          <Image
-            src={appleStore}
-            alt="Available on Apple Store"
-            quality={100}
-            className="mobile-app-1 opacity-0 absolute top-[48%] left-[10%] w-1/3 rounded-xl"
-          />
+          <Link href="#" className="cursor-pointer">
+            <Image
+              src={appleStore}
+              alt="Available on Apple Store"
+              quality={100}
+              className="mobile-app-1 opacity-0 absolute top-[48%] left-[10%] w-1/3 rounded-xl"
+            />
+          </Link>
 
-          <Image
-            src={playStore}
-            alt="Available on Paly Store"
-            quality={100}
-            className="mobile-app-2 opacity-0 absolute top-[62%] left-[10%] w-1/3 rounded-xl"
-          />
+          <Link href="#" className="cursor-pointer">
+            <Image
+              src={playStore}
+              alt="Available on Paly Store"
+              quality={100}
+              className="mobile-app-2 opacity-0 absolute top-[62%] left-[10%] w-1/3 rounded-xl"
+            />
+          </Link>
         </div>
 
         <button className="block mt-5 md:hidden rounded-full px-10 py-2 bg-[var(--brand-color-4)] text-[var(--brand-color-1)] font-semibold text-2xl">
