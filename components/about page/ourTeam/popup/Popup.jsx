@@ -7,6 +7,7 @@ import "./style.css";
 import linkedin from "@/public/elements small/linkedin-rect.png";
 import instagram from "@/public/elements small/instagram-solid.png";
 import facebook from "@/public/elements small/facebook-rect.png";
+import brushStroke from "@/public/elements small/brush-stroke-banner-6.svg";
 import Link from "next/link";
 
 const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
@@ -90,10 +91,19 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
               className="absolute h-full opacity-20 z-[0] right-0 brightness-[0.3] blur-[2px]"
               style={{ objectFit: "cover", objectPosition: "top" }}
             />
-            <div className="px-2 md:px-10 pt-10 md:pt-28 justify-center flex-col gap-2 text-white z-10 relative">
+            <div className="px-2 md:px-10 pt-10 md:pt-28 flex md:block justify-center items-center md:items-start flex-col gap-2 text-white z-10 relative">
               <h3 className="font-bold text-4xl">{name}</h3>
-              <h4 className="font-bold">{position}</h4>
-              <p className="mt-10 mb-5 text-lg">{description}</p>
+              <h4 className="font-bold relative w-fit px-10 -ml-5 text-[var(--brand-color-2)] mt-1">
+                <Image
+                  src={brushStroke}
+                  alt={name}
+                  className="z-[-1]"
+                  fill
+                  objectFit="cover"
+                />
+                {position}
+              </h4>
+              <p className="mt-7 md:mt-10 mb-5 text-lg">{description}</p>
             </div>
           </div>
         </div>
