@@ -1,8 +1,7 @@
 .popup {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   z-index: 20;
   /* backdrop-filter: blur(1px);
   background: rgba(0, 0, 0, 0.1); */
@@ -10,7 +9,6 @@
 
 .team-member-content {
   box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.5);
-  overflow: hidden !important;
 }
 
 .team-socials img {
@@ -29,38 +27,26 @@
   }
 }
 
-@media (height <= 600px) {
+/* @media (height < 768px) {
   .team-member-photo {
-    padding-top: 68vw;
+    margin-top: 10vh;
   }
 }
 
-@media (width >= 1060px) {
+@media (height <= 400px) {
   .team-member-photo {
-    padding-top: 4.8rem;
+    margin-top: 20vh;
+  }
+} */
+
+/* @media (width <= 667px) {
+  .team-member-photo {
+    margin-top: 30vw;
   }
 }
 
-@media (width >= 768px) {
+@media (width <= 360px) {
   .team-member-photo {
-    padding-top: 3.8rem;
+    margin-top: 58vw;
   }
-}
-
-@media (width < 768px) {
-  .team-member-photo {
-    padding-top: 10vh;
-  }
-}
-
-@media (width <= 400px) {
-  .team-member-photo {
-    padding-top: 20vh;
-  }
-}
-
-@media (width <= 350px) {
-  .team-member-photo {
-    padding-top: 40vh;
-  }
-}
+} */

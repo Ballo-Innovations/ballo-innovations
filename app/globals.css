@@ -81,8 +81,16 @@ nav {
   background: linear-gradient(35deg, black, #051866, rgb(26, 93, 148));
 }
 
+.blue-black-bg-grandient-3 {
+  background: linear-gradient(to bottom, rgb(26, 93, 148), #060751);
+}
+
 .no-scroll {
   overflow: hidden;
+}
+
+.move-back {
+  z-index: -1 !important;
 }
 
 @layer utilities {

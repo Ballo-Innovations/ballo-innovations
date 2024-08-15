@@ -13,11 +13,14 @@ const TeamMember = ({ photo, name, position, bg, description }) => {
   const toggleDetails = () => {
     setShowDetails(!showDetails);
     let body = document.querySelector("body");
+    let nav = document.querySelector("#navbar");
     if (!showDetails) {
       body.classList.add("no-scroll");
+      nav.classList.add("move-back");
       setDelayAnim(true);
     } else {
       body.classList.remove("no-scroll");
+      nav.classList.remove("move-back");
       setTimeout(() => {
         setDelayAnim(false);
       }, 1000);
@@ -46,7 +49,7 @@ const TeamMember = ({ photo, name, position, bg, description }) => {
         />
 
         <div
-          className={`details-btn bg-white absolute w-[20%] bottom-0 right-[10%] ${
+          className={`details-btn bg-white absolute w-[20%] bottom-0 right-[10%] shadow-md shadow-gray-800 ${
             showDetails ? "show-details" : "hidden-details"
           } ${delayAnim && "delay-anim"}`}
         >
@@ -58,8 +61,8 @@ const TeamMember = ({ photo, name, position, bg, description }) => {
         className="flex-center flex-col bg-clip-text"
         onClick={toggleDetails}
       >
-        <h3 className="font-bold text-xl text-center">{name}</h3>
-        <p className="text-black font-bold">{position}</p>
+        <h3 className="font-bold text-xl text-center text-white">{name}</h3>
+        <p className="text-[var(--brand-color-5)] font-bold">{position}</p>
       </div>
     </div>
   );

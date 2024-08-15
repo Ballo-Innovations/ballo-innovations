@@ -22,7 +22,7 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
     <>
       <button
         onClick={toggleDetails}
-        className="fade-in fixed top-28 right-5 md:right-10 p-0 rounded-full z-30 opacity-0 bg-white scale-125 md:scale-100"
+        className="fade-in fixed top-7 right-6 md:right-10 p-0 rounded-full z-30 opacity-0 bg-white scale-125 md:scale-100"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -37,9 +37,17 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
         </svg>
       </button>
       <div className="fade-in popup z-20 h-[100dvh] w-[100dvw] cursor-auto fixed flex-center overflow-x-hidden overflow-y-auto opacity-0">
-        <div className="relative overflow-visible ">
-          <div className="team-member-content relative flex flex-col md:flex-row w-screen min-h-[100dvh] bg-gradient-to-l from-blue-400 to-[var(--brand-color-3)]">
-            <div className="absolute left-5 flex-center z-30 h-5/6 md:h-full">
+        <div className="team-member-content relative flex flex-col md:flex-row h-screen w-screen min-h-screen bg-gradient-to-l from-blue-400 to-[var(--brand-color-3)]">
+          <div
+            className="team-member-photo min-h-[60vh] relative overflow-hidden w-full md:w-[62.5vw]"
+            style={{
+              background: `url(${photo.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "top center",
+              // backgroundSize: "auto",
+            }}
+          >
+            <div className="flex justify-start items-center mx-5 my-10 z-30 h-[50vh] md:h-full">
               <div className="team-socials gap-1 flex-center flex-col">
                 <Link
                   href="#"
@@ -65,27 +73,27 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
               </div>
             </div>
 
-            <Image
+            {/* <Image
               src={photo}
               alt={name}
               quality={100}
-              className="team-member-photo w-full md:w-[40vw] z-10 relative"
+              className="team-member-photo w-full md:w-[40vw] z-10 h-full relative"
               style={{ objectFit: "cover", objectPosition: "center" }}
-            />
+            /> */}
+          </div>
 
-            <div className="relative w-full bg-gradient-to-l from-blue-400 to-[var(--brand-color-3)]">
-              <Image
-                src={bg}
-                alt={name}
-                // className="absolute top-0 left-0 w-full h-3/5 rounded-bl-2xl rounded-br-2xl"
-                className="absolute h-full opacity-20 z-[0] right-0 brightness-[0.3] blur-[2px]"
-                style={{ objectFit: "cover", objectPosition: "top" }}
-              />
-              <div className="px-2 md:px-10 pt-10 md:pt-28 justify-center flex-col gap-2 text-white z-10 relative">
-                <h3 className="font-bold text-4xl">{name}</h3>
-                <h4 className="font-bold">{position}</h4>
-                <p className="mt-10">{description}</p>
-              </div>
+          <div className="relative grow w-full bg-gradient-to-l from-blue-400 to-[var(--brand-color-3)]">
+            <Image
+              src={bg}
+              alt={name}
+              // className="absolute top-0 left-0 w-full h-3/5 rounded-bl-2xl rounded-br-2xl"
+              className="absolute h-full opacity-20 z-[0] right-0 brightness-[0.3] blur-[2px]"
+              style={{ objectFit: "cover", objectPosition: "top" }}
+            />
+            <div className="px-2 md:px-10 pt-10 md:pt-28 justify-center flex-col gap-2 text-white z-10 relative">
+              <h3 className="font-bold text-4xl">{name}</h3>
+              <h4 className="font-bold">{position}</h4>
+              <p className="mt-10 mb-5 text-lg">{description}</p>
             </div>
           </div>
         </div>
