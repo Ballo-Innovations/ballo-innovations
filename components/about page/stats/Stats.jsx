@@ -35,7 +35,7 @@ const Stats = () => {
         },
         {
           width: "60rem",
-          duration: 3.5,
+          duration: 7,
         }
       );
 

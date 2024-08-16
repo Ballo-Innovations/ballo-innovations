@@ -8,7 +8,7 @@ import "./style.css";
 import Image from "next/image";
 import background from "@/public/Ballo Logo New/svg/Ballo logo new-06.svg";
 import background2 from "@/public/Backgrounds/About.png";
-import maluba from "@/public/projects/web-development/maluba-tv.png";
+import maluba from "@/public/projects/web-development/maluba-tv.jpg";
 import swr from "@/public/projects/web-development/swr.png";
 import insizwe from "@/public/projects/web-development/insizwe.png";
 import mudenda from "@/public/projects/web-development/mudenda-capital.png";
@@ -21,6 +21,7 @@ gsap.registerPlugin(ScrollTrigger);
 const WebDevelopmentPage = () => {
   const works = [
     { cover: swr, link: "https://style-with-roses.vercel.app/" },
+    { cover: maluba, link: "https://maluba-media.vercel.app/" },
     { cover: insizwe, link: "https://insizwebrokers.com/" },
     { cover: mudenda, link: "https://insizwebrokers.com" },
     { cover: seneca, link: "https://senecazambia.com/" },
@@ -99,7 +100,7 @@ const WebDevelopmentPage = () => {
         onUpdate: (self) => {
           // Update slide either closer or further based on scroll progress
           const progress = self.progress;
-          const zIncrement = progress * 6000; // Value should depend on distance of last slide
+          const zIncrement = progress * 7500; // Value should depend on distance of last slide
           const currentZ = initialZ + zIncrement;
 
           slide.style.transform = `translateX(-50%) translateY(-50%) translateZ(${currentZ}px)`; // Transform based on calculated current Z value
@@ -150,7 +151,7 @@ const WebDevelopmentPage = () => {
               </div>
             ))}
             <div
-              id="slide-5" // Should be value greater than 1 of last slide
+              id="slide-6" // Should be value greater than 1 of last slide
               className={`hidden md:block slide text-white text-center lg:text-start title-slide ${
                 freezeSlide && "freezeTitleSlide"
               }`}
