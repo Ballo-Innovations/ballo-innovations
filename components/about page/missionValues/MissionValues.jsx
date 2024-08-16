@@ -56,14 +56,14 @@ const MissionValues = () => {
           trigger: "#mission",
           scrub: true,
           start: "top",
-          end: () => "+=" + window.innerWidth * 3,
+          end: () => "+=" + window.innerWidth * 15,
         },
       });
 
       motion.to("#paper-plane", {
-        width: 50,
+        width: 25,
         transformOrigin: "50% 50%",
-        duration: 50,
+        duration: 200,
         motionPath: {
           path: "#path_plane",
           align: "#path_plane",

@@ -73,14 +73,6 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
                 </Link>
               </div>
             </div>
-
-            {/* <Image
-              src={photo}
-              alt={name}
-              quality={100}
-              className="team-member-photo w-full md:w-[40vw] z-10 h-full relative"
-              style={{ objectFit: "cover", objectPosition: "center" }}
-            /> */}
           </div>
 
           <div className="relative grow w-full bg-gradient-to-l from-blue-400 to-[var(--brand-color-3)]">
@@ -91,7 +83,7 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
               className="absolute h-full opacity-20 z-[0] right-0 brightness-[0.3] blur-[2px]"
               style={{ objectFit: "cover", objectPosition: "top" }}
             />
-            <div className="px-2 md:px-10 pt-10 md:pt-28 flex md:block justify-center items-center md:items-start flex-col gap-2 text-white z-10 relative">
+            <div className="text-center md:text-start px-2 md:px-10 pt-10 md:pt-28 flex md:block justify-center items-center md:items-start flex-col gap-2 text-white z-10 relative">
               <h3 className="font-bold text-4xl">{name}</h3>
               <h4 className="font-bold relative w-fit pl-14 pr-10 -ml-8 text-[var(--brand-color-2)] mt-1">
                 <Image
