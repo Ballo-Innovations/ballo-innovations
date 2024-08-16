@@ -20,7 +20,14 @@
 .team-member:hover .hidden-details img {
   transition: all 0.05s ease-in-out;
   transition-delay: 0.5s;
-  transform: scale(1.1);
+}
+
+.team-member .profile-image {
+  transition: all 0.2s ease-in-out;
+}
+
+.team-member:hover .profile-image {
+  transform: scale(1.25) translateY(20px);
 }
 
 .delay-anim {

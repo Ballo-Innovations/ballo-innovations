@@ -93,7 +93,7 @@ const Popup = ({ toggleDetails, photo, name, position, bg, description }) => {
             />
             <div className="px-2 md:px-10 pt-10 md:pt-28 flex md:block justify-center items-center md:items-start flex-col gap-2 text-white z-10 relative">
               <h3 className="font-bold text-4xl">{name}</h3>
-              <h4 className="font-bold relative w-fit px-10 -ml-5 text-[var(--brand-color-2)] mt-1">
+              <h4 className="font-bold relative w-fit pl-14 pr-10 -ml-8 text-[var(--brand-color-2)] mt-1">
                 <Image
                   src={brushStroke}
                   alt={name}

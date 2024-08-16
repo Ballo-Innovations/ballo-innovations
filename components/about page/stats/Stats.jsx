@@ -35,15 +35,15 @@ const Stats = () => {
         },
         {
           width: "60rem",
-          duration: 7,
+          duration: 3.5,
         }
       );
 
       gsap.to("#engagement-text", {
         transformOrigin: "50% 50%",
         opacity: 1,
-        duration: 5,
-        delay: 1.5,
+        duration: 3.25,
+        delay: 1.35,
         motionPath: {
           path: "#path_engagement",
           align: "#path_engagement",
@@ -58,15 +58,15 @@ const Stats = () => {
         },
         {
           width: "60rem",
-          duration: 17,
+          duration: 9,
         }
       );
 
       gsap.to("#reach-text", {
         transformOrigin: "50% 50%",
         opacity: 1,
-        duration: 6,
-        delay: 0.5,
+        duration: 4.5,
+        delay: 0.325,
         motionPath: {
           path: "#path_reach",
           align: "#path_reach",
@@ -81,16 +81,16 @@ const Stats = () => {
         },
         {
           width: "60rem",
-          duration: 12,
-          delay: 1,
+          duration: 9,
+          delay: 0.75,
         }
       );
 
       gsap.to("#leads-text", {
         transformOrigin: "50% 50%",
         opacity: 1,
-        duration: 5,
-        delay: 1,
+        duration: 3.25,
+        delay: 0.75,
         motionPath: {
           path: "#path_leads",
           align: "#path_leads",
@@ -104,8 +104,8 @@ const Stats = () => {
           width: "0%",
         },
         {
-          duration: 13,
-          delay: 0.5,
+          duration: 7.75,
+          delay: 0.375,
           width: "60rem",
         }
       );
@@ -113,8 +113,8 @@ const Stats = () => {
       gsap.to("#roi-text", {
         transformOrigin: "50% 50%",
         opacity: 1,
-        duration: 5,
-        delay: 1,
+        duration: 3.25,
+        delay: 0.75,
         motionPath: {
           path: "#path_roi",
           align: "#path_roi",

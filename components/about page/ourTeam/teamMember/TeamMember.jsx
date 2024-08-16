@@ -40,13 +40,15 @@ const TeamMember = ({ photo, name, position, bg, description }) => {
         />
       )}
       <div className="relative" onClick={toggleDetails}>
-        <Image
-          src={photo}
-          alt={name}
-          quality={100}
-          className="rounded-full"
-          style={{ objectFit: "cover", objectPosition: "center" }}
-        />
+        <div className="relative overflow-hidden rounded-full">
+          <Image
+            src={photo}
+            alt={name}
+            quality={100}
+            className="profile-image"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
+        </div>
 
         <div
           className={`details-btn bg-white absolute w-[20%] bottom-0 right-[10%] shadow-md shadow-gray-800 ${
@@ -62,7 +64,9 @@ const TeamMember = ({ photo, name, position, bg, description }) => {
         onClick={toggleDetails}
       >
         <h3 className="font-bold text-xl text-center text-white">{name}</h3>
-        <p className="text-[var(--brand-color-5)] font-bold">{position}</p>
+        <p className="text-[var(--brand-color-5)] font-bold text-center">
+          {position}
+        </p>
       </div>
     </div>
   );

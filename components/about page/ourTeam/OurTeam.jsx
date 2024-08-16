@@ -1,8 +1,7 @@
 import Image from "next/image";
 import TeamMember from "./teamMember/TeamMember";
 import bg from "@/public/elements/Management Team_2.png";
-import bg2 from "@/public/elements/Management Team.png";
-import Lombe from "@/public/team/team-1.jpg";
+import Lombe from "@/public/team/lombe.jpeg";
 import shannon from "@/public/team/shannon.jpg";
 import george from "@/public/team/george.jpg";
 import jonah from "@/public/team/jonah.jpeg";
@@ -21,7 +20,7 @@ const OurTeam = () => {
   const teamMembers = [
     {
       name: "Lombe Lusale-Musukuma",
-      position: "Executive Director",
+      position: "Founder - Managing Director",
       photo: Lombe,
       bg: lombeBG,
       description:
@@ -44,7 +43,7 @@ const OurTeam = () => {
     },
     {
       name: "Mwali Chisanga",
-      position: "Social Media Marketing Intern",
+      position: "Social Media and Customer Support",
       photo: mwali,
       bg: mwaliBG,
       description:
@@ -67,7 +66,7 @@ One thing he loves the most are number "0 & 1", "as a data analyst I've come to 
     },
     {
       name: "Emmanuel Phiri",
-      position: "Graphic Designer",
+      position: "Creative Specialist",
       photo: emmanuel,
       bg: emmaBG,
       description:
