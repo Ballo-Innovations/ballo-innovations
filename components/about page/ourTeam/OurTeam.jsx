@@ -28,7 +28,7 @@ const OurTeam = () => {
     },
     {
       name: "Shannon Zebron",
-      position: "Creative Director",
+      position: "Co-Founder - Creative Director",
       photo: shannon,
       bg: shannonBG,
       description:
@@ -40,14 +40,6 @@ const OurTeam = () => {
       photo: george,
       bg: georgeBG,
       description: `George M'sapenda is a tech wizard with a knack for creating impactful technology solutions. Whether he's coding JavaScript, Ruby, Python, or SQL, George is your go-to guy for turning ideas into impactful solutions. As an innovative engineer poised to change the world, he excels in guiding technical projects.  George motto? "Innovation is about adding value, not just creating new things!"`,
-    },
-    {
-      name: "Mwali Chisanga",
-      position: "Social Media and Customer Support",
-      photo: mwali,
-      bg: mwaliBG,
-      description:
-        "Mwali Chisanga is an up-and-coming social media guru who transforms mundane posts into digital gold. With a unique blend of memes and marketing, combined with a dash of strategic thinking, Mwali creates engagement magic. Known for turning content into viral sensations, Mwali is the go-to person for starting a social media presence. When not online, Mwali is busy thinking of the next big hit. Connect with Mwali to create some social media gold together!!",
     },
     {
       name: "Jonah Hachunde",
@@ -71,6 +63,14 @@ One thing he loves the most are number "0 & 1", "as a data analyst I've come to 
       bg: emmaBG,
       description:
         "Emmanuel Phiri is a seasoned creative professional with over five years of experience in the industry. With a sharp eye for creativity and aesthetics, he quickly grasps briefs and delivers results efficiently. He has helped over 100 businesses transition to the digital world through strategic concepts, compelling designs, and more.",
+    },
+    {
+      name: "Mwali Chisanga",
+      position: "Social Media and Customer Support",
+      photo: mwali,
+      bg: mwaliBG,
+      description:
+        "Mwali Chisanga is an up-and-coming social media guru who transforms mundane posts into digital gold. With a unique blend of memes and marketing, combined with a dash of strategic thinking, Mwali creates engagement magic. Known for turning content into viral sensations, Mwali is the go-to person for starting a social media presence. When not online, Mwali is busy thinking of the next big hit. Connect with Mwali to create some social media gold together!!",
     },
   ];
 
