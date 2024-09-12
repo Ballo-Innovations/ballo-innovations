@@ -1,0 +1,96 @@
+.stats-chart .line {
+  display: block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  height: 80px;
+  width: 100%;
+}
+
+.stat-name {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+}
+
+.stats-chart svg {
+  position: absolute;
+  bottom: 0;
+  left: 11vw;
+  width: 0%;
+}
+
+#svg_leads {
+  margin-bottom: 1em;
+  left: 8vw;
+}
+
+#svg_roi {
+  left: 20vw;
+}
+
+#svg_engagement {
+  bottom: -1em;
+  /* left: 12vw; */
+}
+
+@media (max-width: 576px) {
+  .line-container {
+    top: 10vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .line-container {
+    left: -160vw;
+  }
+}
+
+@media ((min-width: 321px) and (max-width: 408px)) {
+  .line-container {
+    left: -125vw;
+  }
+}
+
+@media ((min-width: 408px) and (max-width: 500px)) {
+  .line-container {
+    left: -100vw;
+  }
+}
+
+@media ((min-width: 501px) and (max-width: 600px)) {
+  .line-container {
+    left: -80vw;
+  }
+}
+
+@media ((min-width: 601px) and (max-width: 700px)) {
+  .line-container {
+    left: -60vw;
+  }
+}
+
+@media ((min-width: 701px) and (max-width: 768px)) {
+  .line-container {
+    left: -40vw;
+  }
+}
+
+@media ((min-width: 768px) and (max-width: 800px)) {
+  .line-container {
+    left: -50vw;
+  }
+}
+
+@media ((min-width: 801px) and (max-width: 900px)) {
+  .line-container {
+    left: -40vw;
+  }
+}
+
+@media ((min-width: 901px) and (max-width: 1050px)) {
+  .line-container {
+    left: -27.5vw;
+  }
+}

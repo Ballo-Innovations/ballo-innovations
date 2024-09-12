@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "typescript": {
+    "ignoreBuildErrors": true // Ignore TypeScript build errors
+  }
+}

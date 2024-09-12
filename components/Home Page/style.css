@@ -1,0 +1,9 @@
+#hero-content-wrapper {
+  max-width: 100vw;
+}
+
+@media (width <= 576px) {
+  #hero-content-wrapper * {
+    text-align: center;
+  }
+}

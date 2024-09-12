@@ -1,0 +1,23 @@
+.glowing-text {
+  color: white;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--brand-color);
+  filter: drop-shadow(0 0 20px #23f9f7);
+}
+
+.blinker {
+  border-right: 0.15em solid white;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,20 @@
+.tilt {
+  background: #135684;
+  width: 100%;
+  position: absolute;
+  height: 550vw;
+  margin-top: -300%;
+  transform: skewY(-80deg);
+}
+
+#iv-social .fp-overflow {
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .tilt {
+    height: 200vw;
+    margin-top: 160%;
+    transform: skewY(-10deg);
+  }
+}
