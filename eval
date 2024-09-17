@@ -1,0 +1,6 @@
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     2002       1    2002      11648  cons0     197609 16:43:18 /usr/bin/bash
+     2047       1    2047      10896  ?         197609 16:43:26 /usr/bin/ssh-agent
+     1903       1    1903      10720  ?         197609 11:11:11 /usr/bin/mintty
+     1904    1903    1904      11028  pty0      197609 11:11:11 /usr/bin/bash
+     2048    2002    2048        476  cons0     197609 16:43:26 /usr/bin/PS

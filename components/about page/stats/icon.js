@@ -112,7 +112,7 @@ export const Leads = () => (
     width="700"
     height="400"
     xmlns="http://www.w3.org/2000/svg"
-    id="svg_engagement"
+    id="svg_leads"
   >
     <g id="Layer_1">
       <title>Layer 1</title>
@@ -169,7 +169,7 @@ export const Engagement = () => (
     width="700"
     height="400"
     xmlns="http://www.w3.org/2000/svg"
-    id="svg_leads"
+    id="svg_engagement"
   >
     <g id="Layer_1">
       <title>Layer 1</title>

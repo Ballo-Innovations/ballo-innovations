@@ -35,15 +35,14 @@ const Stats = () => {
         },
         {
           width: "60rem",
-          duration: 7,
+          duration: 9,
         }
       );
 
       gsap.to("#engagement-text", {
         transformOrigin: "50% 50%",
         opacity: 1,
-        duration: 3.25,
-        delay: 1.35,
+        duration: 4.15,
         motionPath: {
           path: "#path_engagement",
           align: "#path_engagement",
@@ -81,8 +80,7 @@ const Stats = () => {
         },
         {
           width: "60rem",
-          duration: 9,
-          delay: 0.75,
+          duration: 7,
         }
       );
 

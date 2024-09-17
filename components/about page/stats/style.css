@@ -21,7 +21,7 @@
   width: 0%;
 }
 
-#svg_leads {
+#svg_engagement {
   margin-bottom: 1em;
   left: 8vw;
 }
@@ -30,7 +30,7 @@
   left: 20vw;
 }
 
-#svg_engagement {
+#svg_leads {
   bottom: -1em;
   /* left: 12vw; */
 }
