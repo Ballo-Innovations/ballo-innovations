@@ -2,7 +2,7 @@ import ImageGallery from "./Image Gallery";
 
 const GraphicDesignPage = () => {
   return (
-    <section className="pt-[30vh] sm:pb-10 blue-black-bg-grandient-2 md:pl-9 md:pr-15">
+    <section className="pt-[30vh] sm:pb-10 blue-black-bg-grandient-2 md:pl-4 md:pr-8">
       <div className="flex flex-col">
         <div className="md:px-32 text-white text-center lg:text-start">
           <h1 className="font-bold text-8xl">Our Works</h1>
