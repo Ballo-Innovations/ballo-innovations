@@ -2,7 +2,7 @@ import Image from "next/image";
 import TeamMember from "./teamMember/TeamMember";
 import bg from "@/public/elements/Management Team_2.png";
 import Lombe from "@/public/team/lombe.jpeg";
-import shannon from "@/public/team/shannon.jpg";
+import shannon from "@/public/team/shannon2.jpg";
 import george from "@/public/team/george.jpg";
 import jonah from "@/public/team/jonah.jpeg";
 import michael from "@/public/team/michael.jpg";

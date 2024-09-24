@@ -17,7 +17,7 @@ const PackagesPage = () => {
           src={background}
           alt="background"
           quality={100}
-          className="h-screen md:h-auto fixed scale-[1] md:scale-[2.3] -left-[25%] md:-left-[12.25%] top-0 object-cover overflow-visible opacity-[0.12]"
+          className="w-screen h-screen md:h-auto fixed scale-[1] md:scale-[2.3] -left-[25%] md:-left-[12.25%] top-0 object-cover overflow-visible opacity-[0.12]"
         />
 
         <div className="z-[2] px-[0.5em] md:px-[5em] mt-10">
