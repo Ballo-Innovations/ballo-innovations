@@ -64,7 +64,7 @@ export const categoryPaths = [
     path: "/works/graphic-design",
   },
   {
-    name: "Photography",
+    name: "Media Production",
     cover: photography_cover,
     path: "/works/media-production",
   },
