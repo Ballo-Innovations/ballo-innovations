@@ -11,7 +11,9 @@ import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgVdeo from 'lightgallery/plugins/video';
 import lgZoom from "lightgallery/plugins/zoom";
+import lgHash from 'lightgallery/plugins/hash';
 
 // import fjGallery from "flickr-justified-gallery";
 
@@ -49,7 +51,7 @@ const MediaProductionDetailsPage = ({ params }) => {
           </div>
           <LightGallery
             speed={500}
-            plugins={[lgThumbnail, lgZoom]}
+            plugins={[lgThumbnail, lgZoom, lgVdeo, lgHash]}
             elementClassNames={"media-production-gallery"}
           >
             {project.images.map((image, index) => (
@@ -63,6 +65,19 @@ const MediaProductionDetailsPage = ({ params }) => {
                   placeholder="blur"
                 />
               </Link>
+            ))}
+
+            {project.videos.map((video, index) => (
+              <a data-src={video} className="gallery-item" key={`video-${index}`}>
+                <Image
+                  id="ballo innovations"
+                  src={project.cover}
+                  alt=""
+                  quality={100}
+                  className="img-responsive"
+                  placeholder="blur"
+                />
+              </a>
             ))}
           </LightGallery>
         </section>

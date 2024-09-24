@@ -17,18 +17,15 @@ const MediaProductionPage = () => {
         <div>
           <ul className="flex-center flex-wrap gap-1">
             {mediaProduction.map((work, index) => (
-              <li className="card" style={{background: `url(${work.cover.src})`, backgroundSize: "cover", backgroundPosition: "center",}}>
+              <li id={`media-${work.path}`} className="card" style={{background: `url(${work.cover.src})`, backgroundSize: "cover", backgroundPosition: "center"}}>
                 <Link 
                   href={`media-production/${work.path}`}
                   key={index}
-                  className="content"
+                  className="content h-full w-full flex-center flex-col"
                 >
-                  <p class="card-title">Product Name</p>
+                  <p class="card-title">{work.name}</p>
                   <p class="small-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio
-                    officia deleniti. Expedita iste et illum, quaerat pariatur consequatur
-                    eum nihil itaque!
+                    {work.description}
                   </p>
                 </Link>
                 <div className="go-corner">

@@ -22,16 +22,39 @@ import fiz_5 from "@/public/projects/media-production/photography/13.jpg";
 import fiz_6 from "@/public/projects/media-production/photography/14.jpg";
 import fiz_7 from "@/public/projects/media-production/photography/15.jpg";
 import fiz_8 from "@/public/projects/media-production/photography/16.jpg";
-import bayport_logo from "@/public/Client Logos/bayport.png";
-import bayport_1 from "@/public/projects/media-production/photography/bayport cover.jpg";
 import mudenda_logo from "@/public/Client Logos/Mudenda Capital Logo to send-03.png";
-import mudenda_1 from "@/public/projects/media-production/photography/mudenda capital cover.jpg";
+import mudenda_1 from "@/public/projects/media-production/photography/22.jpg";
+import bayport_logo from "@/public/Client Logos/bayport.png";
+import bayport_1 from "@/public/projects/media-production/photography/21.jpg";
+import greenery_1 from "@/public/projects/media-production/photography/23.jpeg";
+import greenery_2 from "@/public/projects/media-production/photography/24.jpeg";
+import greenery_3 from "@/public/projects/media-production/photography/25.jpeg";
+import greenery_4 from "@/public/projects/media-production/photography/26.jpeg";
+import greenery_5 from "@/public/projects/media-production/photography/27.jpeg";
+import greenery_6 from "@/public/projects/media-production/photography/28.jpeg";
+import thailand_1 from "@/public/projects/media-production/photography/29.jpg";
+import thailand_2 from "@/public/projects/media-production/photography/30.jpg";
+import thailand_3 from "@/public/projects/media-production/photography/31.jpg";
+import thailand_4 from "@/public/projects/media-production/photography/32.jpg";
+import thailand_5 from "@/public/projects/media-production/photography/33.jpg";
+import thailand_6 from "@/public/projects/media-production/photography/34.jpg";
+import thailand_7 from "@/public/projects/media-production/photography/35.jpg";
+import thailand_8 from "@/public/projects/media-production/photography/36.jpg";
+import thailand_9 from "@/public/projects/media-production/photography/37.jpg";
+import thailand_10 from "@/public/projects/media-production/photography/38.jpg";
+import thailand_11 from "@/public/projects/media-production/photography/39.jpg";
+import thailand_12 from "@/public/projects/media-production/photography/40.jpg";
+import thailand_13 from "@/public/projects/media-production/photography/41.jpg";
+import thailand_14 from "@/public/projects/media-production/photography/42.jpg";
+import thailand_15 from "@/public/projects/media-production/photography/43.jpg";
+import thailand_16 from "@/public/projects/media-production/photography/44.jpg";
+
 
 export const mediaProduction = [
   { 
     path: 'ballo_innovations',
     name: 'Ballo Innovations',
-    description: 'Ballo Innovations',
+    description: 'The team that made all this happen. Sic parvis magna!',
     logo: ballo_logo,
     cover: ballo_1,
     images: [
@@ -39,29 +62,35 @@ export const mediaProduction = [
       ballo_2,
       ballo_3,
       ballo_4,
+    ],
+    videos: [
+      
     ]
   },
   { 
     path: 'fiz',
     name: 'Financial Insight Zambia',
-    description: 'FIZ',
+    description: 'Financial Insight Zambia were interested in improving the quality of their digital spaces. This involved professional photography, behind-the-scenes of their FIZ show season 2 episodes. After a successful set, we went on to work further in digital marketing consultation and graphic design for their platforms.',
     logo: fiz_logo,
     cover: fiz_1,
     images: [
       fiz_1,
       fiz_2,
       fiz_3,
-      fiz_4,
-      fiz_5,
       fiz_6,
       fiz_7,
       fiz_8,
+      fiz_4,
+      fiz_5,
+    ],
+    videos: [
+
     ]
   },
   { 
     path: 'insizwe',
     name: 'Insizwe',
-    description: 'Insizwe',
+    description: 'Our friends at Insizwe had been trying to revamp their branding and digital placing in 2022. Having built on well on their social media with our curated strategy, they requested a team photoshoot which made a buzz on their platforms and added more visibility to their team. Guess they aren’t the only ones making life easy *wink wink *',
     logo: insizwe_logo,
     cover: insizwe_2,
     images: [
@@ -73,22 +102,77 @@ export const mediaProduction = [
       matsib_3,
       matsib_4,
       matsib_5,
+    ],
+    videos: [
+ 
     ]
   },
+  // { 
+  //   path: 'bayport',
+  //   name: 'Bayport Financial Services',
+  //   description: 'Bayport Financial Services Zambia upgraded USSD elaunch campaign.',
+  //   logo: bayport_logo,
+  //   cover: bayport_1,
+  //   images: [],
+  //   videos: [
+  //     "https://www.youtube.com/watch?v=ZBCUegTZF7M",
+  //     "/public/projects/media-production/videos/bayport_teaser_2.mp4",
+  //     "/public/projects/media-production/videos/bayport_teaser_3.mp4",
+  //   ]
+  // },
+  // { 
+  //   path: 'mudenda-capital',
+  //   name: 'Mudenda Capital',
+  //   description: 'Mudenda Capital Partners revised and updated their service offerings. They called on us to create a reintroduction video with voiceover. After having great traction, they called on us to handle their social media.',
+  //   logo: mudenda_logo,
+  //   cover: mudenda_1,
+  //   images: [],
+  //   videos: [
+  //     "/projects/media-production/videos/mudenda_capital.mp4",
+  //   ]
+  // },
   { 
-    path: 'bayport',
-    name: 'Bayport Financial Services',
-    description: 'Mudenda Capital',
-    logo: bayport_logo,
-    cover: bayport_1,
-    images: []
+    path: 'phuket-thailand',
+    name: 'Phuket, Thailand',
+    description: `While on holiday, our Co-founder & Creative Director, Shannon, along with the team embarked on a campaign to show creative diversity. The photoshoot was so creative that even the creativity of the landscape experienced some creative competition. Okay, we know this writeup wasn’t creative, but at least the campaign was. 
+Just enjoy the views!
+`,
+    logo: '',
+    cover: thailand_9,
+    images: [
+      thailand_1,
+      thailand_10,
+      thailand_3,
+      thailand_2,
+      thailand_11,
+      thailand_4,
+      thailand_5,
+      thailand_6,
+      thailand_7,
+      thailand_8,
+      thailand_9,
+      thailand_12,
+      thailand_13,
+      thailand_14,
+      thailand_15,
+      thailand_16,
+    ],
+    videos: []
   },
   { 
-    path: 'mudenda-capital',
-    name: 'Mudenda Capital',
-    description: 'Mudenda Capital',
-    logo: mudenda_logo,
-    cover: mudenda_1,
-    images: []
+    path: 'greenery-scenery',
+    name: 'Greenery Scenery',
+    description: 'Okay, we just wanted to show that we can take photos here, lol.',
+    logo: '',
+    cover: greenery_1,
+    images: [
+      greenery_1,
+      greenery_2,
+      greenery_3,
+      greenery_4,
+      greenery_5,
+      greenery_6,
+    ],
+    videos: []
   },
 ];
