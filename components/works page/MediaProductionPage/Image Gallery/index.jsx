@@ -1,25 +1,25 @@
 "use client";
 
-import photography_1 from "@/public/projects/photography/1.jpg";
-import photography_2 from "@/public/projects/photography/2.jpg";
-import photography_3 from "@/public/projects/photography/3.jpg";
-import photography_4 from "@/public/projects/photography/4.jpg";
-import photography_5 from "@/public/projects/photography/5.jpg";
-import photography_6 from "@/public/projects/photography/6.jpg";
-import photography_7 from "@/public/projects/photography/7.jpg";
-import photography_8 from "@/public/projects/photography/8.jpg";
-import photography_9 from "@/public/projects/photography/9.jpg";
-import photography_10 from "@/public/projects/photography/10.jpg";
-import photography_11 from "@/public/projects/photography/11.jpg";
-import photography_12 from "@/public/projects/photography/12.jpg";
-import photography_13 from "@/public/projects/photography/13.jpg";
-import photography_14 from "@/public/projects/photography/14.jpg";
-import photography_15 from "@/public/projects/photography/15.jpg";
-import photography_16 from "@/public/projects/photography/16.jpg";
-import photography_17 from "@/public/projects/photography/17.jpg";
-import photography_18 from "@/public/projects/photography/18.jpg";
-import photography_19 from "@/public/projects/photography/19.jpg";
-import photography_20 from "@/public/projects/photography/20.jpg";
+import photography_1 from "@/public/projects/media-production/photography/1.jpg";
+import photography_2 from "@/public/projects/media-production/photography/2.jpg";
+import photography_3 from "@/public/projects/media-production/photography/3.jpg";
+import photography_4 from "@/public/projects/media-production/photography/4.jpg";
+import photography_5 from "@/public/projects/media-production/photography/5.jpg";
+import photography_6 from "@/public/projects/media-production/photography/6.jpg";
+import photography_7 from "@/public/projects/media-production/photography/7.jpg";
+import photography_8 from "@/public/projects/media-production/photography/8.jpg";
+import photography_9 from "@/public/projects/media-production/photography/9.jpg";
+import photography_10 from "@/public/projects/media-production/photography/10.jpg";
+import photography_11 from "@/public/projects/media-production/photography/11.jpg";
+import photography_12 from "@/public/projects/media-production/photography/12.jpg";
+import photography_13 from "@/public/projects/media-production/photography/13.jpg";
+import photography_14 from "@/public/projects/media-production/photography/14.jpg";
+import photography_15 from "@/public/projects/media-production/photography/15.jpg";
+import photography_16 from "@/public/projects/media-production/photography/16.jpg";
+import photography_17 from "@/public/projects/media-production/photography/17.jpg";
+import photography_18 from "@/public/projects/media-production/photography/18.jpg";
+import photography_19 from "@/public/projects/media-production/photography/19.jpg";
+import photography_20 from "@/public/projects/media-production/photography/20.jpg";
 
 import LightGallery from "lightgallery/react";
 
@@ -46,8 +46,7 @@ const ImageGallery = () => {
         plugins={[lgThumbnail, lgZoom]}
         elementClassNames={"photography-gallery-container"}
       >
-        <GalleryItem photo={photography_17} rotation="left" title="Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco." />        
-        <GalleryItem photo={photography_17} title="Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco." />
+        <GalleryItem photo={photography_17} rotation="left" title="Ballo" text="The team that made all this happen. Sic parvis magna!" />        
         <GalleryItem photo={photography_20} rotation="right" title="Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco." />
         <GalleryItem photo={photography_18} rotation="left" title="Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco." />
         <GalleryItem photo={photography_9} title="Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco." />

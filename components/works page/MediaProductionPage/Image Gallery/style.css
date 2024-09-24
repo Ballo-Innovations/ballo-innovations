@@ -90,7 +90,7 @@
   line-height: 1.4;
 }
 
-.card:hover svg {
+.photography-gallery-container .card:hover svg {
   scale: 0;
   transform: rotate(-45deg);
 }

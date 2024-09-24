@@ -1,0 +1,78 @@
+.card {
+  display: block;
+  position: relative;
+  width: 28em;
+  height: 20em;
+  border-radius: 5px;
+  padding: 2em 1.2em;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  /* background: linear-gradient(to bottom, #c3e6ec, #a7d1d9); */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-title {
+  opacity: 0;
+  font-size: 1.5em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+.small-desc {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  opacity: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, var(--brand-color-1 ), #384c6c);
+  border-radius: 0 0 0 100%;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), black);
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
+}
+
+.card:hover {
+  transform: translate(0px, -16px);
+}
+
+.card:hover:before {
+  transform: scale(40);
+}
+
+.card:hover .small-desc {
+  transition: all 0.5s ease-out;
+  opacity: 1;
+}
+
+.card:hover .card-title {
+  transition: all 0.5s ease-out;
+  opacity: 1;
+}

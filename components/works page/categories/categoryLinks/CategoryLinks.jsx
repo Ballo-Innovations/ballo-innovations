@@ -13,7 +13,7 @@ const CategoryLinks = ({ category }) => {
         } ${category.name === "Advertising" ? "w-2/3" : ""} ${
           category.name === "Graphic Design" ? "w-4/5 lg:mr-10" : ""
         } ${
-          category.name === "Photography" ? "w-4/5" : ""
+          category.name === "Media Production" ? "w-4/5" : ""
         } lg:w-[30vw] lg:h-[50vh] overflow-visible`}
       >
         <Image
