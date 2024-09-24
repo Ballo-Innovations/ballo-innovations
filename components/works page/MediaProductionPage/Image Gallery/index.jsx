@@ -35,7 +35,7 @@ import lgZoom from "lightgallery/plugins/zoom";
 import Link from "next/link";
 import Image from "next/image";
 
-import "./style.css";
+// import "./style.css";
 import GalleryItem from "./GalleryItem";
 
 const ImageGallery = () => {

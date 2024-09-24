@@ -22,6 +22,10 @@ import fiz_5 from "@/public/projects/media-production/photography/13.jpg";
 import fiz_6 from "@/public/projects/media-production/photography/14.jpg";
 import fiz_7 from "@/public/projects/media-production/photography/15.jpg";
 import fiz_8 from "@/public/projects/media-production/photography/16.jpg";
+import bayport_logo from "@/public/Client Logos/bayport.png";
+import bayport_1 from "@/public/projects/media-production/photography/bayport cover.jpg";
+import mudenda_logo from "@/public/Client Logos/Mudenda Capital Logo to send-03.png";
+import mudenda_1 from "@/public/projects/media-production/photography/mudenda capital cover.jpg";
 
 export const mediaProduction = [
   { 
@@ -29,6 +33,7 @@ export const mediaProduction = [
     name: 'Ballo Innovations',
     description: 'Ballo Innovations',
     logo: ballo_logo,
+    cover: ballo_1,
     images: [
       ballo_1,
       ballo_2,
@@ -38,14 +43,16 @@ export const mediaProduction = [
   },
   { 
     path: 'fiz',
-    name: 'FIZ',
+    name: 'Financial Insight Zambia',
     description: 'FIZ',
     logo: fiz_logo,
+    cover: fiz_1,
     images: [
       fiz_1,
       fiz_2,
       fiz_3,
       fiz_4,
+      fiz_5,
       fiz_6,
       fiz_7,
       fiz_8,
@@ -56,6 +63,7 @@ export const mediaProduction = [
     name: 'Insizwe',
     description: 'Insizwe',
     logo: insizwe_logo,
+    cover: insizwe_2,
     images: [
       insizwe_2,
       insizwe_1,
@@ -66,5 +74,21 @@ export const mediaProduction = [
       matsib_4,
       matsib_5,
     ]
+  },
+  { 
+    path: 'bayport',
+    name: 'Bayport Financial Services',
+    description: 'Mudenda Capital',
+    logo: bayport_logo,
+    cover: bayport_1,
+    images: []
+  },
+  { 
+    path: 'mudenda-capital',
+    name: 'Mudenda Capital',
+    description: 'Mudenda Capital',
+    logo: mudenda_logo,
+    cover: mudenda_1,
+    images: []
   },
 ];
