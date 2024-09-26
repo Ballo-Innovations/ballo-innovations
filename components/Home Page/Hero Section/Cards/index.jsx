@@ -132,7 +132,7 @@ const Cards = () => {
               </div>
             </div>
           </Link>
-          <div class="blob" />
+          <div className="blob" />
         </div>
       </div>
     </div>

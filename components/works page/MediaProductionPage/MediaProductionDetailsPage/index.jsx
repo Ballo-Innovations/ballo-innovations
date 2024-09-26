@@ -55,7 +55,7 @@ const MediaProductionDetailsPage = ({ params }) => {
             elementClassNames={"media-production-gallery"}
           >
             {project.images.map((image, index) => (
-              <Link href={image.src} className="gallery-item big" key={`img-${index}`}>
+              <Link href={image.src} className={`gallery-item ${project.path}-img`} key={`img-${index}`}>
                 <Image
                   id="ballo innovations"
                   src={image}

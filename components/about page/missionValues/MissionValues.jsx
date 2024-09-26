@@ -10,8 +10,13 @@ import { PlanePath } from "./icon";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Clouds from "./Clouds";
+import { useEffect } from "react";
 
 const MissionValues = () => {
+  useEffect(() => {
+    document.querySelector('body').style.position = 'static'
+  }, [])
+  
   useGSAP(() => {
     gsap.defaults({ ease: "power4.out" });
 

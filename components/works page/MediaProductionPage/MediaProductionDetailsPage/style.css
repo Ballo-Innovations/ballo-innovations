@@ -33,9 +33,24 @@
   box-shadow: 0 0 5px 1px var(--brand-color-3);
 }
 
+.fiz-img:nth-child(5) img {
+  object-position: 0 10% !important;
+}
+
+.fiz-img:nth-child(10) img {
+  object-position: 0 20% !important;
+}
+
+.insizwe-img:nth-child(4) img,
+.insizwe-img:nth-child(5) img, 
+.insizwe-img:nth-child(6) img, 
+.insizwe-img:nth-child(7) img, 
+.insizwe-img:nth-child(8) img {
+  object-position: 0 10% !important;
+}
 
 @media (max-width: 768px) {
-  .media-production-gallery {
+  .media-production-gallery { 
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(8.33%, 1fr));

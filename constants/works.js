@@ -19,9 +19,13 @@ import fiz_2 from "@/public/projects/media-production/photography/10.jpg";
 import fiz_3 from "@/public/projects/media-production/photography/11.jpg";
 import fiz_4 from "@/public/projects/media-production/photography/12.jpg";
 import fiz_5 from "@/public/projects/media-production/photography/13.jpg";
-import fiz_6 from "@/public/projects/media-production/photography/14.jpg";
-import fiz_7 from "@/public/projects/media-production/photography/15.jpg";
+import fiz_6 from "@/public/projects/media-production/photography/IMG_2232.jpg";
+import fiz_7 from "@/public/projects/media-production/photography/IMG_2267.jpg";
 import fiz_8 from "@/public/projects/media-production/photography/16.jpg";
+import fiz_9 from "@/public/projects/media-production/photography/IMG_2311.jpg";
+import fiz_10 from "@/public/projects/media-production/photography/IMG_2348.jpg";
+import fiz_11 from "@/public/projects/media-production/photography/IMG_2349.jpg";
+import fiz_12 from "@/public/projects/media-production/photography/IMG_2355.jpg";
 import mudenda_logo from "@/public/Client Logos/Mudenda Capital Logo to send-03.png";
 import mudenda_1 from "@/public/projects/media-production/photography/22.jpg";
 import bayport_logo from "@/public/Client Logos/bayport.png";
@@ -48,6 +52,8 @@ import thailand_13 from "@/public/projects/media-production/photography/41.jpg";
 import thailand_14 from "@/public/projects/media-production/photography/42.jpg";
 import thailand_15 from "@/public/projects/media-production/photography/43.jpg";
 import thailand_16 from "@/public/projects/media-production/photography/44.jpg";
+import thailand_17 from "@/public/projects/media-production/photography/DSC_0191.jpg";
+import thailand_18 from "@/public/projects/media-production/photography/DSC_0228.jpg";
 
 
 export const mediaProduction = [
@@ -82,6 +88,10 @@ export const mediaProduction = [
       fiz_8,
       fiz_4,
       fiz_5,
+      fiz_9,
+      fiz_10,
+      fiz_11,
+      fiz_12,
     ],
     videos: [
 
@@ -145,6 +155,8 @@ Just enjoy the views!
       thailand_3,
       thailand_2,
       thailand_11,
+      thailand_17,
+      thailand_18,
       thailand_4,
       thailand_5,
       thailand_6,

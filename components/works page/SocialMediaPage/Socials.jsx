@@ -3,10 +3,10 @@ import React from 'react'
 
 const Socials = ({ dark, facebook, twitter, linkedin, instagram }) => {
   return (
-    <div class={`social-login-icons ${dark && "dark-icons"}`}>
+    <div className={`social-login-icons ${dark && "dark-icons"}`}>
       {facebook && (
-        <Link href={facebook} class="socialcontainer">
-          <div class="icon social-icon-3-3">
+        <Link href={facebook} className="socialcontainer">
+          <div className="icon social-icon-3-3">
             <svg
               viewBox="0 0 384 512"
               fill="white"
@@ -18,7 +18,7 @@ const Socials = ({ dark, facebook, twitter, linkedin, instagram }) => {
               ></path>
             </svg>
           </div>
-          <div class="social-icon-3">
+          <div className="social-icon-3">
             <svg
               viewBox="0 0 384 512"
               fill="white"
@@ -34,13 +34,13 @@ const Socials = ({ dark, facebook, twitter, linkedin, instagram }) => {
       )}
 
       {twitter && (
-        <div class="socialcontainer">
-          <Link href={twitter} class="icon social-icon-1-1">
+        <div className="socialcontainer">
+          <Link href={twitter} className="icon social-icon-1-1">
             <svg
               viewBox="0 0 512 512"
               height="1.7em"
               xmlns="http://www.w3.org/2000/svg"
-              class="svgIcontwit"
+              className="svgIcontwit"
               fill="white"
             >
               <path
@@ -48,12 +48,12 @@ const Socials = ({ dark, facebook, twitter, linkedin, instagram }) => {
               ></path>
             </svg>
           </Link>
-          <div class="social-icon-1">
+          <div className="social-icon-1">
             <svg
               viewBox="0 0 512 512"
               height="1.7em"
               xmlns="http://www.w3.org/2000/svg"
-              class="svgIcontwit"
+              className="svgIcontwit"
               fill="white"
             >
               <path
@@ -65,11 +65,11 @@ const Socials = ({ dark, facebook, twitter, linkedin, instagram }) => {
       )}
 
       {instagram && (
-        <Link href={instagram} class="socialcontainer">
-          <div class="icon social-icon-2-2">
+        <Link href={instagram} className="socialcontainer">
+          <div className="icon social-icon-2-2">
             <svg
               fill="white"
-              class="svgIcon"
+              className="svgIcon"
               viewBox="0 0 448 512"
               height="1.5em"
               xmlns="http://www.w3.org/2000/svg"
@@ -79,10 +79,10 @@ const Socials = ({ dark, facebook, twitter, linkedin, instagram }) => {
               ></path>
             </svg>
           </div>
-          <div class="social-icon-2">
+          <div className="social-icon-2">
             <svg
               fill="white"
-              class="svgIcon"
+              className="svgIcon"
               viewBox="0 0 448 512"
               height="1.5em"
               xmlns="http://www.w3.org/2000/svg"
@@ -96,13 +96,13 @@ const Socials = ({ dark, facebook, twitter, linkedin, instagram }) => {
       )}
 
       {linkedin && (
-        <Link href={linkedin} class="socialcontainer">
-          <div class="icon social-icon-4-4">
+        <Link href={linkedin} className="socialcontainer">
+          <div className="icon social-icon-4-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 128 128">
               <path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 1 1-10.5 10.49a10.5 10.5 0 0 1 10.5-10.49m20.41 29h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path>
             </svg>
           </div>
-          <div class="social-icon-4">
+          <div className="social-icon-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 128 128">
               <path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 1 1-10.5 10.49a10.5 10.5 0 0 1 10.5-10.49m20.41 29h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path>
             </svg>

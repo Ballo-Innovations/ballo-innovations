@@ -1,7 +1,6 @@
 import phone from "@/public/elements small/phone.png";
 import Image from "next/image";
 import "./style.css";
-import ImageGallery from "./Image Gallery";
 import { mediaProduction } from "@/constants/works";
 import Link from "next/link";
 
@@ -17,14 +16,13 @@ const MediaProductionPage = () => {
         <div>
           <ul className="flex-center flex-wrap gap-1">
             {mediaProduction.map((work, index) => (
-              <li id={`media-${work.path}`} className="card" style={{background: `url(${work.cover.src})`, backgroundSize: "cover", backgroundPosition: "center"}}>
+              <li id={`media-${work.path}`} className="card" style={{background: `url(${work.cover.src})`, backgroundSize: "cover", backgroundPosition: "center"}} key={`bi-${index}`}>
                 <Link 
                   href={`media-production/${work.path}`}
-                  key={index}
                   className="content h-full w-full flex-center flex-col"
                 >
-                  <p class="card-title">{work.name}</p>
-                  <p class="small-desc">
+                  <p className="card-title">{work.name}</p>
+                  <p className="small-desc">
                     {work.description}
                   </p>
                 </Link>
