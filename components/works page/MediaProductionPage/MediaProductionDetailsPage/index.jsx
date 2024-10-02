@@ -22,18 +22,10 @@ import brushStroke from "@/public/elements small/brush-stroke-banner-6.svg";
 const MediaProductionDetailsPage = ({ params }) => {
   // console.log(mediaProduction, projectId)
   const project = mediaProduction.find(obj => obj.path === params.productionId);
-  const projectExample = mediaProduction[0].images
-  useEffect(() => {
-    
-    console.log(projectExample)
-    
-  }, [])
-  
-  console.log(params)
+
   return (
     <>
       {project && (
-
         <section id="media-production-details" className="mt-16 blue-black-bg-grandient">
           <div className="flex-center my-5">
             <div className="text-center relative w-fit font-bold py-10 text-[var(--brand-color-2)] px-10">
@@ -53,6 +45,9 @@ const MediaProductionDetailsPage = ({ params }) => {
             speed={500}
             plugins={[lgThumbnail, lgZoom, lgVdeo, lgHash]}
             elementClassNames={"media-production-gallery"}
+            videojs
+            videojsOptions={{ muted: false }}
+            hash={false}
           >
             {project.images.map((image, index) => (
               <Link href={image.src} className={`gallery-item ${project.path}-img`} key={`img-${index}`}>
@@ -68,14 +63,14 @@ const MediaProductionDetailsPage = ({ params }) => {
             ))}
 
             {project.videos.map((video, index) => (
-              <a data-src={video} className="gallery-item" key={`video-${index}`}>
+              <a data-src={video.src} data-poster={video.thumb} data-lg-size="1280-720" className="gallery-item" key={`video-${index}`}>
                 <Image
-                  id="ballo innovations"
-                  src={project.cover}
-                  alt=""
+                  src={video.thumb}
+                  alt="Ballo Innovtions"
                   quality={100}
                   className="img-responsive"
-                  placeholder="blur"
+                  width={320}
+                  height={320}
                 />
               </a>
             ))}

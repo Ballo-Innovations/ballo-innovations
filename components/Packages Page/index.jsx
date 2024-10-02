@@ -27,11 +27,12 @@ const PackagesPage = () => {
 
           <PackageCards />
 
-          <button className="text-[1.25em] font-bold border-white border-[3px] rounded-full px-14 py-2 z-[2] my-12">
+          {/* <button className="text-[1.25em] font-bold border-white border-[3px] rounded-full px-14 py-2 z-[2] my-12">
             DOWNLOAD OUR RATE CARD
-          </button>
+          </button> */}
 
-          <h2 className="font-bold text-[3em]">Or, Get Detailed Quote</h2>
+          {/* <h2 className="font-bold text-[3em]">Or, Get Detailed Quote</h2> */}
+          <h2 className="font-bold text-[3em]">Get Detailed Quote</h2>
 
           <GetQuouteForm />
         </div>

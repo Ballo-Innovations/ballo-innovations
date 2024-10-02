@@ -1,4 +1,3 @@
-import phone from "@/public/elements small/phone.png";
 import Image from "next/image";
 import "./style.css";
 import { mediaProduction } from "@/constants/works";

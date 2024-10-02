@@ -117,19 +117,28 @@ export const mediaProduction = [
  
     ]
   },
-  // { 
-  //   path: 'bayport',
-  //   name: 'Bayport Financial Services',
-  //   description: 'Bayport Financial Services Zambia upgraded USSD elaunch campaign.',
-  //   logo: bayport_logo,
-  //   cover: bayport_1,
-  //   images: [],
-  //   videos: [
-  //     "https://www.youtube.com/watch?v=ZBCUegTZF7M",
-  //     "/public/projects/media-production/videos/bayport_teaser_2.mp4",
-  //     "/public/projects/media-production/videos/bayport_teaser_3.mp4",
-  //   ]
-  // },
+  { 
+    path: 'bayport',
+    name: 'Bayport Financial Services',
+    description: 'Bayport Financial Services Zambia upgraded USSD elaunch campaign.',
+    logo: bayport_logo,
+    cover: bayport_1,
+    images: [],
+    videos: [
+      {
+        src: "https://youtu.be/VmnFWjgji7o",
+        thumb: "https://img.youtube.com/vi/VmnFWjgji7o/mqdefault.jpg"
+      },
+      {
+        src: "https://youtu.be/ndRFdLgGrOw",
+        thumb: "https://img.youtube.com/vi/ndRFdLgGrOw/mqdefault.jpg"
+      },
+      {
+        src: "https://youtu.be/CoWYvcz0mMA",
+        thumb: "https://img.youtube.com/vi/CoWYvcz0mMA/mqdefault.jpg"
+      },
+    ]
+  },
   // { 
   //   path: 'mudenda-capital',
   //   name: 'Mudenda Capital',
