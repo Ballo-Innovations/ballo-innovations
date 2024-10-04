@@ -109,47 +109,17 @@ export const mediaProduction = [
       insizwe_3,
       matsib_1,
       matsib_2,
-      matsib_3,
-      matsib_4,
+      // matsib_3,
+      // matsib_4,
       matsib_5,
     ],
     videos: [
- 
-    ]
-  },
-  { 
-    path: 'bayport',
-    name: 'Bayport Financial Services',
-    description: 'Bayport Financial Services Zambia upgraded USSD elaunch campaign.',
-    logo: bayport_logo,
-    cover: bayport_1,
-    images: [],
-    videos: [
       {
-        src: "https://youtu.be/VmnFWjgji7o",
-        thumb: "https://img.youtube.com/vi/VmnFWjgji7o/mqdefault.jpg"
-      },
-      {
-        src: "https://youtu.be/ndRFdLgGrOw",
-        thumb: "https://img.youtube.com/vi/ndRFdLgGrOw/mqdefault.jpg"
-      },
-      {
-        src: "https://youtu.be/CoWYvcz0mMA",
-        thumb: "https://img.youtube.com/vi/CoWYvcz0mMA/mqdefault.jpg"
+        src: "3JqR6FemNZw",
+        thumb: "https://img.youtube.com/vi/3JqR6FemNZw/mqdefault.jpg"
       },
     ]
   },
-  // { 
-  //   path: 'mudenda-capital',
-  //   name: 'Mudenda Capital',
-  //   description: 'Mudenda Capital Partners revised and updated their service offerings. They called on us to create a reintroduction video with voiceover. After having great traction, they called on us to handle their social media.',
-  //   logo: mudenda_logo,
-  //   cover: mudenda_1,
-  //   images: [],
-  //   videos: [
-  //     "/projects/media-production/videos/mudenda_capital.mp4",
-  //   ]
-  // },
   { 
     path: 'phuket-thailand',
     name: 'Phuket, Thailand',
@@ -195,5 +165,41 @@ Just enjoy the views!
       greenery_6,
     ],
     videos: []
+  },
+  { 
+    path: 'bayport',
+    name: 'Bayport Financial Services',
+    description: 'Bayport Financial Services Zambia upgraded USSD elaunch campaign.',
+    logo: bayport_logo,
+    cover: bayport_1,
+    images: [],
+    videos: [
+      {
+        src: "VmnFWjgji7o",
+        thumb: "https://img.youtube.com/vi/VmnFWjgji7o/mqdefault.jpg"
+      },
+      {
+        src: "ndRFdLgGrOw",  // Youtube video Id
+        thumb: "https://img.youtube.com/vi/ndRFdLgGrOw/mqdefault.jpg"
+      },
+      {
+        src: "CoWYvcz0mMA",
+        thumb: "https://img.youtube.com/vi/CoWYvcz0mMA/mqdefault.jpg"
+      },
+    ]
+  },
+  { 
+    path: 'mudenda-capital',
+    name: 'Mudenda Capital',
+    description: 'Mudenda Capital Partners revised and updated their service offerings. They called on us to create a reintroduction video with voiceover. After having great traction, they called on us to handle their social media.',
+    logo: mudenda_logo,
+    cover: mudenda_1,
+    images: [],
+    videos: [
+      {
+        src: "jWZW8WbtdMg",
+        thumb: "https://img.youtube.com/vi/jWZW8WbtdMg/mqdefault.jpg"
+      },
+    ]
   },
 ];
