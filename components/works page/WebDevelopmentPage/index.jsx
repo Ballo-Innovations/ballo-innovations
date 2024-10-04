@@ -13,7 +13,7 @@ import swr from "@/public/projects/web-development/swr.png";
 import insizwe from "@/public/projects/web-development/insizwe.png";
 import mudenda from "@/public/projects/web-development/mudenda-capital.png";
 import seneca from "@/public/projects/web-development/seneca-dsc.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -30,7 +30,7 @@ const WebDevelopmentPage = () => {
 
   // Tutorial link: https://www.youtube.com/watch?v=aAGypqJd818
 
-  useGSAP(() => {
+  useEffect(() => {
     let mobileView = gsap.matchMedia();
     mobileView.add("(max-width: 768px)", () => {
       gsap.to("#webdev-mobile-title", {
