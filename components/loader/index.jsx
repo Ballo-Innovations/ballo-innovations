@@ -32,7 +32,7 @@ const Loader = () => {
 
   return (
     showLoader && (
-      <div id="loader" className={fadeOut && "opacity-0"}>
+      <div id="loader" className={`${fadeOut && "opacity-0"}`}>
         {/* <FollowMouse unmount={fadeOut} /> */}
         <RippleEffect
           top={"10%"}

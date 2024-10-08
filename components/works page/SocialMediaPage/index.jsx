@@ -16,23 +16,39 @@ const SocialMediaPage = () => {
     threshold: 0.5,
   });
 
-  const navbarState = () => {
-    if (scrolled) {
-      document.querySelector("#nav-social-links").classList.remove("hidden");
-      document.querySelector("#navbar").classList.remove("nav-scrolled");
-    } else {
-      document.querySelector("#nav-social-links").classList.add("hidden");
-      document.querySelector("#navbar").classList.add("nav-scrolled");
-    }
-  };
-
   useEffect(() => {
+    const navSocialLinks = document.querySelector("#nav-social-links");
+    const navbar = document.querySelector("#navbar");
+    const footer = document.querySelector("#footer");
+
+    const initialNavSocialLinksClass = navSocialLinks.className;
+    const initialNavbarClass = navbar.className;
+    const initialFooterClass = footer.className;
+
+    footer.classList.add("h-screen", "pt-[5em]")
+
+    const navbarState = () => {
+      if (scrolled) {
+        navSocialLinks.classList.remove("hidden");
+        navbar.classList.remove("nav-scrolled");
+      } else {
+        navSocialLinks.classList.add("hidden");
+        navbar.classList.add("nav-scrolled");
+      }
+    };
+    
     if (inView) {
       setScrolled(false);
     } else {
       setScrolled(true);
     }
     navbarState();
+
+    return () => {
+      navSocialLinks.className = initialNavSocialLinksClass;
+      navbar.className = initialNavbarClass;
+      footer.className = initialFooterClass;
+    };
   }, [inView]);
 
   return (

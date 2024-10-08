@@ -26,7 +26,7 @@ const index = () => {
       <h2 className="subheading z-[2]">What&apos;s in your Ballo today?</h2>
 
       <p className="font-bold text-center z-[2] px-5 md:px-0">
-        Feel free to call, email, or hit us up on our social media accounts.
+        For more information, contact us by phone, email, or via our social media channels.
       </p>
 
       <Link

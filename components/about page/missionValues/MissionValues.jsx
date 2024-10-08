@@ -13,9 +13,13 @@ import Clouds from "./Clouds";
 import { useEffect } from "react";
 
 const MissionValues = () => {
-  // useEffect(() => {
-  //   document.querySelector('body').style.position = 'static'
-  // }, [])
+  useEffect(() => {
+    document.querySelector('#navbar').style.position = 'fixed'
+
+    return () => {
+      document.querySelector('#navbar').style.position = 'absolute'
+    };
+  }, [])
   
   useGSAP(() => {
     gsap.defaults({ ease: "power4.out" });

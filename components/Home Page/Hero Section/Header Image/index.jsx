@@ -52,7 +52,7 @@ const HeaderImage = () => {
         scrollTrigger: {
           trigger: "#hero-logo-img",
           start: "top 10%",
-          end: "bottom",
+          end: "bottom 65%",
           pin: true,
           scrub: 1,
           anticipatePin: 1,
