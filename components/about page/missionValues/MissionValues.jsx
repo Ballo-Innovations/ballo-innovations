@@ -14,15 +14,15 @@ import { useEffect } from "react";
 
 const MissionValues = () => {
   useEffect(() => {
-    document.querySelector('#navbar').style.position = 'fixed'
+    document.querySelector('#navbar').classList.add('fixed')
 
     return () => {
-      document.querySelector('#navbar').style.position = 'absolute'
+      document.querySelector('#navbar').classList.remove('fixed')
     };
   }, [])
   
   useGSAP(() => {
-    gsap.defaults({ ease: "power4.out" });
+    gsap.defaults({ ease: "power4.out" }); 
 
     let desktopView = gsap.matchMedia();
     desktopView.add("(min-width: 641px)", () => {
