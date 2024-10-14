@@ -14,10 +14,11 @@ import { useEffect } from "react";
 
 const MissionValues = () => {
   useEffect(() => {
-    document.querySelector('#navbar').classList.add('fixed')
+    const navbar = document.querySelector('#navbar');
+    if(navbar) {navbar.classList.add('fixed')}
 
     return () => {
-      document.querySelector('#navbar').classList.remove('fixed')
+      if(navbar) {navbar.classList.remove('fixed')}
     };
   }, [])
   
