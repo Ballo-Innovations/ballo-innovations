@@ -2,6 +2,7 @@ import Footer from "@/components/footer/Footer";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Loader from "@/components/loader";
+import FloatingSocials from "@/components/Floating Socials/index.";
 
 export const metadata = {
   title: "Ballo Innovations",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <Loader />
         <Navbar />
         {children}
+        <FloatingSocials />
         <Footer />
       </body>
     </html>
