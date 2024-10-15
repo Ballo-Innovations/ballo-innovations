@@ -34,7 +34,7 @@
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  fill: #03a9f4;
+  fill: #025d87;
   padding: 10px;
   border-radius: 50px;
   transition: opacity 0.3s, visibility 0.3s, top 0.3s, background 0.3s;
@@ -54,7 +54,7 @@
   justify-content: center;
 }
 .tooltip-container:hover .tooltip1:hover {
-  background: #03a9f4;
+  background: #025d87;
   fill: #fff;
 }
 /* Fim do tooltip twitter */
@@ -157,7 +157,10 @@
   justify-content: center;
 }
 .tooltip-container:hover .tooltip4:hover {
-  background: #8c9eff;
+  background: black;
+}
+
+.tooltip-container:hover .tooltip4:hover svg { 
   fill: #fff;
 }
 /* Fim do tooltip Discord */
@@ -205,7 +208,7 @@
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  fill: #ea4c89;
+  fill: skyblue;
   padding: 10px;
   border-radius: 50px;
   transition: opacity 0.3s, visibility 0.3s, top 0.3s, background 0.3s;
@@ -225,8 +228,11 @@
   justify-content: center;
 }
 .tooltip-container:hover .tooltip6:hover {
-  background: #ea4c89;
-  fill: #fff;
+  background: skyblue;
+}
+
+.tooltip-container:hover .tooltip6:hover g {
+  fill: white !important;
 }
 /* Fim do tooltip dribbble */
 
@@ -292,9 +298,13 @@
   align-items: center;
   justify-content: center;
 }
+
 .tooltip-container:hover .tooltip8:hover {
-  background: #ff4500;
-  fill: #fff;
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.tooltip-container:hover .tooltip8:hover svg {
+  fill: #fff !important;
 }
 /* Fim do tooltip reddit */
 
