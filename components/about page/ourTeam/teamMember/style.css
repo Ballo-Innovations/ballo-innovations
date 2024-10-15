@@ -26,9 +26,9 @@
   transition: all 0.2s ease-in-out;
 }
 
-.team-member:hover .profile-image {
+/* .team-member:hover .profile-image {
   transform: scale(1.25) translateY(20px);
-}
+} */
 
 .delay-anim {
   z-index: 9;

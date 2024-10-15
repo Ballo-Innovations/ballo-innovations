@@ -2,12 +2,19 @@ import Image from "next/image";
 import TeamMember from "./teamMember/TeamMember";
 import bg from "@/public/elements/Management Team_2.png";
 import Lombe from "@/public/team/lombe.jpeg";
+import Lombe_sm from "@/public/team/lombe-sm.jpeg";
 import shannon from "@/public/team/shannon2.jpg";
+import shannon_sm from "@/public/team/shannon-sm.jpg";
 import george from "@/public/team/george.jpg";
+import george_sm from "@/public/team/george-sm.jpg";
 import jonah from "@/public/team/jonah.jpeg";
+import jonah_sm from "@/public/team/jonah-sm.jpg";
 import michael from "@/public/team/michael.jpg";
+import michael_sm from "@/public/team/michael-sm.jpg";
 import emmanuel from "@/public/team/emmanuel_phiri.jpg";
+import emmanuel_sm from "@/public/team/michael-sm.jpg";
 import mwali from "@/public/team/mwali.jpeg";
+import mwali_sm from "@/public/team/mwali-sm.jpg";
 import lombeBG from "@/public/team/lombe-bg.jpg";
 import georgeBG from "@/public/team/george-bg.png";
 import michaelBG from "@/public/team/michael-bg.jpg";
@@ -21,6 +28,7 @@ const OurTeam = () => {
     {
       name: "Lombe Lusale-Musukuma",
       position: "Founder - Managing Director",
+      photo_sm: Lombe_sm,
       photo: Lombe,
       bg: lombeBG,
       description:
@@ -29,6 +37,7 @@ const OurTeam = () => {
     {
       name: "Shannon Zebron",
       position: "Co-Founder - Creative Director",
+      photo_sm: shannon_sm,
       photo: shannon,
       bg: shannonBG,
       description:
@@ -37,6 +46,7 @@ const OurTeam = () => {
     {
       name: "George M'sapenda",
       position: "Technical Director",
+      photo_sm: george_sm,
       photo: george,
       bg: georgeBG,
       description: `George M'sapenda is a tech wizard with a knack for creating impactful technology solutions. Whether he's coding JavaScript, Ruby, Python, or SQL, George is your go-to guy for turning ideas into impactful solutions. As an innovative engineer poised to change the world, he excels in guiding technical projects.  George motto? "Innovation is about adding value, not just creating new things!"`,
@@ -44,6 +54,7 @@ const OurTeam = () => {
     {
       name: "Jonah Hachunde",
       position: "Sr Data Analyst",
+      photo_sm: jonah_sm,
       photo: jonah,
       bg: jonahBG,
       description: `A software engineer by profession, Jonah is also holds a certificate in Project Management and Cyber Security. He is focused, hard working, strong and exudes interpersonal skills. He easily adapts to new environments, is a fast learner and performs well under pressure. He has a penchant for software engineering, project management and data analysis. “I always try to make a difference in whatever small capacity I can and every opportunity I am given because I believe change starts from within ourselves.”
@@ -52,6 +63,7 @@ One thing he loves the most are number "0 & 1", "as a data analyst I've come to 
     {
       name: "Michael Chuba",
       position: "Software Engineer",
+      photo_sm: michael_sm,
       photo: michael,
       bg: michaelBG,
       description: `Michael is the Head Software Developer at Ballo. A skilled UI/UX Designer & FullStack Developer, he proclaims “A King must know the ins and outs of his kingdom ..... The computer is my kingdom”. He is multi- talented in the digital arts and has that Midas touch; turning everything at his disposal to gold. Michael is the founder of ZedBrains and is a hand in the Ballo pantheon that makes your dreams come to life! "The cowards never start. The weak died along the way….. that leaves us.”`,
@@ -59,6 +71,7 @@ One thing he loves the most are number "0 & 1", "as a data analyst I've come to 
     {
       name: "Emmanuel Phiri",
       position: "Creative Specialist",
+      photo_sm: emmanuel_sm,
       photo: emmanuel,
       bg: emmaBG,
       description:
@@ -67,6 +80,7 @@ One thing he loves the most are number "0 & 1", "as a data analyst I've come to 
     {
       name: "Mwali Chisanga",
       position: "Social Media and Customer Support",
+      photo_sm: mwali_sm,
       photo: mwali,
       bg: mwaliBG,
       description:
@@ -98,6 +112,7 @@ One thing he loves the most are number "0 & 1", "as a data analyst I've come to 
               key={index}
               name={member.name}
               position={member.position}
+              photo_sm={member.photo_sm}
               photo={member.photo}
               bg={member.bg}
               description={member.description}

@@ -6,7 +6,7 @@ import arrow from "@/public/elements small/10.png";
 import { useState } from "react";
 import Popup from "../popup/Popup";
 
-const TeamMember = ({ photo, name, position, bg, description }) => {
+const TeamMember = ({ photo_sm, photo, name, position, bg, description }) => {
   const [showDetails, setShowDetails] = useState(false);
   const [delayAnim, setDelayAnim] = useState(false);
 
@@ -42,7 +42,7 @@ const TeamMember = ({ photo, name, position, bg, description }) => {
       <div className="relative" onClick={toggleDetails}>
         <div className="relative overflow-hidden rounded-full">
           <Image
-            src={photo}
+            src={photo_sm}
             alt={name}
             quality={100}
             className="profile-image"
