@@ -208,7 +208,7 @@
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  fill: skyblue;
+  fill: #5c8ea2;
   padding: 10px;
   border-radius: 50px;
   transition: opacity 0.3s, visibility 0.3s, top 0.3s, background 0.3s;
@@ -228,7 +228,7 @@
   justify-content: center;
 }
 .tooltip-container:hover .tooltip6:hover {
-  background: skyblue;
+  background: #5c8ea2;
 }
 
 .tooltip-container:hover .tooltip6:hover g {
