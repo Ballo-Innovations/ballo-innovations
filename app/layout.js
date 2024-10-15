@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="no-scroll">
         <Loader />
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         <Footer />
       </body>

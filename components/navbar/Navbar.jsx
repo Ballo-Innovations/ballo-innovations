@@ -46,7 +46,6 @@ const Navbar = () => {
     // Handle window resize
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
-        document.querySelector("body").style.position = "relative";
         setShowMenu(false);
       }
     };
@@ -102,12 +101,9 @@ const Navbar = () => {
 
   // Function to toggle menu
   const toggleMenu = () => {
-    // const body = document.querySelector('body');
     if (!showMenu) {
-      // body.style.position = 'fixed';
       setShowMenu(true);
     } else {
-      // body.style.position = 'relative';
       setShowMenu(false);
     }
   };
