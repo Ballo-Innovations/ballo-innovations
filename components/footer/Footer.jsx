@@ -11,7 +11,7 @@ const index = () => {
     <footer
       id="footer"
       style={{ background: `url(${background.src})`, backgroundSize: "cover" }}
-      className="flex-center flex-col text-white gap-10 py-5 relative overflow-hidden z-[5]"
+      className="flex-center flex-col text-white gap-10 py-5 relative overflow-hidden z-[4]"
     >
       <span id="footer_" className="absolute -top-20 mb-20" />
       <Image src={ring} alt="Logo" quality={100} className="footer-ring" />
