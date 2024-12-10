@@ -57,7 +57,7 @@ const PackageCards = () => {
               showMoreTamanga ? "flex-center" : "hidden opacity-0"
             }`}
           >
-            K7,000
+            K7,500
           </h4>
           <button
             className="font-semibold text-sm mt-5 relative w-full h-full"
@@ -132,7 +132,7 @@ const PackageCards = () => {
               showMoreTamangaPro ? "flex-center" : "hidden opacity-0"
             }`}
           >
-            K12,500
+            K15,000
           </h4>
           <button
             className="font-semibold text-sm mt-5 relative w-full h-full"
@@ -205,7 +205,7 @@ const PackageCards = () => {
               showMoreTiyeTiye ? "flex-center" : "hidden opacity-0"
             }`}
           >
-            K25,000
+            K30,000
           </h4>
           <button
             className="font-semibold text-sm mt-5 relative w-full h-full"
