@@ -1,28 +1,32 @@
 .logo-ring-flicker {
-  animation: flicker ease-in-out 4s !important;
+  animation: flicker ease-in-out 4s infinite !important;
+  animation-delay: 0s;
 }
 
 @keyframes flicker {
   0% {
     opacity: 0;
   }
-  70% {
+  30% {
     opacity: 0;
   }
-  74% {
+  34% {
     opacity: 1;
   }
-  77.5% {
+  37.5% {
     opacity: 0;
   }
-  80% {
+  40% {
     opacity: 1;
   }
-  85% {
+  45% {
     opacity: 0;
   }
-  95% {
+  50% {
     opacity: 0;
+  }
+  55% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -125,7 +129,7 @@
 
   .logo-ring {
     width: calc(52% - 0.3em);
-    left: -5.5%;
+    left: -5%;
   }
 
   .bi-logo {
@@ -161,6 +165,6 @@
 @media (min-width: 1024px) {
   .logo-ring {
     width: calc(29% - 0.3em) !important;
-    left: 4%;
+    left: 4.15%;
   }
 }
