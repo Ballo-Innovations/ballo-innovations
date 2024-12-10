@@ -2,7 +2,7 @@
   position: absolute;
   z-index: 0;
   height: auto;
-  width: 55%;
+  width: 45%;
   opacity: 0.5;
   animation: footer-ring-glow 7s ease-in-out infinite;
 }
