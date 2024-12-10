@@ -103,6 +103,7 @@
   top: 55%;
   left: 76%;
   transform: translateX(-50%) translateY(-50%) translateZ(-1500px); /*Increment translateZ by 1500px*/
+  box-shadow: 25px 50px 60px rgba(0, 0, 0, 0.6);
 }
 
 #work-web-dev .slider #slide-4 {
@@ -110,6 +111,7 @@
   top: 55%;
   left: 23%;
   transform: translateX(-50%) translateY(-50%) translateZ(-3000px); /*Increment translateZ by 1500px*/
+  box-shadow: -25px 50px 60px rgba(0, 0, 0, 0.6);
 }
 
 #work-web-dev .slider #slide-3 {
@@ -117,6 +119,7 @@
   top: 55%;
   left: 76%;
   transform: translateX(-50%) translateY(-50%) translateZ(-4500px);
+  box-shadow: 25px 50px 60px rgba(0, 0, 0, 0.6);
 }
 
 #work-web-dev .slider #slide-2 {
@@ -124,6 +127,7 @@
   top: 55%;
   left: 23%;
   transform: translateX(-50%) translateY(-50%) translateZ(-6000px);
+  box-shadow: -25px 50px 60px rgba(0, 0, 0, 0.6);
 }
 
 #work-web-dev .slider #slide-1 {
@@ -131,6 +135,7 @@
   top: 55%;
   left: 76%;
   transform: translateX(-50%) translateY(-50%) translateZ(-7500px);
+  box-shadow: 25px 50px 60px rgba(0, 0, 0, 0.6);
 }
 
 .follow-link-bubble {
