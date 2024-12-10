@@ -68,15 +68,15 @@ One thing he loves the most are number "0 & 1", "as a data analyst I've come to 
       bg: michaelBG,
       description: `Michael is the Head Software Developer at Ballo. A skilled UI/UX Designer & FullStack Developer, he proclaims “A King must know the ins and outs of his kingdom ..... The computer is my kingdom”. He is multi- talented in the digital arts and has that Midas touch; turning everything at his disposal to gold. Michael is the founder of ZedBrains and is a hand in the Ballo pantheon that makes your dreams come to life! "The cowards never start. The weak died along the way….. that leaves us.”`,
     },
-    {
-      name: "Emmanuel Phiri",
-      position: "Creative Specialist",
-      photo_sm: emmanuel_sm,
-      photo: emmanuel,
-      bg: emmaBG,
-      description:
-        "Emmanuel Phiri is a seasoned creative professional with over five years of experience in the industry. With a sharp eye for creativity and aesthetics, he quickly grasps briefs and delivers results efficiently. He has helped over 100 businesses transition to the digital world through strategic concepts, compelling designs, and more.",
-    },
+    // {
+    //   name: "Emmanuel Phiri",
+    //   position: "Creative Specialist",
+    //   photo_sm: emmanuel_sm,
+    //   photo: emmanuel,
+    //   bg: emmaBG,
+    //   description:
+    //     "Emmanuel Phiri is a seasoned creative professional with over five years of experience in the industry. With a sharp eye for creativity and aesthetics, he quickly grasps briefs and delivers results efficiently. He has helped over 100 businesses transition to the digital world through strategic concepts, compelling designs, and more.",
+    // },
     {
       name: "Mwali Chisanga",
       position: "Social Media and Customer Support",
