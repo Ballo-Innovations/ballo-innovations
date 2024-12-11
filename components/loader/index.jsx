@@ -12,6 +12,13 @@ import ring from "@/public/elements small/15.png";
 const Loader = () => {
   const [showLoader, setShowLoader] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
+  const [animation, setAnimation] = useState(false);
+
+  useEffect(() => {
+    const fadeOutTimeout = setTimeout(() => {
+      setAnimation(true);
+    }, 1000);
+  });
 
   // useEffect(() => {
   //   // Set timeouts and store the IDs
@@ -91,11 +98,14 @@ const Loader = () => {
             src={ring}
             alt="Ballo Innovations"
             quality={100}
-            className="ring absolute z-30"
+            className={`ring absolute z-30 ${animation && "animate-ring"}`}
             loading="eager"
           />
           <span class="actual-text">&nbsp;WEBSITE..&nbsp;</span>
-          <span aria-hidden="true" class="hover-text">
+          <span
+            aria-hidden="true"
+            className={`hover-text ${animation && "animate-text"}`}
+          >
             &nbsp;WEBSITE..&nbsp;
           </span>
         </button>
