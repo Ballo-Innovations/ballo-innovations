@@ -89,7 +89,7 @@ body {
 
 .ring {
   transition: all ease-in-out 1.5s;
-  left: -70%;
+  left: -53vw;
   border: none !important;
   box-shadow: none !important;
   height: 100vh;
@@ -98,6 +98,6 @@ body {
 }
 
 .button:hover .ring {
-  left: 90%;
+  left: 60vw;
   opacity: 1;
 }
