@@ -89,7 +89,7 @@ body {
 
 .ring {
   transition: all ease-in-out 1.5s;
-  left: -53vw;
+  left: -55vw;
   border: none !important;
   box-shadow: none !important;
   height: 100vh;
