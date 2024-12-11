@@ -1,4 +1,4 @@
-#loader {
+/* #loader {
   position: fixed;
   inset: 0;
   height: 100vh;
@@ -13,4 +13,91 @@
   background: rgba(0, 0, 0, 0.05);
   z-index: 2;
   backdrop-filter: blur(1px);
+} */
+
+body {
+  cursor: url("/elements small/15.png") 16 16, auto !important;
+}
+
+.reel-wrapper-wrapper {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  z-index: 20;
+  position: fixed;
+  inset: 0;
+  cursor: url("/elements small/15.png") 16 16, auto !important;
+}
+
+.reel-wraper {
+  font-size: 5rem;
+  z-index: 20;
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* transform: rotate(180deg); */
+}
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: auto;
+}
+
+/* button styling */
+.button {
+  --border-right: 20px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #2cf8f6;
+  --fs-size: 2em;
+  letter-spacing: 10px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: white;
+  width: 0%;
+  inset: 0;
+  /* border-right: var(--border-right) solid var(--animation-color); */
+  overflow: hidden;
+  transition: 1.5s;
+  transition-delay: 0.4s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+.ring {
+  transition: all ease-in-out 1.5s;
+  left: -70%;
+  border: none !important;
+  box-shadow: none !important;
+  height: 100vh;
+  top: -35vh;
+  width: auto;
+}
+
+.button:hover .ring {
+  left: 90%;
+  opacity: 1;
 }

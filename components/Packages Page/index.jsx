@@ -22,7 +22,7 @@ const PackagesPage = () => {
 
         <div className="z-[2] px-[0.5em] md:px-[5em] mt-10">
           <h2 className="text-center md:text-left text-[3em] font-bold relative md:mb-10 lg:mb-0">
-            Business Starter Packages
+            Corporate Identity Packages
           </h2>
 
           <PackageCards />
