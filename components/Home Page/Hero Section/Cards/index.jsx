@@ -45,7 +45,7 @@ const Cards = () => {
         duration: 0.5,
         scrollTrigger: {
           trigger: "#service-cards-wrapper",
-          start: "top 45%",
+          start: "top 40%",
           end: "+=" + amountToScroll,
           pin: true,
           scrub: true,

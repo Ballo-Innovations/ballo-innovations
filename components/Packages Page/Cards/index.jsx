@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import "./style.css";
+import info from "@/public/elements small/information-svg.png";
+import Image from "next/image";
 
 const CheckMark = ({ color }) => {
   return (
@@ -28,7 +30,25 @@ const PackageCards = () => {
   return (
     <div className="packages-container relative pt-10">
       <div className="package">
-        <h3>Tamanga</h3>
+        <div className="z-80 flex-center gap-3">
+          <h3>Base</h3>
+          <div class="relative group flex-center">
+            <Image
+              src={info}
+              alt="Ballo Innovations"
+              quality={100}
+              className="w-6 cursor-pointer"
+            />
+
+            <div class="z-10 p-4 absolute -left-[10vw] top-1/2 mt-6 hidden w-[80vw] md:w-[20vw] bg-gradient-to-br from-[#2e2c6f] to-[#181c9d] border-gray-200 rounded-md shadow-lg group-hover:block text-white z-80">
+              This package offers an affordable yet comprehensive solution for
+              startups and small businesses looking to project professionalism
+              and build trust with their audience from the outset. Its ideal for
+              entrepreneurs or small companies ready to transition from informal
+              branding to a cohesive, market-ready corporate identity
+            </div>
+          </div>
+        </div>
         <div className="text-[var(--brand-color-1)] bg-[var(--brand-color-5)]">
           <ul className="text-left">
             <li className="flex">
@@ -85,7 +105,26 @@ const PackageCards = () => {
       </div>
 
       <div className="package">
-        <h3>Tamanga Pro</h3>
+        <div className="z-80 flex-center gap-3">
+          <h3>Booster</h3>
+          <div class="relative group flex-center">
+            <Image
+              src={info}
+              alt="Ballo Innovations"
+              quality={100}
+              className="w-6 cursor-pointer"
+            />
+
+            <div class="z-10 p-4 absolute -left-[10vw] top-1/2 mt-6 hidden w-[80vw] md:w-[20vw] bg-gradient-to-br from-[#2e2c6f] to-[#181c9d] border-gray-200 rounded-md shadow-lg group-hover:block text-white z-80">
+              This package offers enhanced tools for businesses aiming to scale,
+              ensuring a polished and consistent brand image across all
+              touchpoints. It’s ideal for growing businesses seeking to present
+              a professional, cohesive identity to investors, partners, and
+              clients while maintaining a unified look and feel as they expand
+              or rebrand.
+            </div>
+          </div>
+        </div>
         <div className="bg-[var(--brand-color-3)]">
           <ul className="text-left">
             <li className="flex">
@@ -160,7 +199,27 @@ const PackageCards = () => {
       </div>
 
       <div className="package">
-        <h3>Tiye Tiye</h3>
+        <div className="z-80 flex-center gap-3">
+          <h3>Ballo</h3>
+          <div class="relative group flex-center">
+            <Image
+              src={info}
+              alt="Ballo Innovations"
+              quality={100}
+              className="w-6 cursor-pointer"
+            />
+
+            <div class="z-10 p-4 absolute -left-[10vw] top-1/2 mt-6 hidden w-[80vw] md:w-[20vw] bg-gradient-to-br from-[#2e2c6f] to-[#181c9d] border-gray-200 rounded-md shadow-lg group-hover:block text-white z-80">
+              This package offers a complete and seamless identity solution,
+              combining branding essentials with a professional landing website
+              that positions your business for maximum visibility and engagement
+              in the digital age. It’s perfect for established businesses or
+              ambitious startups ready to compete at a high level and create a
+              strong impression across physical and digital platforms. It’s
+              everything you need, so what’s in your Ballo today?
+            </div>
+          </div>
+        </div>
         <div className="bg-[var(--brand-color-2)]">
           <ul className="text-left">
             <li className="flex">
