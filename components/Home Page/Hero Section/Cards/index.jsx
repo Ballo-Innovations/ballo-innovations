@@ -37,7 +37,7 @@ const Cards = () => {
     if (cardsWrapperRef) {
       const cards = gsap.utils.toArray(".service-card");
       const amountToScroll =
-        cardsWrapperRef.current.offsetWidth - window.innerWidth;
+        cardsWrapperRef.current.offsetWidth - window.innerWidth + 50;
 
       let scrollTween = gsap.to("#services-cards-container", {
         x: -amountToScroll,
@@ -49,7 +49,7 @@ const Cards = () => {
           end: "+=" + amountToScroll,
           pin: true,
           scrub: true,
-          anticipatePin: 1,
+          anticipatePin: 3,
           snap: {
             snapTo: 0.5, // Snap to the middle point
             duration: 0.5,
@@ -87,7 +87,7 @@ const Cards = () => {
       duration: 1,
       scrollTrigger: {
         trigger: "#what-we-are-about",
-        start: "top 75%",
+        start: "top 90%",
         end: "top 50%",
         scrub: true,
       },
@@ -168,7 +168,7 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      <div className="mt-80 px-5 md:px-32 opacity-0" id="what-we-are-about">
+      <div className="mt-40 px-5 md:px-32 opacity-0" id="what-we-are-about">
         <h2 className="subheading mb-5">What We’re About</h2>
 
         <p className="font-semibold text-base md:w-[41%]">
