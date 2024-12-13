@@ -1,11 +1,48 @@
+"use client";
+
 import bi_logo from "@/public/elements small/ballo_logo_half.png";
 import Image from "next/image";
 import "./style.css";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const FloatingSocials = () => {
+  const [iconPosition, setIconPosition] = useState(0);
+  const [iconVisibility, setIconVisibility] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollFromTop = window.scrollY;
+      const viewportHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollFromBottom =
+        ((scrollFromTop + viewportHeight) / documentHeight) * 90;
+
+      console.log(scrollFromTop, documentHeight - 1000);
+      setIconPosition(scrollFromBottom);
+      if (scrollFromTop > documentHeight - 850 || scrollFromTop < 50) {
+        setIconVisibility(false);
+      } else {
+        setIconVisibility(true);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className=" tooltip-container fixed z-10">
+    <div
+      className={`tooltip-container fixed z-10 ${
+        iconVisibility ? "opacity-1" : "opacity-0 pointer-events-none"
+      }`}
+      style={{ top: `${iconPosition}%` }}
+    >
       <div className="bouncing-ball-wrapper">
         <div className="ballo-ball-container">
           <div className="ballo-ball" />

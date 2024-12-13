@@ -32,7 +32,9 @@ const PackagesPage = () => {
           </button> */}
 
           {/* <h2 className="font-bold text-[3em]">Or, Get Detailed Quote</h2> */}
-          <h2 className="font-bold text-[3em]">Get Detailed Quote</h2>
+          <h2 className="font-bold text-[3em] text-center md:text-start">
+            Get Detailed Quote
+          </h2>
 
           <GetQuouteForm />
         </div>

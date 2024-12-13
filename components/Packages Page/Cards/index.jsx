@@ -30,7 +30,7 @@ const PackageCards = () => {
   return (
     <div className="packages-container relative pt-10">
       <div className="package">
-        <div className="z-80 flex-center gap-3">
+        <div className="z-80 flex-center gap-3 mt-16 md:mt-0">
           <h3>Base</h3>
           <div class="relative group flex-center">
             <Image
@@ -40,7 +40,7 @@ const PackageCards = () => {
               className="w-6 cursor-pointer"
             />
 
-            <div class="z-10 p-4 absolute -left-[10vw] top-1/2 mt-6 hidden w-[80vw] md:w-[30vw] md:p-10 text-[1.1rem] bg-gradient-to-br from-[#2e2c6f] to-[#181c9d] border-gray-200 rounded-3xl shadow-2xl shadow-black group-hover:flex justify-center items-center text-white z-80">
+            <div class="z-10 p-4 absolute -left-[50vw] md:-left-[10vw] top-1/2 mt-6 hidden w-[80vw] md:w-[30vw] md:p-10 text-[1.1rem] bg-gradient-to-br from-[#2e2c6f] to-[#181c9d] border-gray-200 rounded-3xl shadow-2xl shadow-black group-hover:flex justify-center items-center text-white z-80">
               This package offers an affordable yet comprehensive solution for
               startups and small businesses looking to project professionalism
               and build trust with their audience from the outset. Its ideal for
@@ -105,7 +105,7 @@ const PackageCards = () => {
       </div>
 
       <div className="package">
-        <div className="z-80 flex-center gap-3">
+        <div className="z-80 flex-center gap-3 mt-16 md:mt-0">
           <h3>Booster</h3>
           <div class="relative group flex-center">
             <Image
@@ -115,7 +115,7 @@ const PackageCards = () => {
               className="w-6 cursor-pointer"
             />
 
-            <div class="z-10 p-4 absolute -left-[20vw] top-1/2 mt-6 hidden w-[80vw] md:w-[30vw] md:p-10 text-[1.1rem] bg-gradient-to-br from-[#2e2c6f] to-[#181c9d] border-gray-200 rounded-3xl shadow-2xl shadow-black group-hover:flex justify-center items-center text-white z-80">
+            <div class="z-10 p-4 absolute -left-[50vw] md:-left-[20vw] top-1/2 mt-6 hidden w-[80vw] md:w-[30vw] md:p-10 text-[1.1rem] bg-gradient-to-br from-[#2e2c6f] to-[#181c9d] border-gray-200 rounded-3xl shadow-2xl shadow-black group-hover:flex justify-center items-center text-white z-80">
               This package offers enhanced tools for businesses aiming to scale,
               ensuring a polished and consistent brand image across all
               touchpoints. It’s ideal for growing businesses seeking to present
@@ -198,8 +198,8 @@ const PackageCards = () => {
         </div>
       </div>
 
-      <div className="package">
-        <div className="z-80 flex-center gap-3">
+      <div className="package mb-28 md:mb-0">
+        <div className="z-80 flex-center gap-3 mt-16 md:mt-0">
           <h3>Ballo</h3>
           <div class="relative group flex-center">
             <Image
@@ -209,7 +209,7 @@ const PackageCards = () => {
               className="w-6 cursor-pointer"
             />
 
-            <div class="z-10 p-4 absolute -left-[15vw] top-1/2 mt-6 hidden w-[80vw] md:w-[30vw] md:p-10 text-[1.1rem] bg-gradient-to-br from-[#2e2c6f] to-[#181c9d] border-gray-200 rounded-3xl shadow-2xl shadow-black group-hover:flex justify-center items-center text-white z-80">
+            <div class="z-10 p-4 absolute -left-[50vw] md:-left-[15vw] top-1/2 mt-6 hidden w-[80vw] md:w-[30vw] md:p-10 text-[1.1rem] bg-gradient-to-br from-[#2e2c6f] to-[#181c9d] border-gray-200 rounded-3xl shadow-2xl shadow-black group-hover:flex justify-center items-center text-white z-80">
               This package offers a complete and seamless identity solution,
               combining branding essentials with a professional landing website
               that positions your business for maximum visibility and engagement

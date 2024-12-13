@@ -1,16 +1,17 @@
 /* This is an example, feel free to delete this code */
 .tooltip-container {
   width: 3em;
-  padding-top: .5em;
+  padding-top: 0.5em;
   position: fixed;
-  bottom: 2rem;
-  right: 4em;
+  right: 2em;
   cursor: pointer;
   border-radius: 50px;
-  transition: all 0.6s;
+  transition: opacity 0.3s;
+  transition: transform 0.3s;
 }
+
 .tooltip-container:hover {
-  bottom: 4rem;
+  transform: translateX(-2.5rem);
 }
 
 .tooltip-container .text {
@@ -160,7 +161,7 @@
   background: black;
 }
 
-.tooltip-container:hover .tooltip4:hover svg { 
+.tooltip-container:hover .tooltip4:hover svg {
   fill: #fff;
 }
 /* Fim do tooltip Twitter */
@@ -300,7 +301,14 @@
 }
 
 .tooltip-container:hover .tooltip8:hover {
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
 }
 
 .tooltip-container:hover .tooltip8:hover svg {
@@ -329,9 +337,9 @@
 }
 
 .bouncing-ball-wrapper {
-    position: absolute;
-    top: -1.2em;
-    left: 0.75em;
+  position: absolute;
+  top: -1.2em;
+  left: 0.75em;
 }
 
 .ballo-ball-container {
@@ -344,7 +352,7 @@
   border-radius: 50%;
   left: 15%;
   transform-origin: 50%;
-  animation: bouncig-circle .5s alternate infinite ease;
+  animation: bouncig-circle 0.5s alternate infinite ease;
   height: 0.75em;
   width: 0.75em;
 }
