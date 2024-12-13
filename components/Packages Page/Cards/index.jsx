@@ -40,7 +40,7 @@ const PackageCards = () => {
               className="w-6 cursor-pointer"
             />
 
-            <div class="z-10 p-4 absolute -left-[10vw] top-1/2 mt-6 hidden w-[80vw] md:w-[20vw] bg-gradient-to-br from-[#2e2c6f] to-[#181c9d] border-gray-200 rounded-md shadow-lg group-hover:block text-white z-80">
+            <div class="z-10 p-4 absolute -left-[10vw] top-1/2 mt-6 hidden w-[80vw] md:w-[20vw] bg-white border-gray-200 rounded-md shadow-lg group-hover:block text-[var(--brand-color-1)] z-80">
               This package offers an affordable yet comprehensive solution for
               startups and small businesses looking to project professionalism
               and build trust with their audience from the outset. Its ideal for
