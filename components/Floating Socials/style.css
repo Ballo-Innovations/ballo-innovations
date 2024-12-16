@@ -53,6 +53,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .tooltip-container:hover .tooltip1:hover {
   background: #025d87;
   fill: #fff;

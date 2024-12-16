@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Loader from "@/components/loader";
 import FloatingSocials from "@/components/Floating Socials/index.";
 import siteMetadata from "@/siteMetaData";
+import UnderConstruction from "@/components/Under Contruction";
 
 export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
@@ -72,6 +73,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="no-scroll">
+        <UnderConstruction />
         <Loader />
         <Navbar />
         {children}

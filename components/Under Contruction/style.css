@@ -1,0 +1,219 @@
+body {
+  cursor: url("/elements small/15.png") 16 16, auto !important;
+  position: fixed;
+  overflow: hidden;
+}
+
+.reel-wrapper-wrapper {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  inset: 0;
+  cursor: url("/elements small/15.png") 16 16, auto !important;
+}
+
+.reel-wraper {
+  font-size: 5rem;
+  z-index: 20;
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* transform: rotate(180deg); */
+}
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: auto;
+}
+
+/* button styling */
+.button {
+  --border-right: 20px;
+  --text-stroke-color: black;
+  --animation-color: #2cf8f6;
+  --fs-size: 2em;
+  letter-spacing: 10px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: white;
+  width: 0%;
+  inset: 0;
+  /* border-right: var(--border-right) solid var(--animation-color); */
+  overflow: hidden;
+  transition: 1.5s;
+  transition-delay: 0.4s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.animate-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+  animation: text-animation 8s infinite ease-in-out;
+  text-align: center;
+}
+
+.ring {
+  transition: all ease-in-out 1.5s;
+  left: -45vw;
+  border: none !important;
+  box-shadow: none !important;
+  top: -30vh;
+  height: auto;
+  width: 60%;
+  animation: ring-animation 8s infinite ease-in-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.under-contruction-logo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  animation: logo-animation 8s infinite ease-in-out;
+  width: 70%;
+}
+
+@keyframes ring-animation {
+  0% {
+    left: -10%;
+  }
+
+  15% {
+    left: -10%;
+  }
+
+  45% {
+    left: 110%;
+  }
+
+  55% {
+    left: 110%;
+  }
+
+  85% {
+    left: -10%;
+  }
+
+  100% {
+    left: -10%;
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    width: 0%;
+  }
+
+  15% {
+    width: 0%;
+  }
+
+  45% {
+    width: 100%;
+  }
+
+  55% {
+    width: 100%;
+  }
+
+  85% {
+    width: 0%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes logo-animation {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (width <= 900px) {
+  .ring {
+    width: 100%;
+  }
+}
+
+@media (width <= 768px) {
+  .under-contruction-logo {
+    width: 80vw;
+  }
+
+  .button {
+    font-size: 2rem;
+  }
+
+  .ring {
+    height: auto;
+    width: 100% !important;
+  }
+
+  @keyframes ring-animation {
+    0% {
+      left: -30%;
+    }
+
+    15% {
+      left: -30%;
+    }
+
+    45% {
+      left: 60vw;
+    }
+
+    55% {
+      left: 60vw;
+    }
+
+    85% {
+      left: -30%;
+    }
+
+    100% {
+      left: -30%;
+    }
+  }
+}
