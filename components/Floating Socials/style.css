@@ -380,3 +380,13 @@
     top: 0%;
   }
 }
+
+@media (width <= 576px) {
+  .tooltip-container {
+    right: 0.5rem;
+  }
+
+  .tooltip-container:hover {
+    transform: translateX(-3.5rem);
+  }
+}
