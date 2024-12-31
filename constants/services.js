@@ -13,7 +13,6 @@ import photography_cover from "@/public/projects/project-covers/photography.png"
 import graphic_design_cover from "@/public/projects/project-covers/graphic-design.png";
 import advertising_cover from "@/public/projects/project-covers/advertising.png";
 
-
 const services = [
   {
     name: "Strategic Marketing Planning",

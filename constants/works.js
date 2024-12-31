@@ -53,29 +53,36 @@ import thailand_15 from "@/public/projects/media-production/photography/43.jpg";
 import thailand_16 from "@/public/projects/media-production/photography/44.jpg";
 import thailand_17 from "@/public/projects/media-production/photography/DSC_0191.jpg";
 import thailand_18 from "@/public/projects/media-production/photography/DSC_0228.jpg";
+import ballo_mag_1 from "@/public/ballo-mag/ballo-mag-2024-cover.jpeg";
 
+export const balloMag = [
+  {
+    path: "/ballo-mag/BalloMag_Vol_1.pdf",
+    name: "Ballo Mag Volume 01",
+    description:
+      "Get to know what happened this past year. Click here and enjoy!",
+    logo: ballo_logo,
+    cover: ballo_mag_1,
+    images: [ballo_1, ballo_2, ballo_3, ballo_4],
+    videos: [],
+  },
+];
 
 export const mediaProduction = [
-  { 
-    path: 'ballo_innovations',
-    name: 'Ballo Innovations',
-    description: 'The team that made all this happen. Sic parvis magna!',
+  {
+    path: "ballo_innovations",
+    name: "Ballo Innovations",
+    description: "The team that made all this happen. Sic parvis magna!",
     logo: ballo_logo,
     cover: ballo_1,
-    images: [
-      ballo_1,
-      ballo_2,
-      ballo_3,
-      ballo_4,
-    ],
-    videos: [
-      
-    ]
+    images: [ballo_1, ballo_2, ballo_3, ballo_4],
+    videos: [],
   },
-  { 
-    path: 'fiz',
-    name: 'Financial Insight Zambia',
-    description: 'Financial Insight Zambia were interested in improving the quality of their digital spaces. This involved professional photography, behind-the-scenes of their FIZ show season 2 episodes. After a successful set, we went on to work further in digital marketing consultation and graphic design for their platforms.',
+  {
+    path: "fiz",
+    name: "Financial Insight Zambia",
+    description:
+      "Financial Insight Zambia were interested in improving the quality of their digital spaces. This involved professional photography, behind-the-scenes of their FIZ show season 2 episodes. After a successful set, we went on to work further in digital marketing consultation and graphic design for their platforms.",
     logo: fiz_logo,
     cover: fiz_1,
     images: [
@@ -92,14 +99,13 @@ export const mediaProduction = [
       fiz_11,
       fiz_12,
     ],
-    videos: [
-
-    ]
+    videos: [],
   },
-  { 
-    path: 'insizwe',
-    name: 'Insizwe',
-    description: 'Our friends at Insizwe had been trying to revamp their branding and digital placing in 2022. Having built on well on their social media with our curated strategy, they requested a team photoshoot which made a buzz on their platforms and added more visibility to their team. Guess they aren’t the only ones making life easy *wink wink *',
+  {
+    path: "insizwe",
+    name: "Insizwe",
+    description:
+      "Our friends at Insizwe had been trying to revamp their branding and digital placing in 2022. Having built on well on their social media with our curated strategy, they requested a team photoshoot which made a buzz on their platforms and added more visibility to their team. Guess they aren’t the only ones making life easy *wink wink *",
     logo: insizwe_logo,
     cover: insizwe_2,
     images: [
@@ -115,53 +121,55 @@ export const mediaProduction = [
     videos: [
       {
         src: "3JqR6FemNZw",
-        thumb: "https://img.youtube.com/vi/3JqR6FemNZw/mqdefault.jpg"
+        thumb: "https://img.youtube.com/vi/3JqR6FemNZw/mqdefault.jpg",
       },
-    ]
+    ],
   },
-  { 
-    path: 'mudenda-capital',
-    name: 'Mudenda Capital',
-    description: 'Mudenda Capital Partners revised and updated their service offerings. They called on us to create a reintroduction video with voiceover. After having great traction, they called on us to handle their social media.',
+  {
+    path: "mudenda-capital",
+    name: "Mudenda Capital",
+    description:
+      "Mudenda Capital Partners revised and updated their service offerings. They called on us to create a reintroduction video with voiceover. After having great traction, they called on us to handle their social media.",
     logo: mudenda_logo,
     cover: mudenda_1,
     images: [],
     videos: [
       {
         src: "jWZW8WbtdMg",
-        thumb: "https://img.youtube.com/vi/jWZW8WbtdMg/mqdefault.jpg"
+        thumb: "https://img.youtube.com/vi/jWZW8WbtdMg/mqdefault.jpg",
       },
-    ]
+    ],
   },
-  { 
-    path: 'bayport',
-    name: 'Bayport Financial Services',
-    description: 'Bayport Financial Services Zambia upgraded USSD elaunch campaign.',
+  {
+    path: "bayport",
+    name: "Bayport Financial Services",
+    description:
+      "Bayport Financial Services Zambia upgraded USSD elaunch campaign.",
     logo: bayport_logo,
     cover: bayport_1,
     images: [],
     videos: [
       {
         src: "VmnFWjgji7o",
-        thumb: "https://img.youtube.com/vi/VmnFWjgji7o/mqdefault.jpg"
+        thumb: "https://img.youtube.com/vi/VmnFWjgji7o/mqdefault.jpg",
       },
       {
-        src: "ndRFdLgGrOw",  // Youtube video Id
-        thumb: "https://img.youtube.com/vi/ndRFdLgGrOw/mqdefault.jpg"
+        src: "ndRFdLgGrOw", // Youtube video Id
+        thumb: "https://img.youtube.com/vi/ndRFdLgGrOw/mqdefault.jpg",
       },
       {
         src: "CoWYvcz0mMA",
-        thumb: "https://img.youtube.com/vi/CoWYvcz0mMA/mqdefault.jpg"
+        thumb: "https://img.youtube.com/vi/CoWYvcz0mMA/mqdefault.jpg",
       },
-    ]
+    ],
   },
-  { 
-    path: 'phuket-thailand',
-    name: 'Phuket, Thailand',
+  {
+    path: "phuket-thailand",
+    name: "Phuket, Thailand",
     description: `While on holiday, our Co-founder & Creative Director, Shannon, along with the team embarked on a campaign to show creative diversity. The photoshoot was so creative that even the creativity of the landscape experienced some creative competition. Okay, we know this writeup wasn’t creative, but at least the campaign was. 
 Just enjoy the views!
 `,
-    logo: '',
+    logo: "",
     cover: thailand_9,
     images: [
       thailand_1,
@@ -183,13 +191,14 @@ Just enjoy the views!
       thailand_15,
       thailand_16,
     ],
-    videos: []
+    videos: [],
   },
-  { 
-    path: 'greenery-scenery',
-    name: 'Greenery Scenery',
-    description: 'Okay, we just wanted to show that we can take photos here, lol.',
-    logo: '',
+  {
+    path: "greenery-scenery",
+    name: "Greenery Scenery",
+    description:
+      "Okay, we just wanted to show that we can take photos here, lol.",
+    logo: "",
     cover: greenery_1,
     images: [
       greenery_1,
@@ -199,6 +208,6 @@ Just enjoy the views!
       greenery_5,
       greenery_6,
     ],
-    videos: []
+    videos: [],
   },
 ];
