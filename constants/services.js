@@ -12,6 +12,7 @@ import web_development_cover from "@/public/projects/project-covers/web-developm
 import photography_cover from "@/public/projects/project-covers/photography.png";
 import graphic_design_cover from "@/public/projects/project-covers/graphic-design.png";
 import advertising_cover from "@/public/projects/project-covers/advertising.png";
+import balloAds_cover from "@/public/elements small/Ballo-Bag.png";
 
 const services = [
   {
@@ -71,6 +72,11 @@ export const categoryPaths = [
     name: "Web Development ",
     cover: web_development_cover,
     path: "/works/web-development",
+  },
+  {
+    name: "Ballo Mag",
+    cover: balloAds_cover,
+    path: "/works/ballo-mag",
   },
   {
     name: "Advertising",

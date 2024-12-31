@@ -6,7 +6,7 @@ import Link from "next/link";
 const BalloMagPage = () => {
   return (
     <section
-      id="media-production"
+      id="ballo-mag"
       className="pt-[30vh] pb-10 blue-black-bg-grandient md:px-5 md:pr-10"
     >
       <div className="flex flex-col">
@@ -33,7 +33,7 @@ const BalloMagPage = () => {
                   target="_blank"
                   className="content h-full w-full flex-center flex-col"
                 >
-                  <p className="card-title text-3xl">{work.name}</p>
+                  <p className="card-title">{work.name}</p>
                   <p className="small-desc">{work.description}</p>
                 </Link>
                 <div className="go-corner">

@@ -10,9 +10,6 @@ const SubLinks = ({ items }) => {
             <li>{item.name}</li>
           </Link>
         ))}
-        <Link href="/works/ballo-mag">
-          <li>Ballo Mag</li>
-        </Link>
       </ul>
     </div>
   );

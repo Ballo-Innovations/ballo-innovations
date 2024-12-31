@@ -158,7 +158,7 @@
   justify-content: center;
 }
 .tooltip-container:hover .tooltip4:hover {
-  background: black;
+  background: var(--brand-color-3);
 }
 
 .tooltip-container:hover .tooltip4:hover svg {
