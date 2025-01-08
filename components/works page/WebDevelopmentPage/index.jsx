@@ -10,7 +10,7 @@ import background from "@/public/Ballo Logo New/svg/Ballo logo new-06.svg";
 import background2 from "@/public/Backgrounds/About.png";
 import maluba from "@/public/projects/web-development/maluba-tv.jpg";
 import swr from "@/public/projects/web-development/swr.png";
-import insizwe from "@/public/projects/web-development/insizwe.png";
+import makhulu from "@/public/projects/web-development/makhulu.png";
 import mudenda from "@/public/projects/web-development/mudenda-capital.png";
 import seneca from "@/public/projects/web-development/seneca-dsc.png";
 import { useEffect, useState } from "react";
@@ -22,9 +22,9 @@ const WebDevelopmentPage = () => {
   const works = [
     { cover: swr, link: "https://style-with-roses.vercel.app/" },
     { cover: maluba, link: "https://maluba-media.vercel.app/" },
-    { cover: insizwe, link: "https://insizwebrokers.com/" },
-    { cover: mudenda, link: "https://insizwebrokers.com" },
-    { cover: seneca, link: "https://senecazambia.com/" },
+    { cover: makhulu, link: "https://www.makhuluinvestments.com/" },
+    { cover: mudenda, link: "https://www.mudendacapital.com/" },
+    { cover: seneca, link: "https://seneca-delta.vercel.app/" },
   ];
   const [freezeSlide, setFreezeSlide] = useState(true);
 
@@ -130,12 +130,12 @@ const WebDevelopmentPage = () => {
                 }`}
                 id={`slide-${index + 1}`}
               >
-                <div className="slide-img relative overflow-hidden cursor-pointer">
+                <div className="slide-img relative overflow-hidden">
                   <div className="follow-link-bubble absolute w-full h-full flex-center opacity-0">
                     <Link
                       href={work.link}
                       target="_blank"
-                      className="border-4 border-white rounded-full text-white py-5 px-10 font-semibold text-4xl"
+                      className="border-4 border-white rounded-full text-white py-5 px-10 font-semibold text-4xl cursor-pointer"
                     >
                       View Project
                     </Link>
