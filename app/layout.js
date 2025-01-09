@@ -78,16 +78,11 @@ export default function RootLayout({ children }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-PMFGTXH7W1"
         ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-PMFGTXH7W1');
-            `,
-          }}
-        />
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-PMFGTXH7W1');
+        </script>
       </Head>
       <body className="no-scroll">
         <Loader />
