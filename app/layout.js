@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Loader from "@/components/loader";
 import FloatingSocials from "@/components/Floating Socials/index.";
 import siteMetadata from "@/siteMetaData";
-import Head from "next/head";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
@@ -72,18 +72,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        {/* Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-PMFGTXH7W1"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-PMFGTXH7W1');
-        </script>
-      </Head>
       <body className="no-scroll">
         <Loader />
         <Navbar />
@@ -91,6 +79,7 @@ export default function RootLayout({ children }) {
         <FloatingSocials />
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G - PMFGTXH7W1" />
     </html>
   );
 }
