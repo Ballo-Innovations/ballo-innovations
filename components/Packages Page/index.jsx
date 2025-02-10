@@ -1,6 +1,6 @@
 // compress ballo logo pattern
-import background from "@/public/Backgrounds/bi-logo-pattern.png";
 import Image from "next/image";
+import pattern from "@/public/Backgrounds/pattern2.png";
 import "./style.css";
 import GetQuouteForm from "./GetQuoteForm";
 import PackageCards from "./Cards";
@@ -14,7 +14,7 @@ const PackagesPage = () => {
         id="packages-section"
       >
         <Image
-          src={background}
+          src={pattern}
           alt="background"
           quality={100}
           className="w-screen h-screen md:h-auto fixed scale-[1] md:scale-[2.3] -left-[25%] md:-left-[12.25%] top-0 object-cover overflow-visible opacity-[0.12]"

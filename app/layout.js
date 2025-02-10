@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
         <FloatingSocials />
         <Footer />
       </body>
-      <GoogleAnalytics gaId="G - PMFGTXH7W1" />
+      <GoogleAnalytics gaId="G-WQY87F7EPR" />
     </html>
   );
 }
