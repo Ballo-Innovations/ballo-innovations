@@ -53,9 +53,10 @@ import thailand_15 from "@/public/projects/media-production/photography/43.jpg";
 import thailand_16 from "@/public/projects/media-production/photography/44.jpg";
 import thailand_17 from "@/public/projects/media-production/photography/DSC_0191.jpg";
 import thailand_18 from "@/public/projects/media-production/photography/DSC_0228.jpg";
-import ballo_mag_filler_page from "@/public/Ballo Logo New/png/Ballo logo new-07.png";
 import ballo_mag_vol_1_front_cover from "@/public/ballo-mag/vol-1/front-cover.jpeg";
 import ballo_mag_vol_1_back_cover from "@/public/ballo-mag/vol-1/back-cover.jpeg";
+import ballo_mag_front_cover_content from "@/public/ballo-mag/vol-1/front-cover-content.jpeg";
+import ballo_mag_back_cover_content from "@/public/ballo-mag/vol-1/back-cover-content.jpeg";
 import ballo_mag_vol_1_page_1 from "@/public/ballo-mag/vol-1/page 1.jpeg";
 import ballo_mag_vol_1_page_2 from "@/public/ballo-mag/vol-1/page 2.jpeg";
 import ballo_mag_vol_1_page_3 from "@/public/ballo-mag/vol-1/page 3.jpeg";
@@ -93,7 +94,7 @@ export const balloMag = [
     logo: ballo_logo,
     frontCover: ballo_mag_vol_1_front_cover,
     images: [
-      ballo_mag_filler_page,
+      ballo_mag_front_cover_content,
       ballo_mag_vol_1_page_1,
       ballo_mag_vol_1_page_2,
       ballo_mag_vol_1_page_3,
@@ -120,7 +121,7 @@ export const balloMag = [
       ballo_mag_vol_1_page_24,
       ballo_mag_vol_1_page_25,
       ballo_mag_vol_1_page_26,
-      ballo_mag_filler_page,
+      ballo_mag_back_cover_content,
     ],
     backCover: ballo_mag_vol_1_back_cover,
   },
