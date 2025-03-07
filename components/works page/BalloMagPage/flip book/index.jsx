@@ -27,7 +27,7 @@ const FlipBook = ({ pages, url }) => {
   return (
     <div
       id='ballo-mag-canvas-container'
-      className="blue-black-bg-grandient relative flex flex-col md:flex-row gap-5 justify-center items-center min-h-screen pb-20"
+      className="blue-black-bg-grandient relative hidden md:flex flex-col md:flex-row gap-5 justify-center items-center min-h-screen pb-20"
     >
       <div        
         className="shadow-lg flex justify-center mt-48"

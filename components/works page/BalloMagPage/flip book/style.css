@@ -2,11 +2,6 @@
   background: linear-gradient(to bottom, #060751 35%, #020218, black) !important;
 }
 
-/* .stf__item.--hard {  
-  transform-origin: bottom !important;
-  transform: none !important;
-} */
-
 .ballo-mag-canvas {
   height: 100%;
 }
@@ -29,4 +24,10 @@
 
 .ballo-mag-fullscreen > div:first-child {
   margin-top: 0;
+}
+
+@media (width <= 768px) {
+  .ballo-mag-canvas-container {
+    display: none !important;
+  }
 }
