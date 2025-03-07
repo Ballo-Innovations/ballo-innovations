@@ -85,7 +85,8 @@ import ballo_mag_vol_1_page_26 from "@/public/ballo-mag/vol-1/page 26.jpeg";
 
 export const balloMag = [
   {
-    path: "/ballo-mag/vol-1/BalloMag_Vol_1.pdf",
+    path: './ballo-mag/volume-1',
+    filePath: "/ballo-mag/vol-1/BalloMag_Vol_1.pdf",
     name: "Ballo Mag Volume 01",
     description:
       "Get to know what happened this past year. Click here and enjoy!",

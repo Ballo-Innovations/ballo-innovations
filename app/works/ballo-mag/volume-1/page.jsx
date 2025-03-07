@@ -3,7 +3,7 @@ import { balloMag } from "@/constants/works";
 
 const Page = () => {
   const pages = [balloMag[0].frontCover, ...balloMag[0].images, balloMag[0].backCover];
-  const url= balloMag[0].path
+  const url= balloMag[0].filePath
   return (
     <main>
       <FlipBook pages={pages} url={url} />

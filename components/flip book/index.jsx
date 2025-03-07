@@ -32,7 +32,7 @@ const FlipBook = ({ pages, url }) => {
   return (
     <div
       id='ballo-mag-canvas-container'
-      className="blue-black-bg-grandient relative flex gap-5 justify-center items-center min-h-screen pb-20"
+      className="blue-black-bg-grandient relative flex flex-col md:flex-row gap-5 justify-center items-center min-h-screen pb-20"
     >
       <div        
         className="shadow-lg flex justify-center mt-48"
@@ -55,6 +55,7 @@ const FlipBook = ({ pages, url }) => {
           mobileScrollSupport={true}
           ref={flipbookRef}
           flippingTime={500} // Adjust flipping speed
+          usePortrait={true}
         >
           {pages.map((page, index) => (
             <div key={index} className="flex items-center justify-center bg-white ballo-mag-page">
@@ -65,7 +66,7 @@ const FlipBook = ({ pages, url }) => {
       </div>
 
       {/* Controls */}
-      <div className="mt-4 flex flex-col gap-4">
+      <div className="mt-4 flex md:flex-col gap-4">
         <button onClick={toggleFullscreen} className="p-2 bg-gray-800 text-white rounded">
           {isFullscreen ? <Minimize /> : <Fullscreen />}
         </button>
