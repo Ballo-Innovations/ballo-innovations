@@ -20,7 +20,6 @@ import lgHash from 'lightgallery/plugins/hash';
 import brushStroke from "@/public/elements small/brush-stroke-banner-6.svg";
 
 const MediaProductionDetailsPage = ({ params }) => {
-  // console.log(mediaProduction, projectId)
   const project = mediaProduction.find(obj => obj.path === params.productionId);
   const [showPopup, setShowPopup] = useState(false)
   const [popupContent, setPopupContent] = useState("")

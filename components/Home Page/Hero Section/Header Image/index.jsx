@@ -34,7 +34,6 @@ const HeaderImage = () => {
             if (self.progress <= 0.07) {
             }
             if (self.progress <= 0.08) {
-              console.log(self.progress);
               const scale = 1 - self.progress;
               gsap.to("#hero-logo-img", { scale: scale, overwrite: "auto" });
             } else {

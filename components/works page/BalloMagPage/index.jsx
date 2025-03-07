@@ -22,7 +22,7 @@ const BalloMagPage = () => {
                 id={`media-${work.path}`}
                 className="card"
                 style={{
-                  background: `url(${work.cover.src})`,
+                  background: `url(${work.frontCover.src})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

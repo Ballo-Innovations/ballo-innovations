@@ -18,8 +18,6 @@ const FloatingSocials = () => {
       const documentHeight = document.documentElement.scrollHeight;
       const scrollFromBottom =
         ((scrollFromTop + viewportHeight) / documentHeight) * 90;
-
-      console.log(scrollFromTop, documentHeight - 1000);
       setIconPosition(scrollFromBottom);
       if (scrollFromTop > documentHeight - 850 || scrollFromTop < 50) {
         setIconVisibility(false);

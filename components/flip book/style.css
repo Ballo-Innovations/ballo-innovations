@@ -1,0 +1,32 @@
+#bookContainer {
+  background: linear-gradient(to bottom, #060751 35%, #020218, black) !important;
+}
+
+/* .stf__item.--hard {  
+  transform-origin: bottom !important;
+  transform: none !important;
+} */
+
+.ballo-mag-canvas {
+  height: 100%;
+}
+
+.ballo-mag-page:first-child {
+  /* opacity: 0 !important;  */
+}
+
+.ballo-mag-fullscreen {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.ballo-mag-fullscreen > div:first-child {
+  margin-top: 0;
+}
