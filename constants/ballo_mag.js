@@ -107,8 +107,8 @@ export const balloMag = [
     backCover: ballo_mag_vol_1_back_cover,
   },
   {
-    path: './ballo-mag/womens-day-2025',
-    filePath: "/ballo-mag/vol-1/Ballo Magazine - Women's Day.pdf",
+    path: './ballo-mag/womens-day-edition-2025',
+    filePath: "/ballo-mag/womens-day-2025/ballo_magazine_ womens_day_edition_2025.pdf",
     name: `Ballo Magazine - Women’s Day Special Edition 2025`,
     description:
       "Celebrating the resilience and leadership of women shaping tomorrow!",
