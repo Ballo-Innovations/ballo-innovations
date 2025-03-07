@@ -30,7 +30,6 @@ const BalloMagPage = () => {
               >
                 <Link
                   href={work.path}
-                  target="_blank"
                   className="content h-full w-full flex-center flex-col"
                 >
                   <p className="card-title">{work.name}</p>
