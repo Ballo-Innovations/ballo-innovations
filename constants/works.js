@@ -120,6 +120,7 @@ export const balloMag = [
       ballo_mag_vol_1_page_24,
       ballo_mag_vol_1_page_25,
       ballo_mag_vol_1_page_26,
+      ballo_mag_filler_page,
     ],
     backCover: ballo_mag_vol_1_back_cover,
   },
