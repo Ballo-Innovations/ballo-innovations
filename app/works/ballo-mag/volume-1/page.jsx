@@ -1,6 +1,6 @@
 import BalloMagSlider from "@/components/works page/BalloMagPage/ballo mag slider";
 import FlipBook from "@/components/works page/BalloMagPage/flip book";
-import { balloMag } from "@/constants/works";
+import { balloMag } from "@/constants/ballo_mag";
 
 const Page = () => {
   const pages = [balloMag[0].frontCover, ...balloMag[0].images, balloMag[0].backCover];
