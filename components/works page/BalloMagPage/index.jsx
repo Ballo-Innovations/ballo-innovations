@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./style.css";
-import { balloMag } from "@/constants/works";
+import { balloMag } from "@/constants/ballo_mag";
 import Link from "next/link";
 
 const BalloMagPage = () => {

@@ -1,13 +1,13 @@
 'use client'
 
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import Image from 'next/image';
 import './style.css'
 import { ArrowLeft, ArrowRight, Download, Fullscreen, Minimize } from 'lucide-react';
 import Link from 'next/link';
 
-const FlipBook = ({ pages, url }) => {
+const FlipBook = ({ pages, url, width, height }) => {
   const flipbookRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -24,6 +24,24 @@ const FlipBook = ({ pages, url }) => {
     }
   };
 
+  
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      if (!document.fullscreenElement) {
+        console.log("Fullscreen mode exited");
+        document.querySelector('#ballo-mag-canvas-container').classList.remove('ballo-mag-fullscreen');
+        setIsFullscreen(false);
+        
+      }
+    };
+
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    };
+  }, []);
+
   return (
     <div
       id='ballo-mag-canvas-container'
@@ -39,8 +57,8 @@ const FlipBook = ({ pages, url }) => {
       >
         <HTMLFlipBook
           size="stretch"
-          width={600}
-          height={600}
+          width={width}
+          height={height}
           autoSize={true}
           className="ballo-mag-canvas"
           maxShadowOpacity={0.5}

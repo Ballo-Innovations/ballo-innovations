@@ -7,7 +7,7 @@ const Page = () => {
   const url= balloMag[0].filePath
   return (
     <main>      
-      <FlipBook pages={pages} url={url} />      
+      <FlipBook pages={pages} url={url} width={500} height={500} />      
       <section className="flex md:hidden h-screen relative blue-black-bg-grandient pr-5">
         <BalloMagSlider pages={pages} />
       </section>
