@@ -70,7 +70,7 @@ const FlipBook = ({ pages, url, width, height }) => {
         >
           {pages.map((page, index) => (
             <div key={index} className="flex items-center justify-center bg-white ballo-mag-page cursor-grab">
-              <Image src={page} alt='Ballo Mag page' className='h-auto w-full object-fill' fill />
+              <Image src={page} alt='Ballo Mag page' className='h-auto w-full object-fill' blurDataURL={page.blurhashDataUrl} fill />
             </div>
           ))}
         </HTMLFlipBook>

@@ -145,9 +145,8 @@ export const balloMag = [
       ballo_mag_womens_day_2025_page_27,
       ballo_mag_womens_day_2025_page_28,
       ballo_mag_womens_day_2025_page_29,
-      ballo_mag_womens_day_2025_back_cover_content,
       
     ],
-    backCover: ballo_mag_womens_day_2025_back_cover,
+    backCover: ballo_mag_womens_day_2025_back_cover_content,
   },
 ];
