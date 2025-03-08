@@ -7,3 +7,11 @@
   z-index: 10;
   margin-right: 0.35rem !important;
 }
+
+.custom-download-btn {
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  padding: 0.8rem;
+  right: 55px;
+}
