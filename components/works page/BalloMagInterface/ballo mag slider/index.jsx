@@ -56,7 +56,7 @@ const BalloMagSlider = ({ pages, url }) => {
             <Image
               id="works-default-bg"
               src={page}
-              alt="Ballo Mag page"
+              alt=""
               quality={100}
               className="img-responsive"
               placeholder="blur"
