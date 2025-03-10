@@ -5,10 +5,9 @@ import HTMLFlipBook from 'react-pageflip';
 import Image from 'next/image';
 import './style.css'
 import { ArrowLeft, ArrowRight, Download, Fullscreen, Minimize } from 'lucide-react';
-import Link from 'next/link';
 import ReactGA from "react-ga4";
 
-const FlipBook = ({ pages, url, width, height }) => {
+const FlipBook = ({ pages, url, width, height, name }) => {
   const flipbookRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -85,20 +84,20 @@ const FlipBook = ({ pages, url, width, height }) => {
         </button>
 
         {/* Download Link */}
-        <Link
+        <a
           href={url}
           target="_blank"
           className="p-2 bg-gray-800 text-white rounded"
           onClick={() => {
             ReactGA.event({
-              category: "Magazine",
+              category: name,
               action: "Download",
               label: url,
             });
           }}
         >
           <Download />
-        </Link>
+        </a>
 
         {/* Navigation Buttons */}        
         <button 
