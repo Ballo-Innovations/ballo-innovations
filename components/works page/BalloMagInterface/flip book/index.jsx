@@ -6,6 +6,7 @@ import Image from 'next/image';
 import './style.css'
 import { ArrowLeft, ArrowRight, Download, Fullscreen, Minimize } from 'lucide-react';
 import Link from 'next/link';
+import ReactGA from "react-ga4";
 
 const FlipBook = ({ pages, url, width, height }) => {
   const flipbookRef = useRef(null);
@@ -88,6 +89,13 @@ const FlipBook = ({ pages, url, width, height }) => {
           href={url}
           target="_blank"
           className="p-2 bg-gray-800 text-white rounded"
+          onClick={() => {
+            ReactGA.event({
+              category: "Magazine",
+              action: "Download",
+              label: url,
+            });
+          }}
         >
           <Download />
         </Link>
