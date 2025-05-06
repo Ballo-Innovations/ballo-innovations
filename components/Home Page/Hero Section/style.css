@@ -8,3 +8,10 @@
 #hero-section > .pin-spacer {
   height: auto !important;
 }
+
+@media (width <= 576px) {
+  #hero-content-wrapper {
+    z-index: 1;
+    position: relative;
+  }
+}

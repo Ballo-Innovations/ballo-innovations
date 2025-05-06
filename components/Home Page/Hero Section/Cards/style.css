@@ -150,3 +150,15 @@
     overflow-x: scroll;
   } */
 }
+
+@media (width <= 576px) {
+  #services-cards-container {
+    overflow-x: auto !important;
+    width: auto !important;
+  }
+  .service-card {
+    min-width: 22rem;
+    height: fit-content;
+    min-height: 20rem;
+  }
+}

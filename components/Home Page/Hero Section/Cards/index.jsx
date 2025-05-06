@@ -34,33 +34,36 @@ const Cards = () => {
   }, []);
 
   useGSAP(() => {
+    
     if (cardsWrapperRef) {
-      const cards = gsap.utils.toArray(".service-card");
-      const amountToScroll =
+      let desktopView = gsap.matchMedia();
+      
+      desktopView.add("(min-width: 576px)", () => {
+
+        const cards = gsap.utils.toArray(".service-card");
+        const amountToScroll =
         cardsWrapperRef.current.offsetWidth - window.innerWidth + 50;
 
-      let scrollTween = gsap.to("#services-cards-container", {
-        x: -amountToScroll,
-        ease: "power1.inOut",
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: "#service-cards-wrapper",
-          start: "top 40%",
-          end: "+=" + amountToScroll,
-          pin: true,
-          scrub: true,
-          anticipatePin: 3,
-          snap: {
-            snapTo: 0.5, // Snap to the middle point
-            duration: 0.5,
-            ease: "power1.inOut",
+        let scrollTween = gsap.to("#services-cards-container", {
+          x: -amountToScroll,
+          ease: "power1.inOut",
+          duration: 0.5,
+          scrollTrigger: {
+            trigger: "#service-cards-wrapper",
+            start: "top 40%",
+            end: "+=" + amountToScroll,
+            pin: true,
+            scrub: true,
+            anticipatePin: 3,
+            snap: {
+              snapTo: 0.5, // Snap to the middle point
+              duration: 0.5,
+              ease: "power1.inOut",
+            },
+            onComplete: setDispalyConent(true),
           },
-          onComplete: setDispalyConent(true),
-        },
-      });
-
-      let desktopView = gsap.matchMedia();
-      desktopView.add("(min-width: 640px)", () => {
+        });
+      
         cards.forEach((card) => {
           const text = card.querySelectorAll(".anim");
           if (text.length) {
