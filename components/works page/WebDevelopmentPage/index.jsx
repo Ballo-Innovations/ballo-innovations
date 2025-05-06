@@ -14,6 +14,7 @@ import makhulu from "@/public/projects/web-development/makhulu.png";
 import mudenda from "@/public/projects/web-development/mudenda-capital.png";
 import seneca from "@/public/projects/web-development/seneca-dsc.png";
 import axxess from "@/public/projects/web-development/axxess-corporate.jpg";
+import shreeji from "@/public/projects/web-development/shreeji.jpg";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -27,6 +28,7 @@ const WebDevelopmentPage = () => {
     { cover: mudenda, link: "https://www.mudendacapital.com/" },
     { cover: seneca, link: "https://seneca-delta.vercel.app/" },
     { cover: axxess, link: "https://www.axxesscorporate.com/" },
+    { cover: shreeji, link: "https://shreeji.co.zm/" },
   ];
   const [freezeSlide, setFreezeSlide] = useState(true);
 
@@ -102,7 +104,7 @@ const WebDevelopmentPage = () => {
         onUpdate: (self) => {
           // Update slide either closer or further based on scroll progress
           const progress = self.progress;
-          const zIncrement = progress * 9000; // Value should depend on distance of last slide
+          const zIncrement = progress * 10500; // *****Value should depend on distance of last slide + or - 1500***
           const currentZ = initialZ + zIncrement;
 
           slide.style.transform = `translateX(-50%) translateY(-50%) translateZ(${currentZ}px)`; // Transform based on calculated current Z value
