@@ -10,7 +10,7 @@
 
 .service-card {
   min-width: 26vw;
-  background: linear-gradient(#01003f, #bdd4dc8c);
+  background: linear-gradient(#01003f, #5a7982);
 }
 
 .service-card:first-child {
@@ -157,8 +157,9 @@
     width: auto !important;
   }
   .service-card {
-    min-width: 22rem;
+    min-width: 18rem;
     height: fit-content;
     min-height: 20rem;
+    background: linear-gradient(#01003f, #416e7b);
   }
 }

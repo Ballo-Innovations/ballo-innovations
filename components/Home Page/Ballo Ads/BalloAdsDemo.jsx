@@ -32,7 +32,7 @@ const BalloAdsDemo = () => {
   return (
     <section
       id="balloAds"
-      className="min-h-screen text-white py-14"
+      className="min-h-screen text-white py-14 relative"
       style={{ background: `url(${background.src})`, backgroundSize: "cover" }}
     >
       <div className="flex-center flex-col md:flex-row md:px-10 gap-10 md:gap-0">

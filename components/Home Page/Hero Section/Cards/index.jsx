@@ -124,7 +124,7 @@ const Cards = () => {
                   />
 
                   <h2
-                    className={`font-bold text-[1.6em] py-2 w-8/12 leading-7 ${
+                    className={`font-bold text-[1.3em] md:text-[1.6em] py-2 w-8/12 leading-7 ${
                       index >= 2 && "anim"
                     }`}
                   >
