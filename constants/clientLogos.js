@@ -11,7 +11,7 @@ import seneca from "@/public/Client Logos/seneca-logo new-02.png";
 import shane from "@/public/Client Logos/Shane Investments logo.png";
 import swr from "@/public/Client Logos/SWR Logo white.png";
 import bayport from "@/public/Client Logos/bayport.png";
-import shreeji from "@/public/Client Logos/shreeji.png";
+import shreeji from "@/public/Client Logos/Shreeji.png";
 
 const clientLogos = [
   {
