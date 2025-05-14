@@ -35,7 +35,7 @@ const index = () => {
         Contact Us
       </Link>
 
-      <div className="flex flex-col gap-5 md:flex-row md:gap-32 md:pb-10 md:pt-5 z-[2]">
+      <div className="flex flex-col gap-4 md:flex-row md:gap-32 md:pb-10 md:pt-5 z-[2]">
         <div className="flex flex-col justify-between">        
           <Link href="mailto:info@balloinnovations.com" className="md:pt-5 text-center hover:underline">
             info@balloinnovations.com
@@ -110,7 +110,7 @@ const index = () => {
           </div>
         </div>
 
-        <div className="flex items-center flex-col">
+        <div className="flex items-center flex-col gap-4 md:gap-0">
           <Link href="/" className="md:pt-5 text-center hover:underline">
             Home
           </Link>
@@ -124,7 +124,7 @@ const index = () => {
           </Link>          
         </div>
 
-        <div className="flex items-center flex-col">
+        <div className="flex items-center flex-col gap-4 md:gap-0">
           <Link href="/careers" className="md:pt-5 text-center hover:underline">
             Careers
           </Link>

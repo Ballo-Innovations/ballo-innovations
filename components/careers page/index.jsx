@@ -52,7 +52,7 @@ export default function CareersPage() {
 
   return (
     <div
-      className="careers-page min-h-screen bg-gradient-to-b from-[#0D0E25] to-black text-white relative -mt-4"
+      className="careers-page min-h-screen bg-gradient-to-b from-[#0D0E25] to-black text-white relative -mt-4 w-[100vw] overflow-hidden"
       style={{ background: `url(${background.src})`, backgroundSize: "cover" }}  
     >
       <Image
@@ -63,25 +63,20 @@ export default function CareersPage() {
       <div className="container mx-auto py-20 px-4 md:pl-20 md:pr-10 relative">
         {/* Top Section */}
         <div className="relative flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 z-10 md:px-5">
+          <div className="md:w-1/2 z-10 md:px-5 pt-[15vh] md:pt-0 text-center md:text-start">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Prepare Your Brush And
               <br /> <span className="text-[darkturquoise]">Begin</span> Painting Your
               <br />
               Journey <span className="text-[darkturquoise]">With Us</span>!
             </h1>
+            
             <p className="text-lg text-gray-100 mb-8">
               Ballo Innovations believes in providing equal opportunities to everyone, offering the right tools and opportunities.
               Ballo Innovations is prepared to be your second home.
             </p>
           </div>
           <div className="md:w-[60vw] relative">
-            <Image
-              src={brush}
-              className="w-[40%] h-auto absolute top-[10%] right-[165%] scale-y-[-1] rotate-[10deg] opacity-0"
-              alt="Ballo Innovations team"
-            />
-
             <Image
               src={teamImg}
               className="w-full h-full rotate-6 z-[2]"
