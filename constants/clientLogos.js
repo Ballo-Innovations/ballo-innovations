@@ -7,10 +7,11 @@ import fi from "@/public/Client Logos/Financial Insights Logo white.png";
 import tinge from "@/public/Client Logos/Tinge logo white.png";
 import iv from "@/public/Client Logos/iv1.png";
 import zhtc from "@/public/Client Logos/logo-2 white.png";
-import seneca from "@/public/Client Logos/seneca-logo dsc-02.png";
+import seneca from "@/public/Client Logos/seneca-logo new-02.png";
 import shane from "@/public/Client Logos/Shane Investments logo.png";
 import swr from "@/public/Client Logos/SWR Logo white.png";
 import bayport from "@/public/Client Logos/bayport.png";
+import shreeji from "@/public/Client Logos/shreeji.png";
 
 const clientLogos = [
   {
@@ -63,16 +64,21 @@ const clientLogos = [
     name: "ZHTC",
     img: zhtc,
     width: 13,
-  },
+  },  
   {
     name: "Seneca",
     img: seneca,
-    width: 18,
+    width: 15,
   },
   {
     name: "Shane Investments",
     img: shane,
     width: 8,
+  },
+  {
+    name: "Shreeji Investments Ltd",
+    img: shreeji,
+    width: 18,
   },
   {
     name: "Style with RoseS",

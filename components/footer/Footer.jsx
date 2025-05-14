@@ -10,12 +10,11 @@ const index = () => {
   return (
     <footer
       id="footer"
-      style={{ background: `url(${background.src})`, backgroundSize: "cover" }}
-      className="flex-center flex-col text-white gap-10 py-5 relative overflow-hidden z-[4]"
-    >
+      className="bg-[#0e0e39] flex-center flex-col text-white gap-10 py-5 relative overflow-hidden z-[4]"
+    >      
       <span id="footer_" className="absolute -top-20 mb-20" />
       <Image src={ring} alt="Logo" quality={100} className="footer-ring" />
-
+      <div className="absolute h-full w-full bg-gradient-to-b from-transparent via-[#00000094] to-black" />
       <Image
         src={logo}
         alt="Ballo Innovations"
@@ -25,7 +24,7 @@ const index = () => {
 
       <h2 className="subheading z-[2]">What&apos;s in your Ballo today?</h2>
 
-      <p className="font-bold text-center z-[2] px-5 md:px-0">
+      <p className="font-semibold text-center z-[2] px-5 md:px-0">
         For more information, contact us by phone, email, or via our social media channels.
       </p>
 
@@ -36,24 +35,17 @@ const index = () => {
         Contact Us
       </Link>
 
-      <div className="flex-center flex-col gap-5 md:flex-row md:gap-32 md:pb-10 md:pt-5 z-[2]">
-        <div className="flex flex-col justify-between">
-          <p className="font-bold text-center">EMAIL</p>
-          <Link href="mailto:info@balloinnovations.com" className="md:pt-5">
+      <div className="flex flex-col gap-5 md:flex-row md:gap-32 md:pb-10 md:pt-5 z-[2]">
+        <div className="flex flex-col justify-between">        
+          <Link href="mailto:info@balloinnovations.com" className="md:pt-5 text-center hover:underline">
             info@balloinnovations.com
           </Link>
-        </div>
 
-        <div className="flex-center flex-col">
-          <p className="font-bold text-center">PHONE</p>
-          <Link href="tel:+260979611334" className="md:pt-5">
+          <Link href="tel:+260979611334" className="md:pt-5 text-center hover:underline">
             +260979611334
           </Link>
-        </div>
 
-        <div>
-          <p className="font-bold text-center">SOCIALS</p>
-          <div className="flex-center gap-2 pt-2">
+          <div className="flex-center gap-2 pt-5">
             <Link
               target="_"
               href="https://www.facebook.com/profile.php?id=100087875482090&mibextid=LQQJ4d"
@@ -116,6 +108,30 @@ const index = () => {
               </svg>
             </Link>
           </div>
+        </div>
+
+        <div className="flex items-center flex-col">
+          <Link href="/" className="md:pt-5 text-center hover:underline">
+            Home
+          </Link>
+
+          <Link href="/about" className="md:pt-5 text-center hover:underline">
+            About
+          </Link>
+
+          <Link href="/works" className="md:pt-5 text-center hover:underline">
+            Works
+          </Link>          
+        </div>
+
+        <div className="flex items-center flex-col">
+          <Link href="/careers" className="md:pt-5 text-center hover:underline">
+            Careers
+          </Link>
+
+          <Link href="/packages" className="md:pt-5 text-center hover:underline">
+            Packages
+          </Link>          
         </div>
       </div>
     </footer>
