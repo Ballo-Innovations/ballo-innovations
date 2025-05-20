@@ -13,9 +13,7 @@ export const jobPosts = [
   //   experience: "3",
   //   description: `
   //     Our mission is to build a super powerful and exceptionally delightful All-in-One recruitment platform, that empowers recruiters and leaders to source, engage, and close best candidates.
-
   //     But here is the thing: long gone are the days when recruiters would just post a job ad online and wait for applications. Today recruiters need to actively seek out the best candidates, provide a great experience, nurture relationships and create a solid employer brand.
-
   //     That’s where we come in. We’re crafting a breakthrough platform that does it all (no more switching, no more repetitive tasks).`
   // },
   // {
@@ -56,9 +54,7 @@ export const jobPosts = [
   //   experience: "3",
   //   description: `
   //     Our mission is to build a super powerful and exceptionally delightful All-in-One recruitment platform, that empowers recruiters and leaders to source, engage, and close best candidates.
-
   //     But here is the thing: long gone are the days when recruiters would just post a job ad online and wait for applications. Today recruiters need to actively seek out the best candidates, provide a great experience, nurture relationships and create a solid employer brand.
-
   //     That’s where we come in. We’re crafting a breakthrough platform that does it all (no more switching, no more repetitive tasks).`
   // },
   // {

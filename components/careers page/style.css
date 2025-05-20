@@ -1,6 +1,6 @@
 .careers-page {
-  font-family: 'Inter', sans-serif;
-  background-color: #0D0E25;
+  font-family: "Inter", sans-serif;
+  background-color: #0d0e25;
 }
 
 .image-container {
@@ -13,7 +13,11 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(13, 14, 37, 0) 40%, rgba(199, 21, 133, 0.7));
+  background: linear-gradient(
+    135deg,
+    rgba(13, 14, 37, 0) 40%,
+    rgba(199, 21, 133, 0.7)
+  );
   z-index: 5;
   border-radius: 1rem;
 }
@@ -33,7 +37,7 @@
 
 h1 span,
 h2 span {
-  color: #E91E63; /* pink highlight */
+  color: #e91e63; /* pink highlight */
 }
 
 .job-card:hover .check-offer {
@@ -45,17 +49,16 @@ h2 span {
 }
 
 .job-card:hover .check-offer svg {
-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 
 .e-card {
   background: transparent;
-  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
   position: relative;
   /* width: 240px;
   height: 330px; */
-  border-radius: 16px;
+  /* border-radius: 16px; */
   overflow: hidden;
 }
 
@@ -68,7 +71,8 @@ transform: rotate(45deg);
   top: 0;
   margin-left: -60%;
   margin-top: 0%;
-  background: linear-gradient(744deg,#0a003c,#09013c 60%,#001516);
+  background: linear-gradient(744deg, #0a003c, #09013c 60%, #001516);
+  transform: rotate(30deg);
 }
 
 .icon {
@@ -92,22 +96,22 @@ transform: rotate(45deg);
 
 .playing .wave {
   border-radius: 40%;
-  animation: wave 90s infinite linear;
+  /* animation: wave 90s infinite linear; */
 }
 
 .playing:nth-child(2n) .wave {
   /* border-radius: 40%; */
-  animation: wave 60s infinite alternate-reverse;
+  /* animation: wave 60s infinite alternate-reverse; */
 }
 
 .playing:nth-child(3n) .wave {
   /* border-radius: 40%; */
-  animation: wave 60s infinite both;
+  /* animation: wave 60s infinite both; */
 }
 
 .wave {
   /* border-radius: 40%; */
-  animation: wave 7s infinite linear;
+  /* animation: wave 7s infinite linear; */
 }
 
 .playing .wave:nth-child(2) {
@@ -137,5 +141,12 @@ transform: rotate(45deg);
 
   100% {
     transform: rotate(160deg);
+  }
+}
+
+.job-form-container {
+  background: linear-gradient(-744deg, #051b1d9a, #09013c, #0a003c 60%);
+  * {
+    color: white;
   }
 }
