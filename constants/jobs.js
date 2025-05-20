@@ -14,7 +14,7 @@ export const jobPosts = [
   //   description: `
   //     Our mission is to build a super powerful and exceptionally delightful All-in-One recruitment platform, that empowers recruiters and leaders to source, engage, and close best candidates.
   //     But here is the thing: long gone are the days when recruiters would just post a job ad online and wait for applications. Today recruiters need to actively seek out the best candidates, provide a great experience, nurture relationships and create a solid employer brand.
-  //     That’s where we come in. We’re crafting a breakthrough platform that does it all (no more switching, no more repetitive tasks).`
+  //     That’s where we come in. We’re crafting a breakthrough platform that does it all (no more switching, no more repetitive tasks).`,
   // },
   // {
   //   slug: "uiux-designer",
@@ -27,7 +27,7 @@ export const jobPosts = [
   //   postedDaysAgo: "5",
   //   experience: "3",
   //   description: `
-  //     Join our dynamic design team to craft intuitive user interfaces and delightful user experiences for digital products that impact thousands of users.`
+  //     Join our dynamic design team to craft intuitive user interfaces and delightful user experiences for digital products that impact thousands of users.`,
   // },
   // {
   //   slug: "qa-tester",
@@ -40,7 +40,7 @@ export const jobPosts = [
   //   postedDaysAgo: "5",
   //   experience: "3",
   //   description: `
-  //     We’re looking for a meticulous QA Tester to ensure our software products are of the highest quality before they reach our users.`
+  //     We’re looking for a meticulous QA Tester to ensure our software products are of the highest quality before they reach our users.`,
   // },
   // {
   //   slug: "product-manager",
@@ -55,7 +55,7 @@ export const jobPosts = [
   //   description: `
   //     Our mission is to build a super powerful and exceptionally delightful All-in-One recruitment platform, that empowers recruiters and leaders to source, engage, and close best candidates.
   //     But here is the thing: long gone are the days when recruiters would just post a job ad online and wait for applications. Today recruiters need to actively seek out the best candidates, provide a great experience, nurture relationships and create a solid employer brand.
-  //     That’s where we come in. We’re crafting a breakthrough platform that does it all (no more switching, no more repetitive tasks).`
+  //     That’s where we come in. We’re crafting a breakthrough platform that does it all (no more switching, no more repetitive tasks).`,
   // },
   // {
   //   slug: "uiux-designer",
@@ -68,7 +68,7 @@ export const jobPosts = [
   //   postedDaysAgo: "5",
   //   experience: "3",
   //   description: `
-  //     Join our dynamic design team to craft intuitive user interfaces and delightful user experiences for digital products that impact thousands of users.`
+  //     Join our dynamic design team to craft intuitive user interfaces and delightful user experiences for digital products that impact thousands of users.`,
   // },
   // {
   //   slug: "qa-tester",
@@ -81,6 +81,6 @@ export const jobPosts = [
   //   postedDaysAgo: "5",
   //   experience: "3",
   //   description: `
-  //     We’re looking for a meticulous QA Tester to ensure our software products are of the highest quality before they reach our users.`
-  // }
+  //     We’re looking for a meticulous QA Tester to ensure our software products are of the highest quality before they reach our users.`,
+  // },
 ];

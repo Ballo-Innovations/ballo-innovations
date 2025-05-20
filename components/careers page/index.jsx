@@ -124,11 +124,11 @@ export default function CareersPage() {
                 {/* <div class="wave" /> */}
                 {/* <div class="wave" /> */}
                 <div class="wave" />
-                <div className="absolute right-5 top-3 font-semibold text-white/60 text-2xl">
+                <div className="absolute right-5 top-3 font-semibold text-white/70 text-2xl">
                   {index + 1}
                 </div>
 
-                <div className="z-[1] relative job-card p-6 rounded-2xl flex flex-col gap-5 transition duration-200 cursor-pointer">
+                <div className="z-[1] relative job-card p-6 flex flex-col gap-5 transition duration-200 cursor-pointer">
                   <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
                   <p className="text-gray-400 mb-2">{job.location}</p>
                   <div className="flex flex-wrap gap-2 mb-2">

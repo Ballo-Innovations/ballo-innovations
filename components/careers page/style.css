@@ -19,7 +19,7 @@
     rgba(199, 21, 133, 0.7)
   );
   z-index: 5;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
 }
 
 .job-card {
@@ -95,7 +95,7 @@ h2 span {
 }
 
 .playing .wave {
-  border-radius: 40%;
+  /* border-radius: 40%; */
   /* animation: wave 90s infinite linear; */
 }
 
