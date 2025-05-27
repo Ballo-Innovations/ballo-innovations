@@ -3,6 +3,11 @@
   background-color: #0d0e25;
 }
 
+.careers-page form input,
+.careers-page form textarea {
+  color: black !important;
+}
+
 .image-container {
   position: relative;
 }

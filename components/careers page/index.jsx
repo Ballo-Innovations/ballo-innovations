@@ -205,14 +205,14 @@ export default function CareersPage() {
                       <input
                         name="First name"
                         type="text"
-                        placeholder="First name"
+                        placeholder="First name *"
                         required
                         className="col-span-1 border border-gray-300 rounded px-4 py-2"
                       />
                       <input
                         name="Last name"
                         type="text"
-                        placeholder="Last name"
+                        placeholder="Last name *"
                         required
                         className="col-span-1 border border-gray-300 rounded px-4 py-2"
                       />
@@ -220,14 +220,15 @@ export default function CareersPage() {
                     <input
                       name="Email"
                       type="email"
-                      placeholder="Email"
+                      placeholder="Email *"
                       required
                       className="w-full border border-gray-300 rounded px-4 py-2"
                     />
                     <input
                       name="Phone numbers"
                       type="text"
-                      placeholder="Phone number"
+                      placeholder="Phone number *"
+                      required
                       className="w-full border border-gray-300 rounded px-4 py-2"
                     />
                     <textarea
@@ -238,12 +239,13 @@ export default function CareersPage() {
                     />
                     <div>
                       <label className="block mb-1 text-sm font-medium text-gray-700">
-                        Resume
+                        Resume / CV *
                       </label>
                       <input
                         name="Resume"
                         type="file"
                         accept=".pdf,.doc,.docx"
+                        required
                         className="w-full border border-dashed border-gray-300 p-3 rounded bg-white"
                       />
                       <p className="text-xs text-gray-500 mt-1">
