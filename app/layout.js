@@ -6,7 +6,6 @@ import FloatingSocials from "@/components/Floating Socials/index.";
 import siteMetadata from "@/siteMetaData";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-
 export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: "Ballo Innovations",
