@@ -16,19 +16,19 @@ export const jobPosts = [
   //     But here is the thing: long gone are the days when recruiters would just post a job ad online and wait for applications. Today recruiters need to actively seek out the best candidates, provide a great experience, nurture relationships and create a solid employer brand.
   //     That’s where we come in. We’re crafting a breakthrough platform that does it all (no more switching, no more repetitive tasks).`,
   // },
-  // {
-  //   slug: "uiux-designer",
-  //   title: "UI/UX Designer",
-  //   type: "Full-Time",
-  //   location: "Lusaka, Zambia",
-  //   category: "Design",
-  //   status: "open",
-  //   endDate: "2025-06-15",
-  //   postedDaysAgo: "5",
-  //   experience: "3",
-  //   description: `
-  //     Join our dynamic design team to craft intuitive user interfaces and delightful user experiences for digital products that impact thousands of users.`,
-  // },
+  {
+    slug: "uiux-designer",
+    title: "UI/UX Designer",
+    type: "Full-Time",
+    location: "Lusaka, Zambia",
+    category: "Design",
+    status: "open",
+    endDate: "2025-12-30",
+    postedDaysAgo: "5",
+    experience: "3",
+    description: `
+      Join our dynamic design team to craft intuitive user interfaces and delightful user experiences for digital products that impact thousands of users.`,
+  },
   // {
   //   slug: "qa-tester",
   //   title: "Software QA Tester",
@@ -57,19 +57,19 @@ export const jobPosts = [
   //     But here is the thing: long gone are the days when recruiters would just post a job ad online and wait for applications. Today recruiters need to actively seek out the best candidates, provide a great experience, nurture relationships and create a solid employer brand.
   //     That’s where we come in. We’re crafting a breakthrough platform that does it all (no more switching, no more repetitive tasks).`,
   // },
-  {
-    slug: "uiux-designer",
-    title: "UI/UX Designer",
-    type: "Full-Time",
-    location: "Lusaka, Zambia",
-    category: "Design",
-    status: "open",
-    endDate: "2025-06-15",
-    postedDaysAgo: "5",
-    experience: "3",
-    description: `
-      Join our dynamic design team to craft intuitive user interfaces and delightful user experiences for digital products that impact thousands of users.`,
-  },
+  // {
+  //   slug: "uiux-designer",
+  //   title: "UI/UX Designer",
+  //   type: "Full-Time",
+  //   location: "Lusaka, Zambia",
+  //   category: "Design",
+  //   status: "open",
+  //   endDate: "2025-06-15",
+  //   postedDaysAgo: "5",
+  //   experience: "3",
+  //   description: `
+  //     Join our dynamic design team to craft intuitive user interfaces and delightful user experiences for digital products that impact thousands of users.`,
+  // },
   // {
   //   slug: "qa-tester",
   //   title: "Software QA Tester",
