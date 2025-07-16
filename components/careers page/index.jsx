@@ -64,7 +64,7 @@ export default function CareersPage() {
         }
         alt="Ballo Innovations team"
       />
-      <div className="container mx-auto pb-32 pt-48 px-4 md:pl-20 md:pr-10 relative">
+      <div className="container mx-auto pt-32 pb-20 md:pb-32 md:pt-48 px-4 md:pl-20 md:pr-10 relative">
         {/* Top Section */}
         <div className="relative flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 z-10 md:px-5 pt-[15vh] md:pt-0 text-center md:text-start">
@@ -97,14 +97,14 @@ export default function CareersPage() {
             className={
               !activeJobs.length
                 ? "hidden"
-                : "text-4xl font-semibold my-10 mx-5"
+                : "text-4xl font-semibold my-10 mx-5 text-center md:text-start"
             }
           >
             <span className="text-[darkturquoise]">Available</span> Job
             Offerings
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-[5rem] relative z-[1]">
+          <div className="grid md:grid-cols-3 gap-[2rem] md:gap-[5rem] relative z-[1]">
             {/* <div class="e-card playing">              
               <div class="infotop">
     
