@@ -2,8 +2,8 @@
 
 export const jobPosts = [
   {
-    slug: "hybrid-graphic-designer",
-    title: "Hybrid Graphic Designer",
+    slug: "graphic-designer",
+    title: "Graphic Designer",
     type: "Full-Time",
     location: "Lusaka | Hybrid Work Setup",
     category: "Design",
@@ -48,7 +48,7 @@ export const jobPosts = [
   {
     slug: "flutter-developer",
     title: "Flutter Developer (Mobile Apps)",
-    type: "Full-Time",
+    type: "Part-Time",
     location: "Remote or Lusaka",
     category: "Engineering",
     status: "open",

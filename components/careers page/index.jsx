@@ -64,7 +64,7 @@ export default function CareersPage() {
         }
         alt="Ballo Innovations team"
       />
-      <div className="container mx-auto py-20 px-4 md:pl-20 md:pr-10 relative">
+      <div className="container mx-auto pb-32 pt-48 px-4 md:pl-20 md:pr-10 relative">
         {/* Top Section */}
         <div className="relative flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 z-10 md:px-5 pt-[15vh] md:pt-0 text-center md:text-start">
@@ -95,14 +95,16 @@ export default function CareersPage() {
         <div>
           <h2
             className={
-              !activeJobs.length ? "hidden" : "text-4xl font-semibold mb-6 mx-5"
+              !activeJobs.length
+                ? "hidden"
+                : "text-4xl font-semibold my-10 mx-5"
             }
           >
             <span className="text-[darkturquoise]">Available</span> Job
             Offerings
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-10 relative z-[1]">
+          <div className="grid md:grid-cols-3 gap-[5rem] relative z-[1]">
             {/* <div class="e-card playing">              
               <div class="infotop">
     
@@ -118,51 +120,36 @@ export default function CareersPage() {
               <Link
                 href={`/careers/${job.slug}`}
                 key={job.slug}
-                className="e-card playing"
+                className="relative job-card-container"
               >
-                {/* <div class="image" />                 */}
-                {/* <div class="wave" /> */}
-                {/* <div class="wave" /> */}
-                <div class="wave" />
-                <div className="absolute right-5 top-3 font-semibold text-white/70 text-2xl">
-                  {index + 1}
-                </div>
-
-                <div className="z-[1] relative job-card p-6 flex flex-col gap-5 transition duration-200 cursor-pointer">
-                  <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
-                  <p className="text-gray-400 mb-2">{job.location}</p>
-                  <div className="flex flex-wrap gap-2 mb-2">
-                    <span className="badge bg-gray-700 text-sm px-3 py-1 rounded-full">
-                      Full-Time
-                    </span>
-                    <span className="badge bg-gray-700 text-sm px-3 py-1 rounded-full">
-                      {job.experience} Years Min. Exp.
-                    </span>
-                    <span className="badge bg-[#21538a] text-sm px-3 py-1 rounded-full">
-                      🚀 Hiring Fast
-                    </span>
+                <div class="parent md:min-w-[400px]">
+                  <div class="job-card relative">
+                    <div class="glass"></div>
+                    <div class="content">
+                      <div className="absolute right-8 top-5 font-semibold text-white/70 text-3xl">
+                        {index + 1}
+                      </div>
+                      <p className="text-gray-800 mb-2">{job.location}</p>
+                      <span class="title">{job.title}</span>
+                      <span class="text text-gray-800">
+                        Posted {job.postedDaysAgo} days ago
+                      </span>
+                    </div>
+                    <div class="bottom flex flex-wrap w-full">
+                      <div class="tags-container">
+                        <div class="tag .tag1 min-w-[6rem]">
+                          <span className="badge bg-white text-sm px-3 py-1 rounded-full w-max">
+                            {job.type}
+                          </span>
+                        </div>
+                        <div class="tag .tag2 min-w-[6rem] w-max mx-5">
+                          <span className="badge bg-white text-sm px-3 py-1 rounded-full w-max">
+                            {job.experience} Years Min. Exp.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <p className="text-xs text-gray-500">
-                    Posted {job.postedDaysAgo} days ago
-                  </p>
-                  <p className="check-offer text-sm mt-2 text-[#e7fcff] flex gap-1">
-                    APPLY
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
-                    >
-                      <path d="M7 7h10v10" />
-                      <path d="M7 17 17 7" />
-                    </svg>
-                  </p>
                 </div>
               </Link>
             ))}
