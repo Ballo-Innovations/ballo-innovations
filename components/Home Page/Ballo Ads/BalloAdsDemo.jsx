@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import background from "@/public/Backgrounds/hero-bg.png";
 // NOTE: Use the image bellow to animate effects
-// import balloAds from '@/public/elements small/1.png'
+// import balloAds from '@/public/elements small/1.png' 
 import playStore from "@/public/elements small/18.png";
 import appleStore from "@/public/elements small/19.png";
 
