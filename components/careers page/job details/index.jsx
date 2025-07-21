@@ -4,8 +4,14 @@ import React, { useRef, useState } from "react";
 import { notFound } from "next/navigation";
 
 export default function JobDetailsPage({ job }) {
+  const graphicDesignerForm = 'https://usebasin.com/f/deb19f40fde9'
+  const frontendDeveloperForm = 'https://usebasin.com/f/1a80649641c7'
+  const defaultForm = 'https://usebasin.com/f/c52bce6aa202' 
+
+  const formUrl = job.slug === 'graphic-designer' ? graphicDesignerForm : job.slug === 'flutter-developer' ? frontendDeveloperForm : defaultForm
   const formRef = useRef(null);
   const [status, setStatus] = useState(null);
+
 
   if (!job) return notFound();
 
@@ -15,9 +21,10 @@ export default function JobDetailsPage({ job }) {
 
     const form = formRef.current;
     const formData = new FormData(form);
+    console.log(formUrl)
 
     try {
-      const response = await fetch("https://usebasin.com/f/c52bce6aa202", {
+      const response = await fetch(formUrl, {
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" },

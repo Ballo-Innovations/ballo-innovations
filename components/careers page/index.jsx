@@ -104,18 +104,7 @@ export default function CareersPage() {
             Offerings
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-[2rem] md:gap-[5rem] relative z-[1]">
-            {/* <div class="e-card playing">              
-              <div class="infotop">
-    
-                  UI / EX Designer
-                <br />
-                <div class="name">Lusaka, Zambia</div>
-                <div class="name">Full-time</div>
-                <div class="name">Posted 5 days ago</div>
-              </div>
-            </div> */}
-
+          <div className="flex gap-[2rem] md:gap-[5rem] relative z-[1] flex-wrap">
             {activeJobs.map((job, index) => (
               <Link
                 href={`/careers/${job.slug}`}
@@ -135,8 +124,8 @@ export default function CareersPage() {
                         Posted {job.postedDaysAgo} days ago
                       </span>
                     </div>
-                    <div class="bottom flex flex-wrap w-full">
-                      <div class="tags-container">
+                    <div class="bottom  flex-row flex-wrap w-full">
+                      <div class="tags-container flex-row">
                         <div class="tag .tag1 min-w-[6rem]">
                           <span className="badge bg-white text-sm px-3 py-1 rounded-full w-max">
                             {job.type}
