@@ -8,7 +8,7 @@ export const jobPosts = [
     location: "Lusaka | Hybrid Work Setup",
     category: "Design",
     status: "open",
-    endDate: "2025-07-25",
+    endDate: "2025-07-31",
     postedDaysAgo: "0",
     experience: "1–3",
     description: `
@@ -52,7 +52,7 @@ export const jobPosts = [
     location: "Remote or Lusaka",
     category: "Engineering",
     status: "open",
-    endDate: "2025-07-25",
+    endDate: "2025-07-31",
     postedDaysAgo: "0",
     experience: "2+",
     description: `
